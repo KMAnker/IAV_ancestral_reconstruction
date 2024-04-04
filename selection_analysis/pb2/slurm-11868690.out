@@ -1,0 +1,132 @@
+
+Analysis Description
+--------------------
+MEME (Mixed Effects Model of Evolution) estimates a site-wise synonymous
+(&alpha;) and a two-category mixture of non-synonymous (&beta;-, with
+proportion p-, and &beta;+ with proportion [1-p-]) rates, and uses a
+likelihood ratio test to determine if &beta;+ > &alpha; at a site. The
+estimates aggregate information over a proportion of branches at a site,
+so the signal is derived from episodic diversification, which is a
+combination of strength of selection [effect size] and the proportion of
+the tree affected. A subset of branches can be selected for testing as
+well, in which case an additional (nuisance) parameter will be inferred
+-- the non-synonymous rate on branches NOT selected for testing.
+Multiple partitions within a NEXUS file are also supported for
+recombination - aware analysis. Version 3.0 adds a different format for
+ancestral state reconstruction, branch-site posterior storage, and
+site-level heterogeneity testing. 
+
+- __Requirements__: in-frame codon alignment and a phylogenetic tree
+
+- __Citation__: Detecting Individual Sites Subject to Episodic Diversifying Selection.
+_PLoS Genet_ 8(7): e1002764.
+
+- __Written by__: Sergei L. Kosakovsky Pond, Steven Weaver
+
+- __Contact Information__: spond@temple.edu
+
+- __Analysis Version__: 3.0
+
+
+>code –> Universal
+
+-------
+>[WARNING] This dataset contains 20 duplicate sequences. Identical
+sequences do not contribute any information to the analysis and only
+slow down computation. Please consider removing duplicate or 'nearly'
+duplicate sequences, e.g. using
+https://github.com/veg/hyphy-analyses/tree/master/remove-duplicates
+prior to running selection analyses
+-------
+/srv/data/VOF/INF/KMAN/ancestral_reconstruction_final/hyphy_new/pb2/pb2_annotated_tree.nexus
+pb2_annotated_tree.nexus
+
+>Loaded a multiple sequence alignment with **969** sequences, **760** codons, and **1** partitions from `/srv/data/VOF/INF/KMAN/ancestral_reconstruction_final/hyphy_new/pb2/pb2.fasta`
+
+>branches –> SWINE-SWINE
+
+>Select the p-value threshold to use when testing for selection (permissible range = [0,1], default value = 0.1): 
+>pvalue –> 0.1
+
+>[Advanced setting, will result in MUCH SLOWER run time] Perform parametric bootstrap resampling to derive site-level null LRT distributions up to this many replicates per site. Recommended use for small to medium (<30 sequences) datasets (permissible range = [0,1000], default value = 50, integer): 
+>resample –> 0
+
+
+### Branches to include in the MEME analysis
+Selected 1285 branches to include in the MEME analysis: `SEQ_065, SEQ_100, SEQ_101, Node7, Node6, Node4, SEQ_039, SEQ_032, SEQ_162, SEQ_106, SEQ_458, SEQ_130, Node42, SEQ_064, Node41, SEQ_584, SEQ_102, Node48, SEQ_132, SEQ_131, Node51, Node47, SEQ_713, Node46, Node40, SEQ_049, Node39, Node37, Node35, SEQ_022, SEQ_025, Node59, SEQ_027, SEQ_026, Node63, SEQ_021, Node62, Node58, SEQ_030, SEQ_126, SEQ_099, SEQ_124, Node74, SEQ_123, Node73, Node71, SEQ_043, SEQ_035, Node79, SEQ_036, SEQ_185, SEQ_042, Node87, SEQ_041, SEQ_119, SEQ_122, Node102, SEQ_048, SEQ_029, SEQ_120, Node108, SEQ_121, Node107, Node105, Node101, SEQ_038, Node100, Node98, SEQ_031, Node97, Node91, Node86, Node84, Node82, Node78, Node70, Node68, SEQ_033, Node67, Node23, SEQ_040, Node22, SEQ_037, Node21, SEQ_069, SEQ_070, SEQ_103, SEQ_104, SEQ_076, SEQ_066, Node183, SEQ_206, SEQ_004, Node182, SEQ_014, SEQ_017, SEQ_018, Node200, SEQ_015, SEQ_016, SEQ_429, SEQ_585, SEQ_587, Node264, SEQ_588, Node263, SEQ_505, SEQ_067, SEQ_371, SEQ_005, Node304, SEQ_370, Node303, SEQ_376, Node302, SEQ_180, SEQ_137, Node313, SEQ_700, SEQ_701, SEQ_142, Node320, Node318, SEQ_089, Node317, SEQ_703, SEQ_350, Node327, SEQ_133, Node326, SEQ_152, Node325, SEQ_111, SEQ_702, Node332, Node324, Node316, Node312, SEQ_011, SEQ_218, SEQ_213, Node337, SEQ_060, SEQ_193, SEQ_105, Node343, SEQ_211, Node342, Node340, Node336, Node311, SEQ_061, SEQ_013, SEQ_012, Node351, Node349, SEQ_691, SEQ_010, SEQ_009, Node357, SEQ_709, SEQ_712, Node364, SEQ_210, Node363, SEQ_107, SEQ_108, SEQ_109, SEQ_242, Node375, SEQ_145, Node374, Node371, Node369, SEQ_028, Node368, SEQ_112, Node362, SEQ_222, SEQ_247, Node383, SEQ_390, SEQ_381, SEQ_633, Node393, Node391, SEQ_154, Node390, SEQ_375, Node389, SEQ_140, SEQ_357, SEQ_224, Node402, Node400, SEQ_196, SEQ_195, SEQ_586, SEQ_627, Node410, Node408, SEQ_228, SEQ_230, Node417, SEQ_229, Node416, Node414, SEQ_690, Node413, Node407, Node405, Node399, SEQ_243, Node398, Node388, SEQ_388, SEQ_358, SEQ_306, SEQ_305, Node434, SEQ_307, Node433, SEQ_315, SEQ_308, Node440, Node438, Node432, Node430, SEQ_312, SEQ_460, SEQ_695, SEQ_317, Node447, Node445, SEQ_391, SEQ_302, Node451, SEQ_628, Node450, Node443, Node429, SEQ_549, Node428, SEQ_576, SEQ_629, SEQ_309, Node461, SEQ_402, Node460, Node458, SEQ_575, Node457, SEQ_635, SEQ_621, SEQ_622, Node475, Node473, SEQ_614, Node472, SEQ_577, Node471, SEQ_634, Node470, SEQ_636, SEQ_568, Node481, Node469, Node467, SEQ_245, Node466, SEQ_687, SEQ_679, SEQ_352, SEQ_372, Node514, Node512, SEQ_351, SEQ_321, Node511, SEQ_632, SEQ_688, Node526, Node510, SEQ_355, SEQ_374, SEQ_373, Node532, Node530, SEQ_681, Node529, SEQ_314, SEQ_363, Node509, Node489, SEQ_201, SEQ_303, SEQ_625, SEQ_432, Node540, Node488, Node456, Node427, SEQ_353, Node426, SEQ_186, SEQ_380, SEQ_382, SEQ_427, Node550, SEQ_377, Node549, SEQ_354, Node548, SEQ_403, SEQ_318, SEQ_319, SEQ_430, Node562, SEQ_311, SEQ_686, SEQ_750, Node567, Node566, SEQ_304, Node565, Node561, Node559, SEQ_221, Node557, Node547, Node545, SEQ_233, Node544, Node425, Node423, Node387, SEQ_187, Node592, SEQ_414, Node591, SEQ_361, SEQ_231, SEQ_225, SEQ_153, SEQ_188, Node604, Node602, Node600, Node598, SEQ_413, SEQ_223, Node611, SEQ_409, SEQ_326, Node614, Node610, SEQ_362, Node609, SEQ_450, SEQ_129, Node619, SEQ_453, SEQ_410, Node622, Node618, Node608, SEQ_411, SEQ_215, SEQ_329, SEQ_630, SEQ_220, SEQ_219, SEQ_217, Node640, Node638, SEQ_324, SEQ_626, Node645, Node643, Node637, SEQ_323, Node636, SEQ_689, Node632, Node630, Node628, Node625, SEQ_214, SEQ_205, SEQ_423, SEQ_452, SEQ_330, Node659, Node657, Node655, SEQ_424, SEQ_150, SEQ_422, Node665, SEQ_151, SEQ_202, SEQ_407, Node670, Node668, Node664, Node662, SEQ_020, Node674, SEQ_191, SEQ_127, Node678, SEQ_139, Node673, SEQ_360, SEQ_241, Node685, SEQ_708, SEQ_705, Node688, Node684, SEQ_322, Node683, SEQ_148, SEQ_328, Node682, Node607, SEQ_316, SEQ_226, Node696, SEQ_327, SEQ_406, Node699, Node695, SEQ_404, Node694, Node590, Node586, Node386, Node382, SEQ_212, SEQ_246, Node381, Node361, SEQ_006, SEQ_024, Node706, SEQ_178, SEQ_019, SEQ_199, SEQ_063, Node713, Node711, Node709, Node705, Node360, Node356, Node354, Node348, SEQ_721, SEQ_732, SEQ_725, Node722, Node720, SEQ_443, SEQ_435, SEQ_419, Node729, Node727, SEQ_593, SEQ_598, SEQ_483, Node734, Node732, SEQ_389, SEQ_727, Node738, SEQ_418, SEQ_420, Node743, SEQ_421, Node742, SEQ_412, Node741, Node737, SEQ_729, Node752, SEQ_393, SEQ_723, Node756, SEQ_244, Node755, Node751, SEQ_459, SEQ_339, Node771, SEQ_548, SEQ_083, Node774, SEQ_240, SEQ_718, SEQ_720, Node780, Node778, SEQ_340, SEQ_342, SEQ_408, Node785, Node783, SEQ_445, Node777, SEQ_197, SEQ_198, SEQ_664, SEQ_665, SEQ_356, SEQ_345, Node820, SEQ_349, Node819, SEQ_367, SEQ_348, Node824, SEQ_359, SEQ_366, SEQ_337, SEQ_336, SEQ_338, SEQ_572, SEQ_570, Node895, SEQ_571, SEQ_190, SEQ_189, SEQ_156, SEQ_552, SEQ_473, SEQ_506, SEQ_507, SEQ_738, Node962, Node960, Node965, Node959, SEQ_334, Node958, Node956, Node954, SEQ_386, SEQ_742, SEQ_741, Node1024, SEQ_740, SEQ_739, Node1027, SEQ_097, SEQ_096, SEQ_384, SEQ_200, SEQ_573, SEQ_368, SEQ_574, SEQ_578, Node1045, Node1043, Node1041, SEQ_425, SEQ_173, SEQ_176, SEQ_252, SEQ_250, SEQ_461, SEQ_463, SEQ_239, SEQ_238, SEQ_454, SEQ_333, Node1101, SEQ_216, SEQ_320, SEQ_416, Node1106, Node1104, Node1100, Node760, Node750, SEQ_624, SEQ_092, SEQ_090, SEQ_094, SEQ_093, Node1118, Node1116, Node1114, SEQ_091, Node1113, Node1112, SEQ_565, SEQ_609, SEQ_671, Node1124, SEQ_678, Node1129, SEQ_439, SEQ_522, SEQ_364, SEQ_524, SEQ_227, Node1138, SEQ_525, SEQ_518, Node1142, SEQ_520, Node1141, Node1137, SEQ_521, Node1135, Node1133, SEQ_526, Node1128, SEQ_232, SEQ_650, Node1148, Node1123, Node1110, SEQ_365, SEQ_693, SEQ_557, Node1153, Node1151, Node1109, Node749, SEQ_095, SEQ_663, SEQ_383, Node1164, SEQ_683, SEQ_660, SEQ_661, Node1170, Node1168, SEQ_560, SEQ_682, SEQ_666, Node1178, Node1176, SEQ_667, Node1175, SEQ_605, Node1174, SEQ_559, SEQ_662, Node1184, SEQ_659, Node1183, Node1173, Node1167, Node1163, SEQ_426, Node1162, Node1158, Node1156, Node748, SEQ_141, SEQ_448, SEQ_436, Node1192, SEQ_529, SEQ_556, Node1198, SEQ_684, SEQ_616, Node1201, Node1197, SEQ_618, SEQ_641, Node1205, SEQ_615, SEQ_523, SEQ_530, Node1210, Node1208, Node1204, SEQ_697, Node1196, SEQ_604, Node1195, Node1191, Node1189, SEQ_462, SEQ_722, SEQ_331, SEQ_332, Node1219, Node1217, SEQ_726, SEQ_457, Node1223, SEQ_735, Node1222, SEQ_645, SEQ_440, Node1230, SEQ_433, Node1229, SEQ_449, SEQ_580, SEQ_446, SEQ_447, Node1239, SEQ_579, SEQ_581, SEQ_716, SEQ_715, Node1245, Node1242, Node1238, Node1236, Node1234, Node1228, SEQ_724, SEQ_731, Node1252, Node1250, SEQ_733, Node1249, SEQ_583, Node1248, Node1227, Node1216, Node726, SEQ_438, SEQ_346, SEQ_347, Node1259, SEQ_734, SEQ_415, Node1262, Node1258, Node725, Node719, SEQ_275, Node718, SEQ_706, Node717, SEQ_710, SEQ_711, SEQ_437, Node1270, SEQ_707, Node1269, Node1267, Node716, Node347, Node310, SEQ_550, SEQ_157, SEQ_118, SEQ_310, Node1280, Node1278, SEQ_114, SEQ_487, SEQ_495, SEQ_486, Node1291, SEQ_171, SEQ_169, SEQ_078, Node1297, SEQ_174, SEQ_296, SEQ_163, Node1304, SEQ_168, SEQ_170, SEQ_179, SEQ_284, SEQ_295, Node1314, Node1312, SEQ_172, Node1311, Node1309, Node1307, Node1303, SEQ_175, SEQ_161, Node1302, Node1300, Node1295, SEQ_147, SEQ_159, Node1323, SEQ_002, Node1322, SEQ_001, SEQ_044, SEQ_491, Node1330, Node1328, SEQ_068, SEQ_431, SEQ_073, SEQ_251, SEQ_737, SEQ_297, Node1348, SEQ_595, SEQ_480, Node1351, Node1347, SEQ_274, SEQ_277, Node1354, SEQ_493, Node1346, Node1344, SEQ_398, SEQ_264, SEQ_282, Node1364, Node1362, Node1360, SEQ_492, Node1359, SEQ_657, SEQ_649, Node1369, SEQ_254, Node1368, Node1358, SEQ_596, SEQ_591, SEQ_477, SEQ_594, Node1381, Node1378, Node1376, SEQ_482, Node1375, SEQ_272, Node1374, SEQ_592, SEQ_253, SEQ_475, Node1391, Node1389, SEQ_656, Node1388, Node1386, Node1373, SEQ_261, SEQ_281, SEQ_494, Node1397, Node1395, Node1343, SEQ_504, SEQ_287, SEQ_286, Node1405, SEQ_158, SEQ_084, SEQ_497, Node1411, SEQ_369, Node1410, Node1408, Node1404, SEQ_501, Node1403, SEQ_502, SEQ_500, SEQ_747, SEQ_745, SEQ_672, SEQ_673, Node1429, Node1427, SEQ_606, Node1425, Node1423, SEQ_746, SEQ_668, Node1434, SEQ_692, SEQ_694, Node1441, SEQ_639, Node1440, SEQ_676, Node1439, Node1437, Node1433, Node1422, SEQ_085, Node1421, SEQ_267, Node1420, SEQ_474, Node1419, Node1417, SEQ_046, Node1402, Node1400, SEQ_405, SEQ_503, Node1452, SEQ_278, SEQ_599, SEQ_273, SEQ_646, Node1461, Node1459, Node1457, SEQ_600, Node1456, SEQ_508, SEQ_255, Node1467, SEQ_499, Node1466, SEQ_496, Node1472, SEQ_545, SEQ_546, Node1475, Node1471, Node1465, SEQ_498, SEQ_291, SEQ_378, Node1484, SEQ_648, SEQ_263, Node1488, SEQ_698, SEQ_748, Node1492, SEQ_749, SEQ_387, Node1496, SEQ_623, Node1499, Node1495, Node1491, Node1487, Node1483, Node1481, SEQ_285, Node1480, SEQ_289, SEQ_300, Node1504, SEQ_164, SEQ_160, SEQ_293, SEQ_292, SEQ_260, Node1515, Node1513, SEQ_262, Node1512, SEQ_490, Node1511, Node1509, SEQ_248, SEQ_610, Node1520, Node1507, SEQ_469, SEQ_466, Node1524, SEQ_465, SEQ_658, Node1529, SEQ_468, Node1528, SEQ_249, SEQ_467, Node1534, SEQ_608, SEQ_464, Node1538, SEQ_268, Node1537, Node1533, Node1527, Node1523, SEQ_288, SEQ_489, Node1542, Node1503, Node1479, SEQ_479, SEQ_481, SEQ_276, Node1547, Node1545, SEQ_485, SEQ_602, Node1555, SEQ_265, Node1554, SEQ_509, Node1553, SEQ_512, SEQ_510, SEQ_385, SEQ_653, SEQ_113, Node1567, Node1565, SEQ_279, Node1564, Node1562, Node1560, Node1552, SEQ_182, Node1551, SEQ_470, Node1550, Node1478, SEQ_266, SEQ_290, SEQ_597, SEQ_476, Node1578, SEQ_181, SEQ_519, SEQ_294, Node1583, Node1581, Node1577, Node1575, Node1573, SEQ_203, SEQ_513, Node1587, SEQ_669, SEQ_283, Node1591, SEQ_184, Node1590, SEQ_135, SEQ_136, Node1596, SEQ_561, SEQ_299, Node1601, SEQ_674, SEQ_675, Node1607, SEQ_298, Node1606, SEQ_234, SEQ_236, SEQ_235, SEQ_237, SEQ_567, Node1616, Node1614, SEQ_677, SEQ_566, Node1622, Node1612, SEQ_194, SEQ_564, Node1625, Node1611, Node1605, SEQ_562, Node1604, Node1600, SEQ_134, SEQ_395, SEQ_394, Node1632, SEQ_400, SEQ_640, SEQ_397, SEQ_685, Node1639, Node1637, Node1635, Node1630, SEQ_631, Node1629, Node1599, Node1595, Node1586, SEQ_399, Node1455, Node1451, SEQ_045, Node1450, Node1341, Node1339, SEQ_183, Node1338, SEQ_517, Node1337, Node1335, SEQ_058, Node1334, SEQ_074, SEQ_047, Node1648, Node1333, Node1327, Node1321, SEQ_143, SEQ_456, SEQ_563, Node1658, Node1656, Node1654, SEQ_087, SEQ_551, Node1662, SEQ_072, SEQ_059, SEQ_080, Node1670, SEQ_086, SEQ_081, Node1669, Node1667, Node1666, SEQ_088, Node1665, Node1661, Node1653, SEQ_007, Node1652, SEQ_082, Node1651, Node1320, SEQ_146, SEQ_138, Node1688, SEQ_271, SEQ_077, Node1692, SEQ_057, SEQ_051, SEQ_053, SEQ_208, Node1704, SEQ_207, Node1703, Node1701, SEQ_055, Node1700, SEQ_054, Node1699, SEQ_052, SEQ_149, SEQ_050, Node1712, Node1710, Node1698, Node1696, SEQ_056, Node1695, SEQ_554, SEQ_269, SEQ_177, Node1724, Node1722, SEQ_511, Node1721, SEQ_544, SEQ_542, Node1730, SEQ_534, SEQ_514, Node1736, SEQ_280, Node1735, SEQ_533, SEQ_532, Node1741, SEQ_555, Node1740, Node1734, SEQ_204, SEQ_515, SEQ_396, Node1749, SEQ_259, SEQ_115, SEQ_071, Node1757, Node1755, SEQ_527, Node1754, SEQ_258, Node1753, SEQ_619, Node1752, Node1748, SEQ_488, SEQ_401, Node1765, SEQ_536, Node1764, SEQ_553, SEQ_531, SEQ_516, Node1771, Node1769, Node1763, Node1747, SEQ_541, SEQ_379, SEQ_543, Node1777, Node1775, SEQ_538, SEQ_537, Node1781, SEQ_471, SEQ_644, Node1789, SEQ_642, SEQ_643, SEQ_652, Node1792, Node1788, SEQ_620, Node1787, Node1785, SEQ_478, SEQ_601, SEQ_590, Node1801, SEQ_603, Node1800, Node1798, SEQ_484, Node1797, Node1784, Node1780, SEQ_535, Node1774, SEQ_301, SEQ_257, Node1808, SEQ_717, SEQ_472, Node1811, Node1807, Node1746, SEQ_540, SEQ_528, Node1815, SEQ_539, Node1814, Node1733, Node1729, SEQ_256, Node1728, Node1720, Node1716, Node1691, Node1687, Node1294, Node1290, SEQ_166, Node1289, SEQ_079, SEQ_165, Node1821, Node1288, Node1286, SEQ_008, Node1285, Node1283, Node1277, SEQ_062, Node1276, Node1274, Node309, Node301`
+
+
+### Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model
+
+>kill-zero-lengths –> Yes
+
+### Deleted 65 zero-length internal branches: `Node10, Node1001, Node1002, Node1004, Node1018, Node1020, Node1022, Node1023, Node1027, Node1049, Node1050, Node1054, Node1056, Node1057, Node1059, Node1061, Node1063, Node1069, Node1075, Node1077, Node1112, Node1114, Node1116, Node1118, Node12, Node14, Node15, Node156, Node1681, Node183, Node269, Node274, Node287, Node291, Node293, Node416, Node417, Node482, Node636, Node638, Node674, Node748, Node749, Node750, Node760, Node761, Node769, Node789, Node791, Node828, Node835, Node841, Node850, Node867, Node907, Node916, Node922, Node941, Node943, Node947, Node980, Node981, Node982, Node986, Node987`
+* Log(L) = -212356.30, AIC-c = 428379.65 (1832 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site) 17.072
+
+### Obtaining the global omega estimate based on relative GTR branch lengths and nucleotide substitution biases
+* Log(L) = -187222.25, AIC-c = 378003.09 (1775 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site) 18.270
+* non-synonymous/synonymous rate ratio for *background* =   0.0790
+* non-synonymous/synonymous rate ratio for *test* =   0.0760
+
+### Improving branch lengths, nucleotide substitution biases, and global dN/dS ratios under a full codon model
+
+>full-model –> Yes
+* Log(L) = -186721.20
+* non-synonymous/synonymous rate ratio for *background* =   0.0758
+* non-synonymous/synonymous rate ratio for *test* =   0.0723
+
+### For partition 1 these sites are significant at p <=0.1
+
+|   Codon    | Partition  |   alpha    |   beta+    |     p+     |    LRT     |Episodic selection detected?| # branches |Most common codon substitutions at this site|
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:--------------------------:|:----------:|:------------------------------------------:|
+|     6      |     1      |    0.874   |  245.065   |    0.001   |   10.501   |      Yes, p =  0.0023      |     2      |       [29]gaA>gaG|[1]GAa>AGa,gAa>gCa       |
+|     19     |     1      |    0.264   |  283.634   |    0.001   |   15.743   |      Yes, p =  0.0002      |     1      |       [2]atA>atC|[1]atA>atT,ATA>GAT        |
+|     52     |     1      |    0.403   |  163.192   |    0.001   |   14.256   |      Yes, p =  0.0003      |     1      |[10]gcA>gcG|[5]gcA>gcT|[2]gcA>gcC,gcG>gcA...|
+|     64     |     1      |    0.528   |  575.051   |    0.001   |    4.949   |      Yes, p =  0.0387      |     2      |[22]atG>atA|[5]atG>atT,Atg>Gtg|[4]aTg>aCg...|
+|     92     |     1      |    0.465   |   33.155   |    0.001   |    5.585   |      Yes, p =  0.0279      |     1      |[15]tcA>tcG|[3]tcA>tcC|[2]tcA>tcT,tcG>tcA...|
+|    153     |     1      |    1.809   |   12.115   |    0.010   |    4.093   |      Yes, p =  0.0603      |     5      |[33]gaC>gaT|[24]gaT>gaC|[2]Gac>Aac,Gat>Ca...|
+|    184     |     1      |    0.320   |    0.543   |    1.000   |    3.617   |      Yes, p =  0.0773      |     0      |[33]Aca>Gca|[10]Gca>Aca|[6]aCa>aAa|[5]Aca...|
+|    191     |     1      |    0.954   |    5.991   |    0.052   |    5.028   |      Yes, p =  0.0372      |     3      |[25]gaG>gaA|[18]Gaa>Aaa|[11]gaA>gaG|[5]Ga...|
+|    207     |     1      |    0.792   |   67.384   |    0.001   |    3.617   |      Yes, p =  0.0773      |     1      |[15]Ttg>Ctg|[13]Cta>Tta|[8]ttG>ttA|[7]ctA...|
+|    229     |     1      |    0.610   |  199.847   |    0.003   |   14.914   |      Yes, p =  0.0002      |     4      |[21]atT>atC|[7]Att>Gtt|[1]Aat>Tat,atC>atA...|
+|    241     |     1      |    0.847   |  246.083   |    0.001   |    3.530   |      Yes, p =  0.0809      |     1      |     [21]gaG>gaA|[20]gaA>gaG|[1]gAa>gGa     |
+|    243     |     1      |    1.041   |   19.228   |    0.025   |   12.480   |      Yes, p =  0.0008      |     17     |[3]Atg>Ctg|[2]aTG>aAA,aTg>aAg,atG>atA,Atg...|
+|    245     |     1      |    1.399   |   26.992   |    0.004   |    3.360   |      Yes, p =  0.0884      |     3      |[45]acT>acC|[14]acT>acA|[1]acC>acA,aCt>aA...|
+|    267     |     1      |    1.166   |  1290.049  |    0.001   |    8.095   |      Yes, p =  0.0077      |     1      |[23]gtA>gtG|[17]gtT>gtC|[12]gtG>gtA|[2]gt...|
+|    281     |     1      |    0.706   |   42.974   |    0.002   |    3.238   |      Yes, p =  0.0942      |     1      |[24]Ttg>Ctg,ttG>ttA|[3]TtG>CtA|[2]Ctg>Ttg...|
+|    293     |     1      |    1.257   |  423.082   |    0.001   |    7.967   |      Yes, p =  0.0083      |     2      |[56]agG>agA|[18]aGg>aAg|[4]Agg>Cgg,Agg>Gg...|
+|    295     |     1      |    1.027   |    4.220   |    0.160   |    8.893   |      Yes, p =  0.0052      |     35     |[21]gtG>gtA|[16]Gtt>Att|[14]Gtg>Atg|[9]gt...|
+|    383     |     1      |    1.210   |   37.340   |    0.003   |    4.864   |      Yes, p =  0.0404      |     2      |[51]caG>caA|[7]caA>caG|[1]cAg>cTg,CAg>TTg...|
+|    391     |     1      |    1.157   |   21.564   |    0.006   |    4.063   |      Yes, p =  0.0612      |     2      |[23]gaG>gaA|[18]gaA>gaG|[6]gaA>gaC,gaG>ga...|
+|    444     |     1      |    0.899   |   14.424   |    0.008   |    4.525   |      Yes, p =  0.0482      |     5      |[28]gtG>gtA|[12]gtG>gtT|[3]atT>atC,GtG>At...|
+|    468     |     1      |    0.948   |   19.002   |    0.006   |    3.898   |      Yes, p =  0.0667      |     5      |[20]acC>acT|[16]acT>acC|[3]acC>acA,Acc>Gc...|
+|    478     |     1      |    0.949   |  118.183   |    0.003   |    4.765   |      Yes, p =  0.0426      |     3      |[17]gtG>gtA|[13]Ata>Gta|[5]AtA>GtG|[3]Gta...|
+|    525     |     1      |    1.053   |  182.945   |    0.002   |    6.158   |      Yes, p =  0.0208      |     2      |[45]gaG>gaA|[5]gaA>gaG|[1]gaG>gaT,gAG>gTT...|
+|    526     |     1      |    1.067   |  190.188   |    0.002   |   13.829   |      Yes, p =  0.0004      |     3      |[21]aaA>aaG|[19]aaG>aaA|[9]aAa>aGa|[3]aAg...|
+|    535     |     1      |    0.000   |   12.232   |    0.017   |    4.440   |      Yes, p =  0.0504      |     10     |      [7]Atg>Ctg|[4]Atg>Ttg|[1]AtG>CtA      |
+|    541     |     1      |    1.898   |  110.448   |    0.001   |   12.818   |      Yes, p =  0.0007      |     1      |[20]ggT>ggC|[17]ggC>ggT|[14]ggA>ggG|[7]gg...|
+|    560     |     1      |    0.923   |    7.988   |    0.041   |    3.436   |      Yes, p =  0.0849      |     4      |[23]gtG>gtA|[6]ttG>ttA|[5]Gtg>Ttg,Gtt>Att...|
+|    588     |     1      |    1.074   |    2.245   |    0.468   |    3.343   |      Yes, p =  0.0892      |     58     |[24]aCc>aTc|[13]Gcc>Acc|[12]Acc>Gcc|[11]a...|
+|    650     |     1      |    1.240   |   49.551   |    0.001   |    9.897   |      Yes, p =  0.0031      |     1      |[37]agA>agG|[15]agG>agA|[3]Aga>Cga|[1]agA...|
+|    653     |     1      |    1.102   |  891.743   |    0.001   |   17.208   |      Yes, p =  0.0001      |     1      |[26]tcT>tcC|[18]tcC>tcT|[4]tcT>tcA|[2]tcC...|
+|    654     |     1      |    1.484   |   17.835   |    0.005   |    3.903   |      Yes, p =  0.0665      |     3      |[16]ccC>ccT|[12]ccA>ccT|[11]ccA>ccG|[7]cc...|
+|    656     |     1      |    1.629   |   49.478   |    0.002   |    7.567   |      Yes, p =  0.0101      |     2      |[28]ttT>ttC|[24]ttC>ttT|[1]TTc>AAc,ttT>tt...|
+|    666     |     1      |    0.943   |   50.448   |    0.002   |    7.334   |      Yes, p =  0.0114      |     2      |[21]acA>acG|[13]acG>acA|[4]acA>acC|[3]acA...|
+|    668     |     1      |    1.087   |  360.359   |    0.001   |   11.420   |      Yes, p =  0.0014      |     1      |[21]ctC>ctT|[10]ctC>ctA|[5]Cta>Tta|[4]ctT...|
+|    669     |     1      |    1.544   |   47.334   |    0.003   |    8.216   |      Yes, p =  0.0073      |     2      |[59]ggA>ggG|[5]ggA>ggT|[4]ggG>ggA|[2]ggA>...|
+|    670     |     1      |    1.458   |   42.518   |    0.001   |    4.606   |      Yes, p =  0.0462      |     1      |[59]aaG>aaA|[12]aaA>aaG|[1]AAa>GCa,aaG>aa...|
+|    671     |     1      |    1.270   |   37.831   |    0.003   |    5.489   |      Yes, p =  0.0293      |     2      |[33]gaC>gaT|[7]gaT>gaC|[1]GaT>AaA,gAt>gTt...|
+|    676     |     1      |    0.407   |    2.317   |    0.262   |    6.432   |      Yes, p =  0.0181      |     4      |[13]Act>Gct|[12]aCt>aTt|[8]aCt>aAt|[6]Aca...|
+|    683     |     1      |    1.290   |   20.957   |    0.030   |   11.832   |      Yes, p =  0.0012      |     19     |[21]acG>acA|[18]acA>acG|[8]acG>acT|[7]acA...|
+|    686     |     1      |    0.687   |   22.675   |    0.015   |   13.573   |      Yes, p =  0.0005      |     9      |[28]gtG>gtA|[8]gtG>gtT|[5]GtG>AtA|[2]atA>...|
+|    729     |     1      |    0.871   |  103.188   |    0.001   |    6.048   |      Yes, p =  0.0220      |     1      |     [22]ggG>ggA|[20]ggA>ggG|[1]GgG>TgT     |
+|    750     |     1      |    0.077   |    2.211   |    0.011   |    4.326   |      Yes, p =  0.0534      |     2      |   [4]gcG>gcT|[1]GCg>AAg,gcG>gcA,gCg>gTg    |
+|    751     |     1      |    0.000   |    5.267   |    0.003   |   13.202   |      Yes, p =  0.0006      |     1      |                 [1]ACc>GGc                 |
+|    752     |     1      |    0.029   |   24.411   |    0.002   |    6.554   |      Yes, p =  0.0170      |     1      |             [1]aaA>aaG,aAA>aCC             |
+|    755     |     1      |    0.720   |10000.000...|    0.001   |    6.438   |      Yes, p =  0.0180      |     1      |[45]cgG>cgA|[3]cgA>cgG|[1]cgA>cgT,cGG>cAA...|
+|    756     |     1      |    0.051   |   10.244   |    0.016   |   10.268   |      Yes, p =  0.0026      |     8      |[3]Atg>Gtg|[2]Atg>Ttg,Ttg>Atg|[1]aTg>aCg,...|
+|    758     |     1      |    0.220   |    3.895   |    0.037   |    3.922   |      Yes, p =  0.0659      |     7      |[9]atC>atT|[7]aTc>aCc|[2]atC>atA|[1]aTc>a...|
+
+### ** Found _47_ sites under episodic diversifying positive selection at p <= 0.1**
