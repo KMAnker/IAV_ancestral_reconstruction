@@ -6,9 +6,11 @@ Pipeline, scripts, and data for the paper:
 _Anker, K.M., Ciucani, M.M., Nissen, J.N., Anderson, T.K., Pedersen, A.G., and Trebbien, R._ . **Exploring genetic signatures of zoonotic influenza A virus at the swine-human interface with phylogenetic and ancestral sequence reconstruction** (in preparation).
 
 
+
 ## Analysis pipeline and scripts:
 The steps of the pipeline for data preparation and analysis is described in the [ancestor_project_notes](https://github.com/KMAnker/IAV_ancestral_reconstruction/blob/main/ancestor_project_notes.sh) file.
 Here, it can also be seen where each of the scripts in the [scripts](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/scripts) folder is used.
+
 
 
 ## Data:
@@ -18,6 +20,7 @@ We gratefully acknowledge all data contributors, i.e., the authors and their ori
 
 
 We cannot publicly upload the genetic sequences from GISAID, and therefore no sequence (fasta) files are uploaded to this repository. However, the [data](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/data) folder contains lists of accession numbers for all the sequences originally downloaded for analysis.
+
 
 
 ## Analysis and output folders:
