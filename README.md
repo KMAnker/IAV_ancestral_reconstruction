@@ -29,3 +29,4 @@ Folders containing input and output files for the different steps of the analysi
 - [anclib_files](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/anclib_files): Output files from the anclib analysis.
 - [selection_analysis](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/selection_analysis): Output json files from the HyPhy aBSREL and MEME analyses as well as text and excel files containing concatenated output from all segments.
 - [xgboost](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/xgboost): one-hot encoded input files and output files from xgboost analyses (run with the [xgboost.ipynb](https://github.com/KMAnker/IAV_ancestral_reconstruction/blob/main/scripts/h1_xgboost.ipynb) scripts for each protein.
+- [figures_tables](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/figures_tables): Figures and tables from the manuscript along with R code used to generate them.
