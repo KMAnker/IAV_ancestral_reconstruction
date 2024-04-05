@@ -1,25 +1,21 @@
-tester
+
+# Exploring genetic signatures of zoonotic influenza A virus at the swine-human interface with phylogenetic and ancestral sequence reconstruction
+
+Pipeline, scripts, and data for the paper:
+Anker, K.M., Ciucani, M.M., Nissen, J.N., Anderson, T.K., Pedersen, A.G., and Trebbien, R. (in preparation). Exploring genetic signatures of zoonotic influenza A virus at the swine-human interface with phylogenetic and ancestral sequence reconstruction.
 
 
-# ScattBO Benchmark - Bayesian optimisation for materials discovery
+**Analysis pipeline and scripts**:
+The steps of the pipeline for data preparation and analysis is described in the [ancestor_project_notes](https://github.com/KMAnker/IAV_ancestral_reconstruction/blob/main/ancestor_project_notes.sh) file.
+Here, it can also be seen where each of the scripts in the [scripts](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/scripts) folder is used
 
-A self-driving laboratory (SDL) is an autonomous platform that conducts machine learning (ML) selected experiments to achieve a user-defined objective. An objective can be to synthesise a specific material.[1] Such an SDL will synthesise a material, evaluate if this is the target material and if necessary optimise the synthesis parameters for the next synthesis. One way to evaluate if the material is the target material is by measuring scattering data and comparing that to the scattering pattern of the target material. However, these types of SDLs can be expensive to run, which means that intelligent experimental planning is essential. At the same time, only a few people have access to an SDL for materials discovery. Therefore, it is currently challenging to benchmark Bayesian optimisation algorithms for experimental planning tasks in SDLs.
 
-Here, we present a Python-based benchmark (ScattBO) that is an in silico simulation of an SDL for materials discovery. Based on a set of synthesis parameters, the benchmark ‘synthesises’ a structure, calculates the scattering pattern[2] and compares this to the scattering pattern of the target structure. Note: Scattering data may not be enough to conclusively validate that the target material has been synthesised.[3] The benchmark can include other types of data as long they can be simulated.
+**Data**:
+Sequence data for this analysis was obtained from GISAID and NCBI Influenza Virus Resource (Genbank). 
+We gratefully acknowledge all data contributors, i.e., the authors and their originating laboratories responsible for obtaining the specimens, and their submitting laboratories for generating the genetic sequence and metadata and sharing via the GISAID initiative as well as the NCBI Influenza Virus Resource database, on which this research is based.
 
-**Synthesis parameters**:
-  - pH (float):       The pH value, which scales the size of the structure. Range: [0, 14]
-  - pressure (float): The pressure value, which controls the lattice constant of the structure. Range: [0, 100]
-  - solvent (int):    The solvent type, which determines the structure type for large clusters. 
-                      0 for 'Ethanol', 1 for 'Methanol', 2 for 'Water', 3 for 'Others'
+We cannot publicly upload the genetic sequences from GISAID, and therefore no sequence (fasta) files are uploaded to this repository. However, the [data](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/data) folder contains lists of accession numbers for all the sequences originally downloaded for analysis.
 
-**Features**:
-  - Continous parameters (pH and pressure) and discrete parameter (solvent).
-  - Two sizes of benchmark is provided: 1) ScatterBO_small_benchmark and 2) ScatterBO_large_benchmark.
-  - Possibility of two different objectives: 1) The scattering data in Q-space (Sq) or 2) the scattering data in r-space (Gr).
-  - Possibility of multi-objective optimisation using both Sq and Gr.
-  - Possibility of four target scattering patterns: 1) simulated Sq, 2) simulated Gr, 3) experimental Sq, and 4) experimental Gr.
-  - OBS: The scattering pattern calculations can be slow on CPU. **It is recommended to use GPU.**
 
 # Scoreboard
 
