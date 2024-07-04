@@ -4,7 +4,6 @@
 # that fasta headers don't have spaces or other characters except those allowed by IQtree, and that sequences from environmental or synthetic samples 
 # are removed as well as removal of identical sequences so there are no duplicates.
 
-from asyncore import file_dispatcher
 import sys
 import os
 import re

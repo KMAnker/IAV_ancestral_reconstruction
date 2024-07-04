@@ -1,0 +1,17 @@
+anclib==0.11.0
+biopython
+cd-hit==4.8.1
+hyphy==2.5.4
+iqtree>=2.0.3
+jupyterlab
+mafft >=4.8.7
+matplotlib==3.9.0
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.0
+scipy==1.13.1
+seaborn==0.13.2
+seqconverter
+shap==0.42.1
+treetime==0.11.1
+xgboost==1.7.4
