@@ -1,5 +1,5 @@
 
-# IAV ancestral reconstruction at the swine-human interface - Klara
+# IAV ancestral reconstruction at the swine-human interface
 
 Pipeline, scripts, and data for the paper:
 
