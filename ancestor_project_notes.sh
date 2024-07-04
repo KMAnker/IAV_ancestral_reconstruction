@@ -44,7 +44,7 @@
     # fasta files were curated using the FLU annotation tool from NCBI (https://www.ncbi.nlm.nih.gov/genomes/FLU/annotation/)
     # sequences with disturbed reading frames, missing start codon, >5 missing bases in the end or mislabeled sequences should be removed
 
-# 8. Align sequences with mafft (auto settings) for each segment (the filtered_segment.fasta files) and inspection in Aliwiew.
+# 8. Align sequences with mafft (auto settings) for each segment (the filtered_segment.fasta files) and inspection in Aliview.
    # If a sequence causes large gaps in the rest of the alignment, inspect and maybe remove that sequence
    # Realign and trim the alignment so colums with >40% gaps are removed (https://github.com/agormp/seqconverter) 
         seqconverter -I fasta -O fasta --remfracgapcols 0.4 segment_aln.fasta > segment_aln_trim.fasta
@@ -106,5 +106,12 @@
     # Then, XgBoost models were trained and evaluated for each protein
     "segment"_xgboost.ipynb
 
+# 19. For the Bayesian analysis of mutation and amino acid frequencies, a summary file of amino acid frequencies per protein were prepared using "seqconverter":
+    seqconverter --translate 1 -i segment.fasta > segment_aa.fasta
+    seqconverter --com -i segment_aa.fasta > segment_summary.txt
+    # Then, the following input files were used for the analysis:
+         segment_aa.fasta
+         segment_summary.txt
+         segment_branchdiffinfo_aa_br2.txt
 
 # Most plots and figures were created with R and the respective R code are found in the "figures_tables" directory

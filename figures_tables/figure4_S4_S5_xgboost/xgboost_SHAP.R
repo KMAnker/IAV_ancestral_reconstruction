@@ -1,18 +1,12 @@
 library(tidyverse)
 library(dplyr)
-library(viridis)
 library(ggpubr)
 library(ggplot2)
 
-setwd("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/xgboost")
+setwd("PATH_TO_PROJECT_DIRECTORY")
 
 # Function to reshape dataframes
 process_shap_importance <- function(shap_importance_df) {
-  # Define the normalization function
-  normalize <- function(x) {
-    (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
-  }
-  
   # Gather the dataframe into key-value pairs
   long_df <- shap_importance_df %>%
     tidyr::gather(key = "key", value = "value", -Feature)
@@ -64,7 +58,7 @@ trait_order <- c("human_human","swine_swine","human_swine", "swine_human")
 ############
 
 # PB2
-shap_importance_pb2 <- read.csv("pb2/pb2_importance_dataframe.csv", header = TRUE)
+shap_importance_pb2 <- read.csv("xgboost/pb2/pb2_importance_dataframe.csv", header = TRUE)
 
 pb2_plotting_df <- process_shap_importance(shap_importance_pb2)
 
@@ -81,37 +75,6 @@ top5_pb2 <- pb2_plotting_df %>%
   group_by(trait) %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
-
-#pb2 <- ggplot(top10_pb2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = "dodge", width = 0.9, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "PB2",
-       x = "",
-       y = "SHAP value")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 7),
-        axis.text.x = element_text(size = 5, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 5),
-        axis.title.y = element_text(size = 6),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 
 pb2 <- ggplot(top5_pb2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
@@ -143,22 +106,6 @@ pb2 <- ggplot(top5_pb2, aes(x = Feature, y = importance, fill = trait, alpha = n
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 
-pb2_total <- ggplot(top5_pb2, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
-
-pb2_combined <- ggarrange(pb2, pb2_total,
-                          ncol = 1,
-                          nrow = 2,
-                          common.legend = TRUE,
-                          legend = "top")
-
 pb2_positions <- top5_pb2 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
          segment = "PB2") %>%
@@ -173,7 +120,7 @@ pb2_positions_complete <- expand.grid(
 )
 
 # PB1
-shap_importance_pb1 <- read.csv("pb1/pb1_importance_dataframe.csv", header = TRUE)
+shap_importance_pb1 <- read.csv("xgboost/pb1/pb1_importance_dataframe.csv", header = TRUE)
 
 pb1_plotting_df <- process_shap_importance(shap_importance_pb1)
 
@@ -191,37 +138,6 @@ top5_pb1 <- pb1_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#pb1 <- ggplot(top10_pb1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "PB1",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 pb1 <- ggplot(top5_pb1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -251,16 +167,6 @@ pb1 <- ggplot(top5_pb1, aes(x = Feature, y = importance, fill = trait, alpha = n
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
   
 
-pb1_total <- ggplot(top5_pb1, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
-
 
 pb1_positions <- top5_pb1 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -276,7 +182,7 @@ pb1_positions_complete <- expand.grid(
 )
 
 # PB1-F2
-shap_importance_pb1f2 <- read.csv("pb1/pb1-f2_importance_dataframe.csv", header = TRUE)
+shap_importance_pb1f2 <- read.csv("xgboost/pb1/pb1-f2_importance_dataframe.csv", header = TRUE)
 
 pb1f2_plotting_df <- process_shap_importance(shap_importance_pb1f2)
 
@@ -294,37 +200,6 @@ top5_pb1f2 <- pb1f2_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#pb1f2 <- ggplot(top10_pb1f2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "PB1-F2",
-       x = "",
-       y = "SHAP value")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 7),
-        legend.title = element_blank(),
-        legend.key.size = unit(7, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 pb1f2 <- ggplot(top5_pb1f2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -353,16 +228,6 @@ pb1f2 <- ggplot(top5_pb1f2, aes(x = Feature, y = importance, fill = trait, alpha
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
   
-  
-pb1f2_total <- ggplot(top10_pb1f2, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 pb1f2_positions <- top5_pb1f2 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -378,7 +243,7 @@ pb1f2_positions_complete <- expand.grid(
 )
 
 # PA
-shap_importance_pa <- read.csv("pa/pa_importance_dataframe.csv", header = TRUE)
+shap_importance_pa <- read.csv("xgboost/pa/pa_importance_dataframe.csv", header = TRUE)
 
 pa_plotting_df <- process_shap_importance(shap_importance_pa)
 
@@ -396,37 +261,6 @@ top5_pa <- pa_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#pa <- ggplot(top10_pa, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "PA",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 pa <- ggplot(top5_pa, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -455,15 +289,6 @@ pa <- ggplot(top5_pa, aes(x = Feature, y = importance, fill = trait, alpha = nor
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
-pa_total <- ggplot(top10_pb1, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 pa_positions <- top5_pa %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -479,7 +304,7 @@ pa_positions_complete <- expand.grid(
 )
 
 # PA-X
-shap_importance_pax <- read.csv("pa/pa-x_importance_dataframe.csv", header = TRUE)
+shap_importance_pax <- read.csv("xgboost/pa/pa-x_importance_dataframe.csv", header = TRUE)
 
 pax_plotting_df <- process_shap_importance(shap_importance_pax)
 
@@ -496,38 +321,6 @@ top5_pax <- pax_plotting_df %>%
   group_by(trait) %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
-
-#pax <- ggplot(top10_pax, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "PA-X",
-       x = "",
-       y = "SHAP value")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 
 pax <- ggplot(top5_pax, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
@@ -557,15 +350,6 @@ pax <- ggplot(top5_pax, aes(x = Feature, y = importance, fill = trait, alpha = n
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
-pax_total <- ggplot(top10_pax, aes(x = Feature, y = HOW_important, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 pax_positions <- top5_pax %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -581,7 +365,7 @@ pax_positions_complete <- expand.grid(
 )
 
 # H1
-shap_importance_h1 <- read.csv("ha/h1_importance_dataframe.csv", header = TRUE)
+shap_importance_h1 <- read.csv("xgboost/ha/h1_importance_dataframe.csv", header = TRUE)
 
 h1_plotting_df <- process_shap_importance(shap_importance_h1)
 
@@ -598,38 +382,6 @@ top5_h1 <- h1_plotting_df %>%
   group_by(trait) %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
-
-#h1 <- ggplot(top10_h1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "H1",
-       x = "",
-       y = "SHAP value")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
   
 h1 <- ggplot(top5_h1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
@@ -659,15 +411,6 @@ h1 <- ggplot(top5_h1, aes(x = Feature, y = importance, fill = trait, alpha = nor
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
   
-h1_total <- ggplot(top10_h1, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 h1_positions <- top5_h1 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -682,8 +425,9 @@ h1_positions_complete <- expand.grid(
   segment = "H1"
 )
 
+
 # H3
-shap_importance_h3 <- read.csv("ha/h3_importance_dataframe.csv", header = TRUE)
+shap_importance_h3 <- read.csv("xgboost/ha/h3_importance_dataframe.csv", header = TRUE)
 
 h3_plotting_df <- process_shap_importance(shap_importance_h3)
 
@@ -701,37 +445,6 @@ top5_h3 <- h3_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#h3 <- ggplot(top10_h3, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "H3",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 h3 <- ggplot(top5_h3, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -760,15 +473,6 @@ h3 <- ggplot(top5_h3, aes(x = Feature, y = importance, fill = trait, alpha = nor
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines")) 
   
-h3_total <- ggplot(top10_h3, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 h3_positions <- top5_h3 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -784,7 +488,7 @@ h3_positions_complete <- expand.grid(
 )
 
 # NP
-shap_importance_np <- read.csv("np/np_importance_dataframe.csv", header = TRUE)
+shap_importance_np <- read.csv("xgboost/np/np_importance_dataframe.csv", header = TRUE)
 
 np_plotting_df <- process_shap_importance(shap_importance_np)
 
@@ -801,38 +505,6 @@ top5_np <- np_plotting_df %>%
   group_by(trait) %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
-
-#np <- ggplot(top10_np, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "NP",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
   
 np <- ggplot(top5_np, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
@@ -862,15 +534,6 @@ np <- ggplot(top5_np, aes(x = Feature, y = importance, fill = trait, alpha = nor
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))  
 
-np_total <- ggplot(top10_np, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 np_positions <- top5_np %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -886,7 +549,7 @@ np_positions_complete <- expand.grid(
 )
 
 # N1
-shap_importance_n1 <- read.csv("na/n1_importance_dataframe.csv", header = TRUE)
+shap_importance_n1 <- read.csv("xgboost/na/n1_importance_dataframe.csv", header = TRUE)
 
 n1_plotting_df <- process_shap_importance(shap_importance_n1)
 
@@ -904,37 +567,6 @@ top5_n1 <- n1_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#n1 <- ggplot(top10_n1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "N1",
-       x = "",
-       y = "SHAP value")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 n1 <- ggplot(top5_n1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -963,15 +595,6 @@ n1 <- ggplot(top5_n1, aes(x = Feature, y = importance, fill = trait, alpha = nor
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines")) 
 
-n1_total <- ggplot(top10_n1, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 n1_positions <- top5_n1 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -987,9 +610,10 @@ n1_positions_complete <- expand.grid(
 )
 
 # N2
-shap_importance_n2 <- read.csv("na/n2_importance_dataframe.csv", header = TRUE)
+shap_importance_n2 <- read.csv("xgboost/na/n2_importance_dataframe.csv", header = TRUE)
 
 n2_plotting_df <- process_shap_importance(shap_importance_n2)
+
 
 n2_plotting_df$trait <- factor(n2_plotting_df$trait, levels=trait_order)
 n2_plotting_df$presence <- factor(n2_plotting_df$presence, levels=c("present", "not_present"))
@@ -1005,39 +629,8 @@ top5_n2 <- n2_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#n2 <- ggplot(top10_n2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "N2",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
-n2 <- ggplot(top5_n2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
+  n2 <- ggplot(top5_n2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
            position = "dodge", width = 0.9, color = "grey40", size = 0.3) +
   scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
@@ -1064,15 +657,6 @@ n2 <- ggplot(top5_n2, aes(x = Feature, y = importance, fill = trait, alpha = nor
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
   
-n2_total <- ggplot(top10_n2, aes(x = Feature, y = HOW_important, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 n2_positions <- top5_n2 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -1088,7 +672,7 @@ n2_positions_complete <- expand.grid(
 )
 
 # M1
-shap_importance_m1 <- read.csv("mp/m1_importance_dataframe.csv", header = TRUE)
+shap_importance_m1 <- read.csv("xgboost/mp/m1_importance_dataframe.csv", header = TRUE)
 
 m1_plotting_df <- process_shap_importance(shap_importance_m1)
 
@@ -1106,37 +690,6 @@ top5_m1 <- m1_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#m1 <- ggplot(top10_m1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "M1",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 m1 <- ggplot(top5_m1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -1164,16 +717,7 @@ m1 <- ggplot(top5_m1, aes(x = Feature, y = importance, fill = trait, alpha = nor
         panel.spacing.y = unit(0.1, "lines"),
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
-  
-m1_total <- ggplot(top10_m1, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
+
 
 m1_positions <- top5_m1 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -1189,7 +733,7 @@ m1_positions_complete <- expand.grid(
 )
 
 # M2
-shap_importance_m2 <- read.csv("mp/m2_importance_dataframe.csv", header = TRUE)
+shap_importance_m2 <- read.csv("xgboost/mp/m2_importance_dataframe.csv", header = TRUE)
 
 m2_plotting_df <- process_shap_importance(shap_importance_m2)
 
@@ -1207,37 +751,6 @@ top5_m2 <- m2_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#m2 <- ggplot(top10_m2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "M2",
-       x = "",
-       y = "SHAP value")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 m2 <- ggplot(top5_m2, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -1266,15 +779,6 @@ m2 <- ggplot(top5_m2, aes(x = Feature, y = importance, fill = trait, alpha = nor
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
-m2_total <- ggplot(top10_m2, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 m2_positions <- top5_m2 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -1290,7 +794,7 @@ m2_positions_complete <- expand.grid(
 )
 
 # NS1
-shap_importance_ns1 <- read.csv("ns/ns1_importance_dataframe.csv", header = TRUE)
+shap_importance_ns1 <- read.csv("xgboost/ns/ns1_importance_dataframe.csv", header = TRUE)
 
 ns1_plotting_df <- process_shap_importance(shap_importance_ns1)
 
@@ -1309,37 +813,6 @@ top5_ns1 <- ns1_plotting_df %>%
   slice_head(n = 5)
 
 
-#ns1 <- ggplot(top10_ns1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "NS1",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 ns1 <- ggplot(top5_ns1, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -1368,15 +841,6 @@ ns1 <- ggplot(top5_ns1, aes(x = Feature, y = importance, fill = trait, alpha = n
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
-ns1_total <- ggplot(top10_ns1, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
 
 ns1_positions <- top5_ns1 %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -1392,7 +856,7 @@ ns1_positions_complete <- expand.grid(
 )
 
 # NEP
-shap_importance_nep <- read.csv("ns/nep_importance_dataframe.csv", header = TRUE)
+shap_importance_nep <- read.csv("xgboost/ns/nep_importance_dataframe.csv", header = TRUE)
 
 nep_plotting_df <- process_shap_importance(shap_importance_nep)
 
@@ -1410,37 +874,6 @@ top5_nep <- nep_plotting_df %>%
   arrange(desc(abs(importance))) %>%
   slice_head(n = 5)
 
-#nep <- ggplot(top10_nep, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
-  geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
-           position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8, color = "grey40", size = 0.3) +
-  geom_errorbar(aes(ymin = importance - std, ymax = importance + std, color = trait),
-                position = position_dodge2(width = 0.6, preserve = "single"), width = 0.8) +
-  scale_fill_manual(values = c("#D78B5E","#45BACF", "#A5CD92", "#FFD685"),
-                    labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  scale_color_manual(values = c("#966142","#308291", "#749066", "#b2965d"),
-                     labels= c(human_human="human-human", swine_swine="swine-swine", human_swine="human-swine", swine_human="swine-human")) +
-  guides(linetype = guide_legend(override.aes = list(fill = NA))) +
-  scale_y_continuous(limits = c(-0.6, 0.3)) +
-  labs(title = "NEP",
-       x = "",
-       y = "")  +
-  theme_minimal() +
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        legend.title = element_blank(),
-        legend.key.size = unit(6, "points"),
-        plot.title = element_text(size = 8),
-        axis.text.x = element_text(size = 6, angle = 45, vjust = 0.8, hjust = 0.9),
-        axis.text.y = element_text(size = 6),
-        axis.title.y = element_text(size = 7),
-        axis.line = element_line(size = 0.5),
-        axis.ticks = element_line(size = 0.5),
-        strip.background = element_rect(size = 0.6),
-        panel.spacing.x = unit(0.2, "lines"), 
-        panel.spacing.y = unit(0.1, "lines"),
-        panel.grid.minor.x = element_blank(),
-        legend.box.spacing = unit(0, "lines"),
-        plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
 nep <- ggplot(top5_nep, aes(x = Feature, y = importance, fill = trait, alpha = norm_N)) +
   geom_bar(aes(fill = trait, linetype = presence), stat = "identity", 
@@ -1469,16 +902,6 @@ nep <- ggplot(top5_nep, aes(x = Feature, y = importance, fill = trait, alpha = n
         legend.box.spacing = unit(0, "lines"),
         plot.margin = unit(c(0,0.2,0,0.2), "lines"))
 
-nep_total <- ggplot(top10_nep, aes(x = Feature, y = importance, fill = trait)) +
-  geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  scale_fill_manual(values = c("#D78B5E", "#45BACF", "#A5CD92", "#FFD685")) +
-  labs(title = "",
-       x = "",
-       y = "")  +
-  theme_bw() +
-  theme(
-    axis.text.x = element_text(size = 8, angle = 45, vjust = 0.8, hjust = 0.9))
-
 
 nep_positions <- top5_nep %>%
   mutate(position = as.numeric(str_extract(Feature, "\\d+")),
@@ -1495,19 +918,13 @@ nep_positions_complete <- expand.grid(
 
 ##########
 
-#plot_all <- ggarrange(pb2, pb1, pa, h1, h3, np, n1, n2, m1, m2, ns1, nep, 
-                      ncol = 3, nrow = 4,
-                      common.legend = TRUE, 
-                      legend = "top",
-                      font.label = list(size = 10))
-
 plot_all <- ggarrange(pb2, pb1, pb1f2, pa, pax, h1, h3, np, n1, n2, m1, m2, ns1, nep, 
           ncol = 3, nrow = 5,
           common.legend = TRUE, 
           legend = "top",
           font.label = list(size = 10))
 
-ggsave("/Users/kman/Desktop/ancestral_reconstruction_project_final/figures_tables/figure4_S4_S5_xgboost/Figure4_shap_values_plot.png", plot = plot_all, dpi = 300, width = 17 , height = 25, units = "cm" )
+ggsave("figures_tables/figure4_S4_S5_xgboost/Figure4_shap_values_plot.png", plot = plot_all, dpi = 300, width = 17 , height = 25, units = "cm" )
 
 
 ####################################################
@@ -1519,12 +936,22 @@ positions_all <- rbind(pb2_positions_complete, pb1_positions_complete, pb1f2_pos
          trait = str_replace(trait, "_", "-"))%>%
   ungroup()
 
+positions_all_2 <- rbind(pb2_positions, pb1_positions, pb1f2_positions, pa_positions, pax_positions, 
+                       h1_positions, h3_positions, np_positions, n1_positions, n2_positions, 
+                       m1_positions, m2_positions, ns1_positions, nep_positions) %>%
+  mutate(trait = as.character(trait),
+         trait = str_replace(trait, "_", "-"))%>%
+  ungroup()
+
+write.table(positions_all_2, "figures_tables/figure4_S4_S5_xgboost/shap_positions.txt",
+            sep = "\t", row.names = FALSE, quote = FALSE)
+
 ################
 
 summarize_branch_diff <- function(file_path, segment_name) {
   # Read the data
   branchdiff <- read.table(file_path)
-  colnames(branchdiff) <- c("node_from", "node_to", "branchlen", "position", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "trait")
+  colnames(branchdiff) <- c("node_from", "node_to", "branchlen", "position", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "trait", "external")
   
   # Calculate total residue counts
   total_residue_counts <- branchdiff %>%
@@ -1585,20 +1012,20 @@ summarize_branch_diff <- function(file_path, segment_name) {
   return(branchdiff_summarised)
 }
 
-pb2_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/pb2/pb2_branchdiffinfo_aa_br2_all.txt", "PB2")
-pb1_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/pb1/pb1_branchdiffinfo_aa_br2_all.txt", "PB1")
-pb1f2_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/pb1/pb1-f2_branchdiffinfo_aa_br2_all.txt", "PB1-F2")
-pa_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/pa/pa_branchdiffinfo_aa_br2_all.txt", "PA")
-pax_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/pa/pa-x_branchdiffinfo_aa_br2_all.txt", "PA-X")
-h1_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/ha/h1_branchdiffinfo_aa_br2_all.txt", "H1")
-h3_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/ha/h3_branchdiffinfo_aa_br2_all.txt", "H3")
-np_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/np/np_branchdiffinfo_aa_br2_all.txt", "NP")
-n1_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/na/n1_branchdiffinfo_aa_br2_all.txt", "N1")
-n2_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/na/n2_branchdiffinfo_aa_br2_all.txt", "N2")
-m1_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/mp/m1_branchdiffinfo_aa_br2_all.txt", "M1")
-m2_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/mp/m2_branchdiffinfo_aa_br2_all.txt", "M2")
-ns1_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/ns/ns1_branchdiffinfo_aa_br2_all.txt", "NS1")
-nep_branchdiff_summary <- summarize_branch_diff("/Users/kman/Desktop/ancestral_reconstruction_project_final/results/anclib/ns/nep_branchdiffinfo_aa_br2_all.txt", "NEP")
+pb2_branchdiff_summary <- summarize_branch_diff("anclib_files/pb2/pb2_branchdiffinfo_aa_br2_all.txt", "PB2")
+pb1_branchdiff_summary <- summarize_branch_diff("anclib_files/pb1/pb1_branchdiffinfo_aa_br2_all.txt", "PB1")
+pb1f2_branchdiff_summary <- summarize_branch_diff("anclib_files/pb1/pb1-f2_branchdiffinfo_aa_br2_all.txt", "PB1-F2")
+pa_branchdiff_summary <- summarize_branch_diff("anclib_files/pa/pa_branchdiffinfo_aa_br2_all.txt", "PA")
+pax_branchdiff_summary <- summarize_branch_diff("anclib_files/pa/pa-x_branchdiffinfo_aa_br2_all.txt", "PA-X")
+h1_branchdiff_summary <- summarize_branch_diff("anclib_files/ha/h1_branchdiffinfo_aa_br2_all.txt", "H1")
+h3_branchdiff_summary <- summarize_branch_diff("anclib_files/ha/h3_branchdiffinfo_aa_br2_all.txt", "H3")
+np_branchdiff_summary <- summarize_branch_diff("anclib_files/np/np_branchdiffinfo_aa_br2_all.txt", "NP")
+n1_branchdiff_summary <- summarize_branch_diff("anclib_files/na/n1_branchdiffinfo_aa_br2_all.txt", "N1")
+n2_branchdiff_summary <- summarize_branch_diff("anclib_files/na/n2_branchdiffinfo_aa_br2_all.txt", "N2")
+m1_branchdiff_summary <- summarize_branch_diff("anclib_files/mp/m1_branchdiffinfo_aa_br2_all.txt", "M1")
+m2_branchdiff_summary <- summarize_branch_diff("anclib_files/mp/m2_branchdiffinfo_aa_br2_all.txt", "M2")
+ns1_branchdiff_summary <- summarize_branch_diff("anclib_files/ns/ns1_branchdiffinfo_aa_br2_all.txt", "NS1")
+nep_branchdiff_summary <- summarize_branch_diff("anclib_files/ns/nep_branchdiffinfo_aa_br2_all.txt", "NEP")
 
 ###############
 
@@ -1610,6 +1037,6 @@ combined_branchdiff_sumarised <- bind_rows(pb2_branchdiff_summary, pb1_branchdif
 
 shap_positions_amino_acids <- inner_join(combined_branchdiff_sumarised, positions_all, by = c("segment", "position", "trait"))
 
-write.table(shap_positions_amino_acids, "/Users/kman/Desktop/ancestral_reconstruction_project_final/figures_tables/figure4_S4_S5_xgboost/shap_positions_amino_acids_summary.txt",
+write.table(shap_positions_amino_acids, "figures_tables/figure4_S4_S5_xgboost/shap_positions_amino_acids_summary.txt",
             sep = "\t", row.names = FALSE, quote = FALSE)
 

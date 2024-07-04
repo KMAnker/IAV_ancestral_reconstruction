@@ -1,14 +1,15 @@
 library(tidyverse)
 library(dplyr)
-library(viridis)
+library(ggplot2)
 library(ggpubr)
 
-setwd("/Users/kman/Desktop/ancestral_reconstruction_project_final")
+setwd("PATH_TO_PROJECT_DIRECTORY")
+setwd("/Users/B246311/Library/CloudStorage/OneDrive-Sundhedsdatastyrelsen/Skrivebord/IAV_ancestral_reconstruction")
 
 trait_order <- c("swine-swine","human-human", "human-swine", "swine-human")
 
-pb2_aa_branchdiff <- read.table("results/anclib/pb2/pb2_branchdiffinfo_aa_br2_all.txt")
-colnames(pb2_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+pb2_aa_branchdiff <- read.table("anclib_files/pb2/pb2_branchdiffinfo_aa_br2_all.txt")
+colnames(pb2_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 pb2_summarised_branchlen <- pb2_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -24,8 +25,8 @@ pb2_branchcounts <- pb2_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-pb1_aa_branchdiff <- read.table("results/anclib/pb1/pb1_branchdiffinfo_aa_br2_all.txt")
-colnames(pb1_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+pb1_aa_branchdiff <- read.table("anclib_files/pb1/pb1_branchdiffinfo_aa_br2_all.txt")
+colnames(pb1_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 pb1_summarised_branchlen <- pb1_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -41,8 +42,8 @@ pb1_branchcounts <- pb1_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-pa_aa_branchdiff <- read.table("results/anclib/pa/pa_branchdiffinfo_aa_br2_all.txt")
-colnames(pa_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+pa_aa_branchdiff <- read.table("anclib_files/pa/pa_branchdiffinfo_aa_br2_all.txt")
+colnames(pa_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 pa_summarised_branchlen <- pa_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -58,8 +59,8 @@ pa_branchcounts <- pa_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-h1_aa_branchdiff <- read.table("results/anclib/ha/h1_branchdiffinfo_aa_br2_all.txt")
-colnames(h1_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+h1_aa_branchdiff <- read.table("anclib_files/ha/h1_branchdiffinfo_aa_br2_all.txt")
+colnames(h1_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 h1_summarised_branchlen <- h1_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -75,8 +76,8 @@ h1_branchcounts <- h1_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-h3_aa_branchdiff <- read.table("results/anclib/ha/h3_branchdiffinfo_aa_br2_all.txt")
-colnames(h3_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+h3_aa_branchdiff <- read.table("anclib_files/ha/h3_branchdiffinfo_aa_br2_all.txt")
+colnames(h3_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 h3_summarised_branchlen <- h3_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -92,8 +93,8 @@ h3_branchcounts <- h3_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-np_aa_branchdiff <- read.table("results/anclib/np/np_branchdiffinfo_aa_br2_all.txt")
-colnames(np_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+np_aa_branchdiff <- read.table("anclib_files/np/np_branchdiffinfo_aa_br2_all.txt")
+colnames(np_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 np_summarised_branchlen <- np_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -109,8 +110,8 @@ np_branchcounts <- np_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-n1_aa_branchdiff <- read.table("results/anclib/na/n1_branchdiffinfo_aa_br2_all.txt")
-colnames(n1_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+n1_aa_branchdiff <- read.table("anclib_files/na/n1_branchdiffinfo_aa_br2_all.txt")
+colnames(n1_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 n1_summarised_branchlen <- n1_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -125,8 +126,8 @@ n1_branchcounts <- n1_aa_branchdiff %>%
   summarize(branch_count = n_distinct(branch_id),
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
-n2_aa_branchdiff <- read.table("results/anclib/na/n2_branchdiffinfo_aa_br2_all.txt")
-colnames(n2_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+n2_aa_branchdiff <- read.table("anclib_files/na/n2_branchdiffinfo_aa_br2_all.txt")
+colnames(n2_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 n2_summarised_branchlen <- n2_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -142,8 +143,8 @@ n2_branchcounts <- n2_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-mp_aa_branchdiff <- read.table("results/anclib/mp/m1_branchdiffinfo_aa_br2_all.txt")
-colnames(mp_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+mp_aa_branchdiff <- read.table("anclib_files/mp/m1_branchdiffinfo_aa_br2_all.txt")
+colnames(mp_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 mp_summarised_branchlen <- mp_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -159,8 +160,8 @@ mp_branchcounts <- mp_aa_branchdiff %>%
             filtered_branch_count = n_distinct(branch_id[branchlen <= 15]))
 
 
-ns_aa_branchdiff <- read.table("results/anclib/ns/ns1_branchdiffinfo_aa_br2_all.txt")
-colnames(ns_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type")
+ns_aa_branchdiff <- read.table("anclib_files/ns/ns1_branchdiffinfo_aa_br2_all.txt")
+colnames(ns_aa_branchdiff) <- c("node_from", "node_to", "branchlen", "seq_pos", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "branch_type", "external")
 
 ns_summarised_branchlen <- ns_aa_branchdiff %>%
   mutate(trait = paste(trait_from, trait_to, sep = "-")) %>%
@@ -196,7 +197,7 @@ combined_branchcount_df$segment <- factor(combined_branchcount_df$segment, level
 ###########################
 
 branchlength_plot <- ggplot(combined_branchlength_df, aes(x = trait, y = branchlen, fill = trait)) +
-  geom_boxplot(alpha = 1, size = 0.1, color = "grey40", outlier.size = 0.1) +
+  geom_boxplot(alpha = 1, linewidth = 0.1, color = "grey40", outlier.size = 0.1) +
   geom_hline(yintercept = 15, linetype = "dashed", color = "grey40", size = 0.2) +
   scale_fill_manual(values = c("#45BACF", "#D78B5E", "#A5CD92", "#FFD685")) +
   labs(y = "Branch lengths") +
@@ -270,5 +271,5 @@ combined_branch_plots <- ggarrange(branchlength_plot, branchcount_plot,
                                    font.label = list(size = unit(8, "pt")))
 
 
-ggsave("/Users/kman/Desktop/ancestral_reconstruction_project_final/figures_tables/figure1/branch_length_counts_plot.png", plot = combined_branch_plots, dpi = 300, width = 8 , height = 12, units = "cm" )
+ggsave("figures_tables/figure1/branch_length_counts_plot.png", plot = combined_branch_plots, dpi = 300, width = 8 , height = 12, units = "cm" )
 
