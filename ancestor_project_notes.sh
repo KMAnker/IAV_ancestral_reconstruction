@@ -89,12 +89,13 @@
     Get_seq_lenghts.py
 
 # 17. Branches and individual positions for each phylogenetic tree and protein-coding alignment were 
-    # examined for positive selection pressures using the aBSREL and MEME models from the HyPhy package.
+    # examined for positive selection pressures using the aBSREL, MEME and FUBAR models from the HyPhy package.
     # The original alignment file used as input for Treetime was converted into seperate files for each
     # protein-coding region and used as input for the hyphy analyses
     "segment"_coding_frames.py
     hyphy absrel --alignment "protein".fasta --tree "segment"_annotated_tree.nexus --output "protein"_absrel.json
     hyphy meme --alignment "protein".fasta --tree "segment"_annotated_tree.nexus --branches "human-swine" --output "protein"_meme_hu-sw.json
+    hyphy fubar --alignment "protein".fasta --tree "segment"_annotated_tree.nexus --output "protein"_fubar.json
 
         # for the MEME analyses, an annotated treefile with trait categories for each branch (from the anclib output)
         # was used as input, and in four seperate MEME analyses, each of the categories were used as foreground
@@ -114,4 +115,4 @@
          segment_summary.txt
          segment_branchdiffinfo_aa_br2.txt
 
-# Most plots and figures were created with R and the respective R code are found in the "figures_tables" directory
+# Most plots and figures were created with R and the respective R codes are found in the "figures_tables" directory
