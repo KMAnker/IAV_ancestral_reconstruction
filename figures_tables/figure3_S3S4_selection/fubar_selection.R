@@ -213,8 +213,11 @@ FigureS3_combined_plot <- ggarrange(proportions, distributions,
                                    font.label = list(size = 10))
 
 ggsave("figures_tables/figure3_S3S4_selection/figureS3_fubar_overview.png", 
-       plot = FigureS3_combined_plot, dpi = 300, width = 17 , height = 25, units = "cm", bg = "white")
+       plot = FigureS3_combined_plot, dpi = 600, width = 17 , height = 25, units = "cm", bg = "white")
 
 
 
+
+write.table(combined, "figures_tables/figure3_S3S4_selection/FUBAR_selected_positions.txt",
+            sep = "\t", row.names = FALSE, quote = FALSE)
 
