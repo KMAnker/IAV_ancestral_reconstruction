@@ -4,7 +4,6 @@ library(ggplot2)
 library(ggpubr)
 
 setwd("PATH_TO_PROJECT_DIRECTORY")
-setwd("/Users/B246311/Library/CloudStorage/OneDrive-Sundhedsdatastyrelsen/Skrivebord/IAV_ancestral_reconstruction")
 
 trait_order <- c("swine-swine","human-human", "human-swine", "swine-human")
 
@@ -271,5 +270,5 @@ combined_branch_plots <- ggarrange(branchlength_plot, branchcount_plot,
                                    font.label = list(size = unit(8, "pt")))
 
 
-ggsave("figures_tables/figure1/branch_length_counts_plot.png", plot = combined_branch_plots, dpi = 300, width = 8 , height = 12, units = "cm" )
+ggsave("figures_tables/figure1/branch_length_counts_plot.png", plot = combined_branch_plots, dpi = 600, width = 8 , height = 12, units = "cm" )
 
