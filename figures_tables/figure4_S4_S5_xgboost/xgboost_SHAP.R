@@ -3,7 +3,7 @@ library(dplyr)
 library(ggpubr)
 library(ggplot2)
 
-setwd("PATH_TO_PROJECT_DIRECTORY")
+setwd("PATH/TO/PROJECT/DIRECTORY")
 
 # Function to reshape dataframes
 process_shap_importance <- function(shap_importance_df) {
@@ -924,7 +924,7 @@ plot_all <- ggarrange(pb2, pb1, pb1f2, pa, pax, h1, h3, np, n1, n2, m1, m2, ns1,
           legend = "top",
           font.label = list(size = 10))
 
-ggsave("figures_tables/figure4_S4_S5_xgboost/Figure4_shap_values_plot.png", plot = plot_all, dpi = 300, width = 17 , height = 25, units = "cm" )
+ggsave("figures_tables/figure4_S4_S5_xgboost/Figure4_shap_values_plot.png", plot = plot_all, dpi = 600, width = 17 , height = 25, units = "cm", bg = "white")
 
 
 ####################################################
@@ -1012,6 +1012,127 @@ summarize_branch_diff <- function(file_path, segment_name) {
   return(branchdiff_summarised)
 }
 
+summarize_branch_diff <- function(file_path, segment_name) {
+  # Read the data
+  branchdiff <- read.table(file_path)
+  colnames(branchdiff) <- c("node_from", "node_to", "branchlen", "position", "trait_from", "trait_to", "traitprob_from", "traitprob_to", "residue_from", "residue_to", "trait", "external")
+  
+  # Calculate total residue counts for all rows
+  total_residue_counts <- branchdiff %>%
+    filter(branchlen <= 15) %>%
+    mutate(segment = segment_name,
+           position = as.numeric(position),
+           trait = sub("^[^-]*-", "", trait)) %>%
+    group_by(position, trait) %>%
+    summarise(total_residue = n()) %>%
+    ungroup()
+  
+  # Tally for residue_to
+  residue_tally <- branchdiff %>%
+    filter(branchlen <= 15) %>%
+    mutate(position = as.numeric(position),
+           trait = sub("^[^-]*-", "", trait)) %>%
+    group_by(position, trait, residue_to) %>%
+    tally() %>%
+    dplyr::rename(n_residue = n) %>%
+    ungroup()
+  
+  # Summarize residue frequencies
+  residue_summary <- left_join(residue_tally, total_residue_counts, by = c("position", "trait")) %>%
+    group_by(position, trait) %>%
+    arrange(desc(n_residue), .by_group = TRUE) %>%
+    summarise(
+      "Amino Acids (%)" = paste0(residue_to, "(", round(n_residue/total_residue * 100, 1), "%)", collapse = ", ")
+    ) %>%
+    ungroup() %>%
+    mutate(segment = segment_name, .before = "position")
+  
+  # Tally for mutation
+  mutation_tally <- branchdiff %>%
+    filter(branchlen <= 15) %>%
+    mutate(position = as.numeric(position),
+           trait = sub("^[^-]*-", "", trait),
+           mutation = ifelse(residue_from != residue_to, paste(residue_from, "-", residue_to, sep = ""), NA)) %>%
+    group_by(position, trait, mutation) %>%
+    tally() %>%
+    filter(!is.na(mutation)) %>%
+    dplyr::rename(n_mutation = n) %>%
+    ungroup()
+  
+  # Summarize mutation frequencies
+  mutation_summary <- left_join(mutation_tally, total_residue_counts, by = c("position", "trait")) %>%
+    group_by(position, trait) %>%
+    arrange(desc(n_mutation), .by_group = TRUE) %>%
+    summarise(
+      "Mutations (%)" = ifelse(sum(n_mutation) == 0, "NA",
+                               paste0(mutation, "(", round(n_mutation/total_residue * 100, 1), "%)", collapse = ", "))
+    ) %>%
+    ungroup() %>%
+    mutate(segment = segment_name, .before = "position")
+  
+  # Calculate total residue counts for human and swine observed cases
+  total_human_observed_counts <- branchdiff %>%
+    filter(external == 1, trait_to == "human", branchlen <= 15) %>%
+    mutate(segment = segment_name,
+           position = as.numeric(position)) %>%
+    group_by(position) %>%
+    summarise(total_human_observed = n()) %>%
+    ungroup()
+  
+  total_swine_observed_counts <- branchdiff %>%
+    filter(external == 1, trait_to == "swine", branchlen <= 15) %>%
+    mutate(segment = segment_name,
+           position = as.numeric(position)) %>%
+    group_by(position) %>%
+    summarise(total_swine_observed = n()) %>%
+    ungroup()
+  
+  # Tally for human and swine observed AAs
+  human_observed_residue_tally <- branchdiff %>%
+    filter(external == 1, trait_to == "human", branchlen <= 15) %>%
+    mutate(position = as.numeric(position)) %>%
+    group_by(position, residue_to) %>%
+    tally() %>%
+    dplyr::rename(n_human_residue = n) %>%
+    ungroup()
+  
+  swine_observed_residue_tally <- branchdiff %>%
+    filter(external == 1, trait_to == "swine", branchlen <= 15) %>%
+    mutate(position = as.numeric(position)) %>%
+    group_by(position, residue_to) %>%
+    tally() %>%
+    dplyr::rename(n_swine_residue = n) %>%
+    ungroup()
+  
+  # Summarize human and swine observed AAs
+  human_observed_summary <- left_join(human_observed_residue_tally, total_human_observed_counts, by = c("position")) %>%
+    group_by(position) %>%
+    arrange(desc(n_human_residue), .by_group = TRUE) %>%
+    summarise(
+      "Human observed AAs" = paste0(residue_to, "(", round(n_human_residue / total_human_observed * 100, 1), "%)", collapse = ", ")
+    ) %>%
+    ungroup() %>%
+    mutate(segment = segment_name, .before = "position")
+  
+  swine_observed_summary <- left_join(swine_observed_residue_tally, total_swine_observed_counts, by = c("position")) %>%
+    group_by(position) %>%
+    arrange(desc(n_swine_residue), .by_group = TRUE) %>%
+    summarise(
+      "Swine observed AAs" = paste0(residue_to, "(", round(n_swine_residue / total_swine_observed * 100, 1), "%)", collapse = ", ")
+    ) %>%
+    ungroup() %>%
+    mutate(segment = segment_name, .before = "position")
+  
+  
+  # Join the summaries
+  branchdiff_summarised <- left_join(residue_summary, mutation_summary, by = c("segment", "position", "trait")) %>%
+    left_join(human_observed_summary, by = c("segment","position")) %>%
+    left_join(swine_observed_summary, by = c("segment","position"))
+  
+  return(branchdiff_summarised)
+}
+
+
 pb2_branchdiff_summary <- summarize_branch_diff("anclib_files/pb2/pb2_branchdiffinfo_aa_br2_all.txt", "PB2")
 pb1_branchdiff_summary <- summarize_branch_diff("anclib_files/pb1/pb1_branchdiffinfo_aa_br2_all.txt", "PB1")
 pb1f2_branchdiff_summary <- summarize_branch_diff("anclib_files/pb1/pb1-f2_branchdiffinfo_aa_br2_all.txt", "PB1-F2")
@@ -1027,13 +1148,14 @@ m2_branchdiff_summary <- summarize_branch_diff("anclib_files/mp/m2_branchdiffinf
 ns1_branchdiff_summary <- summarize_branch_diff("anclib_files/ns/ns1_branchdiffinfo_aa_br2_all.txt", "NS1")
 nep_branchdiff_summary <- summarize_branch_diff("anclib_files/ns/nep_branchdiffinfo_aa_br2_all.txt", "NEP")
 
-###############
 
 combined_branchdiff_sumarised <- bind_rows(pb2_branchdiff_summary, pb1_branchdiff_summary, pb1f2_branchdiff_summary,
                                            pa_branchdiff_summary, pax_branchdiff_summary, h1_branchdiff_summary,
                                            h3_branchdiff_summary, np_branchdiff_summary, n1_branchdiff_summary,
                                            n2_branchdiff_summary, m1_branchdiff_summary, m2_branchdiff_summary,
                                            ns1_branchdiff_summary, nep_branchdiff_summary)
+
+###############
 
 shap_positions_amino_acids <- inner_join(combined_branchdiff_sumarised, positions_all, by = c("segment", "position", "trait"))
 
