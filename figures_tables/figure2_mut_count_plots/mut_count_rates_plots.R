@@ -12,18 +12,18 @@ protein_order <- c("PB2", "PB1", "PB1-F2", "PA", "PA-X", "H1", "H3", "NP", "N1",
 
 theme1 <- theme(legend.position = "top",
                 legend.title = element_blank(),
-                legend.key.size = unit(9, "pt"),
-                legend.text = element_text(size = 8),
+                legend.key.size = unit(6, "pt"),
+                legend.text = element_text(size = 7),
                 legend.spacing = unit(-0.5, "pt"),
                 legend.margin = margin(unit(c(0.5,0,5,0), "lines")),
                 axis.text.x = element_blank(),
-                axis.text.y = element_text(size=8),
+                axis.text.y = element_text(size=7),
                 axis.title.x = element_blank(),
-                axis.title.y = element_text(size = 8),
+                axis.title.y = element_text(size = 7),
                 axis.ticks.y = element_blank(),
                 axis.ticks.x = element_blank(),
                 strip.background = element_rect(linewidth = 0.5),
-                strip.text = element_text(size = 9),
+                strip.text = element_text(size = 8),
                 axis.line = element_line(size = 0.1),
                 panel.spacing.x = unit(0.1, "lines"), 
                 panel.spacing.y = unit(0.1, "lines"),
@@ -35,19 +35,13 @@ theme1 <- theme(legend.position = "top",
                 legend.box.spacing = unit(0.1, "lines"),
                 plot.margin = unit(c(0.5,0.5,0.5,0.5), "lines"))
 
-theme2 <- theme(legend.position = "right",
-                legend.title = element_blank(),
-                legend.key.size = unit(8, "pt"),
-                legend.text = element_text(size = 8),
-                legend.spacing = unit(-0.5, "pt"),
-                legend.margin = margin(unit(c(0.1,0,0.5,35), "lines")),
-                axis.text.x = element_text(size = 9, vjust = 0.8, angle = 45, hjust = 0.9),
-                axis.text.y = element_text(size=8),
-                axis.title.x = element_text(size = 8),
-                axis.title.y = element_text(size = 8),
+theme2 <- theme(axis.text.x = element_text(size = 7, vjust = 0.8, angle = 45, hjust = 0.9),
+                axis.text.y = element_text(size=7),
+                axis.title.x = element_text(size = 7),
+                axis.title.y = element_text(size = 7),
                 axis.ticks.y = element_blank(),
                 strip.background = element_rect(linewidth = 0.5),
-                strip.text = element_text(size = 9),
+                strip.text = element_text(size = 7),
                 axis.line = element_line(size = 0.1),
                 panel.spacing.x = unit(0.1, "lines"), 
                 panel.spacing.y = unit(0.1, "lines"),
@@ -59,6 +53,29 @@ theme2 <- theme(legend.position = "right",
                 legend.box.spacing = unit(0.1, "lines"),
                 plot.margin = unit(c(0.5,2.5,0.5,2.5), "lines"))
 
+theme3 <- theme(legend.position = "top",
+                legend.title = element_blank(),
+                legend.key.size = unit(6, "pt"),
+                legend.text = element_text(size = 7),
+                legend.spacing = unit(-0.5, "pt"),
+                legend.margin = margin(unit(c(0.5,0,5,0), "lines")),
+                axis.text.x = element_text(size = 7, vjust = 0.8, angle = 45, hjust = 0.9),
+                axis.text.y = element_text(size=7),
+                axis.title.x = element_text(size = 7),
+                axis.title.y = element_text(size = 7),
+                axis.ticks.y = element_blank(),
+                strip.background = element_rect(linewidth = 0.5),
+                strip.text = element_text(size = 7),
+                axis.line = element_line(size = 0.1),
+                panel.spacing.x = unit(0.1, "lines"), 
+                panel.spacing.y = unit(0.1, "lines"),
+                panel.border = element_rect(fill = NA, color = "grey10", linewidth = 0.5),
+                panel.grid.minor.x = element_blank(),
+                panel.grid.major.x = element_blank(),
+                panel.grid.minor.y = element_blank(),
+                panel.grid.major.y = element_blank(),
+                legend.box.spacing = unit(0.1, "lines"),
+                plot.margin = unit(c(0.5,0.5,0.5,0.5), "lines"))
 
 ################################################################################
 
@@ -658,6 +675,8 @@ normalized <- ggplot(combined_summarised, aes(x = trait, y = normalized_mut_per_
   facet_wrap(~protein, ncol = 7) +
   theme_classic()+ 
   theme1
+normalized <- normalized + guides(fill = guide_legend(nrow = 2, byrow = TRUE))
+
 
 combined_summarised_2 <- combined_summarised %>%
   group_by(protein) %>%
@@ -677,5 +696,186 @@ total_and_normalized_mut_count_plots <- ggarrange(average, normalized,
                            heights = c(0.6,1.4),
                            labels = c("a", "b"), 
                            font.label = list(size = 10))
-ggsave("figures_tables/figure2_mut_count_plots/Figure2_total_and_normalized_mut_count_plots.png", plot = total_and_normalized_mut_count_plots, dpi = 300, width = 12 , height = 18, units = "cm" )
+
+
+################################################################################
+## Bayesian analysis ##
+
+# Read in tibbles
+
+pb2_tibble = readRDS("bayesian_mut_analysis/output_files/pb2_comparison.rds") %>%
+  mutate(segment = "PB2")
+pb1_tibble = readRDS("bayesian_mut_analysis/output_files/pb1_comparison.rds") %>%
+  mutate(segment = "PB1")
+pb1_f2_tibble = readRDS("bayesian_mut_analysis/output_files/pb1-f2_comparison.rds") %>%
+  mutate(segment = "PB1-F2")
+pa_tibble = readRDS("bayesian_mut_analysis/output_files/pa_comparison.rds") %>%
+  mutate(segment = "PA")
+pa_x_tibble = readRDS("bayesian_mut_analysis/output_files/pa-x_comparison.rds") %>%
+  mutate(segment = "PA-X")
+h1_tibble = readRDS("bayesian_mut_analysis/output_files/h1_comparison.rds") %>%
+  mutate(segment = "H1")
+h3_tibble = readRDS("bayesian_mut_analysis/output_files/h3_comparison.rds") %>%
+  mutate(segment = "H3")
+np_tibble = readRDS("bayesian_mut_analysis/output_files/np_comparison.rds") %>%
+  mutate(segment = "NP")
+n1_tibble = readRDS("bayesian_mut_analysis/output_files/n1_comparison.rds") %>%
+  mutate(segment = "N1")
+n2_tibble = readRDS("bayesian_mut_analysis/output_files/n2_comparison.rds") %>%
+  mutate(segment = "N2")
+m1_tibble = readRDS("bayesian_mut_analysis/output_files/m1_comparison.rds") %>%
+  mutate(segment = "M1")
+m2_tibble = readRDS("bayesian_mut_analysis/output_files/m2_comparison.rds") %>%
+  mutate(segment = "M2")
+ns1_tibble = readRDS("bayesian_mut_analysis/output_files/ns1_comparison.rds") %>%
+  mutate(segment = "NS1")
+nep_tibble = readRDS("bayesian_mut_analysis/output_files/nep_comparison.rds") %>%
+  mutate(segment = "NEP")
+
+combined_tibble <- bind_rows(pb2_tibble, pb1_tibble, pb1_f2_tibble, pa_tibble, pa_x_tibble,
+                             h1_tibble, h3_tibble, np_tibble, n1_tibble, n2_tibble, 
+                             m1_tibble, m2_tibble, ns1_tibble, nep_tibble)
+
+
+combined_data <- bind_rows(
+  combined_tibble %>% 
+    filter(class1 == "swsw", class2 == "husw", P_2_larger_1 > 0.95) %>% 
+    mutate(comparison = "husw_vs_swsw"),
+  combined_tibble %>% 
+    filter(class1 == "huhu", class2 == "swhu", P_2_larger_1 > 0.95) %>%
+    mutate(comparison = "swhu_vs_huhu"),
+  combined_tibble %>% 
+    filter(class1 == "swsw", class2 == "swhu", P_2_larger_1 > 0.95) %>% 
+    mutate(comparison = "swhu_vs_swsw"),
+  combined_tibble %>% 
+    filter(class1 == "huhu", class2 == "husw", P_2_larger_1 > 0.95) %>% 
+    mutate(comparison = "husw_vs_huhu"),
+  combined_tibble %>% 
+    filter(class1 == "huhu", class2 == "swsw", P_1_larger_2 > 0.95) %>% 
+    mutate(comparison = "huhu_vs_swsw"),
+  combined_tibble %>% 
+    filter(class1 == "huhu", class2 == "swsw", P_2_larger_1 > 0.95) %>% 
+    mutate(comparison = "swsw_vs_huhu"),
+  combined_tibble %>% 
+    filter(class1 == "husw", class2 == "swhu", P_2_larger_1 > 0.95) %>% 
+    mutate(comparison = "swhu_vs_husw"),
+  combined_tibble %>% 
+    filter(class1 == "husw", class2 == "swhu", P_1_larger_2 > 0.95) %>% 
+    mutate(comparison = "husw_vs_swhu"),
+  combined_tibble %>% 
+    filter(class1 == "huhu", class2 == "husw", P_1_larger_2 > 0.95) %>% 
+    mutate(comparison = "huhu_vs_husw"),
+  combined_tibble %>% 
+    filter(class1 == "huhu", class2 == "swhu", P_1_larger_2 > 0.95) %>% 
+    mutate(comparison = "huhu_vs_swhu"),
+  combined_tibble %>% 
+    filter(class1 == "swsw", class2 == "husw", P_1_larger_2 > 0.95) %>% 
+    mutate(comparison = "swsw_vs_husw"),
+  combined_tibble %>%
+    filter(class1 == "swsw", class2 == "swhu", P_1_larger_2 > 0.95) %>% 
+    mutate(comparison = "swsw_vs_swhu")
+)
+
+protein_order <- c("PB2", "PB1", "PB1-F2", "PA", "PA-X", "H1", "H3", "NP", "N1", "N2", "M1", "M2", "NS1", "NEP")
+combined_data$segment <- factor(combined_data$segment, levels=protein_order)
+
+summary <- combined_data %>%
+  group_by(comparison, segment) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  complete(comparison, segment, fill = list(count = 0))
+
+
+# Gather the results for plotting
+
+plot_data <- summary %>%
+  pivot_wider(names_from = comparison, values_from = count) %>%
+  mutate(
+    "human-swine vs human-human" = husw_vs_huhu - huhu_vs_husw,
+    "human-swine vs swine-swine" = husw_vs_swsw - swsw_vs_husw,
+    "swine-human vs human-human" = swhu_vs_huhu - huhu_vs_swhu,
+    "swine-human vs swine-swine" = swhu_vs_swsw - swsw_vs_swhu,
+    "human-human vs swine-swine" = huhu_vs_swsw - swsw_vs_huhu,
+  ) %>%
+  select(segment, "swine-human vs human-human", "human-swine vs swine-swine", 
+         "human-swine vs human-human",  "swine-human vs swine-swine", "human-human vs swine-swine")
+
+plot_c_data <- plot_data %>%
+  pivot_longer(
+    cols = -segment,
+    names_to = "comparison",
+    values_to = "ratio"
+  ) %>%
+  filter(comparison %in% c("swine-human vs human-human", "human-swine vs swine-swine", "human-swine vs human-human",  "swine-human vs swine-swine"))
+
+
+plot_d_data <- plot_data %>%
+  pivot_longer(
+    cols = -segment,
+    names_to = "comparison",
+    values_to = "ratio"
+  ) %>%
+  filter(comparison == c("human-human vs swine-swine"))
+
+comparison_order <- c("swine-human vs human-human", "human-swine vs swine-swine", 
+                      "human-swine vs human-human",  "swine-human vs swine-swine",
+                      "human-human vs swine-swine")
+plot_c_data$comparison <- factor(plot_c_data$comparison, levels=comparison_order)
+plot_d_data$comparison <- factor(plot_d_data$comparison, levels=comparison_order)
+
+
+
+plot_c <- ggplot(plot_c_data, aes(x = comparison, y = ratio, fill = comparison)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(title = "",
+       x = "",
+       y = "Count") +
+  scale_fill_manual(values = c("#FFBF60","#89B177", "#C1E3AE", "#FFE6AA")) +
+  scale_y_continuous(limits = c(-100,111)) +
+  geom_hline(yintercept = 0, linetype = 2, color = "grey60", size = 0.3) +
+  facet_wrap(~segment, ncol = 7) +
+  theme_classic() +
+  theme1
+plot_c <- plot_c + guides(fill = guide_legend(nrow = 2, byrow = TRUE))
+
+plot_d <- ggplot(plot_d_data, aes(x = segment, y = ratio, fill = comparison)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(title = "",
+       x = "",
+       y = "Count") +
+  scale_fill_manual(values = c("#91A178")) +
+  scale_y_continuous(limits = c(-100,111)) +
+  geom_hline(yintercept = 0, linetype = 2, color = "grey60", size = 0.3) +
+  theme_classic() +
+  theme3
+
+
+combined_plot <- ggarrange(plot_c, plot_d,
+                           ncol = 1,
+                           nrow = 2,
+                           heights = c(2,1),
+                           labels = c("c", "d"),
+                           font.label = list(size = 10))
+
+
+combined_plot_final <- ggarrange(total_and_normalized_mut_count_plots, combined_plot,
+                           ncol = 2,
+                           nrow = 1)
+
+ggsave("figures_tables/figure2_mut_count_plots/Figure2_mut_count_and_rate_plots.png", plot = combined_plot_final, dpi = 600, width = 18 , height = 20, units = "cm" )
+
+
+###############################################################################
+
+
+bayes_positions <- combined_data %>%
+  filter(comparison %in% c("swhu_vs_huhu", "husw_vs_swsw")) %>%
+  select(segment, seqpos, comparison) %>%
+  dplyr::rename(position = seqpos, trait = comparison) %>%
+  mutate(trait = recode(trait, 
+                        "swhu_vs_huhu" = "swine-human", 
+                        "husw_vs_swsw" = "human-swine"))
+
+write.table(bayes_positions, "figures_tables/figure2_mut_count_plots/bayes_positions.txt",
+            sep = "\t", row.names = FALSE, quote = FALSE)
+
 
