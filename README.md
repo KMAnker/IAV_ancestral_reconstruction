@@ -3,7 +3,7 @@
 
 Pipeline, scripts, and data for the paper:
 
-_Anker, K.M., Ciucani, M.M., Nissen, J.N., Anderson, T.K., Pedersen, A.G., and Trebbien, R._  **Exploring genetic signatures of zoonotic influenza A virus at the swine-human interface with phylogenetic and ancestral sequence reconstruction** (in preparation).
+_Anker, K.M., Ciucani, M.M., Nissen, J.N., Anderson, T.K., Pedersen, A.G., and Trebbien, R._  **Exploring genetic signatures of zoonotic influenza A virus at the swine-human interface with phylogenetic and ancestral sequence reconstruction**.
 
 
 
@@ -19,7 +19,7 @@ Sequence data for this analysis was obtained from GISAID and NCBI Influenza Viru
 We gratefully acknowledge all data contributors, i.e., the authors and their originating laboratories responsible for obtaining the specimens, and their submitting laboratories for generating the genetic sequence and metadata and sharing via the GISAID initiative as well as the NCBI Influenza Virus Resource database, on which this research is based.
 
 
-We cannot publicly upload the genetic sequences from GISAID, and therefore no sequence (fasta) files are uploaded to this repository. However, the [data](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/data) folder contains lists of accession numbers for all the sequences originally downloaded for analysis.
+We cannot publicly upload the genetic sequences from GISAID, and therefore no sequence (fasta) files are uploaded to this repository. However, the [data](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/data) folder contains lists of accession numbers for all the sequences originally downloaded for analysis as well as for the sequences kepth through each step of the data preparation.
 
 
 
@@ -27,6 +27,7 @@ We cannot publicly upload the genetic sequences from GISAID, and therefore no se
 Folders containing input and output files for the different steps of the analysis:
 - [treefiles](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/treefiles): IQtree output files and both input and output files from Treetime analysis (except fasta sequence files).
 - [anclib_files](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/anclib_files): Output files from the anclib analysis.
-- [selection_analysis](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/selection_analysis): Output json files from the HyPhy aBSREL and MEME analyses as well as text and excel files containing concatenated output from all segments.
+- [selection_analysis](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/selection_analysis): Output csv files from the HyPhy Fubar and json files from the HyPhy aBSREL and MEME analyses as well as text and excel files containing concatenated output from all segments.
+- [bayesian_mut_analysis](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/bayesian_mut_analysis): Input and output files from the bayesian mutation frequency analysis.
 - [xgboost](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/xgboost): one-hot encoded input files and output files from xgboost analyses (run with the [xgboost.ipynb](https://github.com/KMAnker/IAV_ancestral_reconstruction/blob/main/scripts/h1_xgboost.ipynb) scripts for each protein.
 - [figures_tables](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/figures_tables): Figures and tables from the manuscript along with R code used to generate them.
