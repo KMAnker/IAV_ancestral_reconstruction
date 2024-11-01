@@ -3,7 +3,7 @@
 
 Pipeline, scripts, and data for the paper:
 
-_Anker, K.M., Ciucani, M.M., Nissen, J.N., Anderson, T.K., Pedersen, A.G., and Trebbien, R._  **Exploring genetic signatures of zoonotic influenza A virus at the swine-human interface with phylogenetic and ancestral sequence reconstruction**.
+_Anker, K.M., Ciucani, M.M., Nissen, J.N., Anderson, T.K., Pedersen, A.G., and Trebbien, R._  **Exploring genetic signatures of zoonotic influenza A virus at the swine-human interface with phylogenetic and ancestral sequence reconstruction**. _bioRxiv_ 2024.10.26.619880; doi: https://doi.org/10.1101/2024.10.26.619880.
 
 
 
