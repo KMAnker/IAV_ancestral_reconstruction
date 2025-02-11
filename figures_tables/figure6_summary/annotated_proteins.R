@@ -140,7 +140,7 @@ annotated_proteins <- ggplot(plotting_df) +
 
 
 
-ggsave("figures_tables/figure5_summary/annotated_proteins.png", plot = annotated_proteins, dpi = 600, width = 18 , height = 25, units = "cm", bg = "white")
+ggsave("figures_tables/figure6_summary/annotated_proteins.png", plot = annotated_proteins, dpi = 600, width = 18 , height = 25, units = "cm", bg = "white")
 
 
 
