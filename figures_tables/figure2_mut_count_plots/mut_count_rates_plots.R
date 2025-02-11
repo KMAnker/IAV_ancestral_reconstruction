@@ -12,10 +12,10 @@ protein_order <- c("PB2", "PB1", "PB1-F2", "PA", "PA-X", "H1", "H3", "NP", "N1",
 
 theme1 <- theme(legend.position = "top",
                 legend.title = element_blank(),
-                legend.key.size = unit(6, "pt"),
+                legend.key.size = unit(7, "pt"),
                 legend.text = element_text(size = 7),
                 legend.spacing = unit(-0.5, "pt"),
-                legend.margin = margin(unit(c(0.5,0,5,0), "lines")),
+                legend.margin = margin(unit(c(0,0,10,0), "lines")),
                 axis.text.x = element_blank(),
                 axis.text.y = element_text(size=7),
                 axis.title.x = element_blank(),
@@ -55,7 +55,7 @@ theme2 <- theme(axis.text.x = element_text(size = 7, vjust = 0.8, angle = 45, hj
 
 theme3 <- theme(legend.position = "top",
                 legend.title = element_blank(),
-                legend.key.size = unit(6, "pt"),
+                legend.key.size = unit(7, "pt"),
                 legend.text = element_text(size = 7),
                 legend.spacing = unit(-0.5, "pt"),
                 legend.margin = margin(unit(c(0.5,0,5,0), "lines")),
@@ -785,66 +785,98 @@ summary <- combined_data %>%
   complete(comparison, segment, fill = list(count = 0))
 
 
-# Gather the results for plotting
+cross_host_comparisons <- c(
+  "husw_vs_swsw", "swsw_vs_husw",
+  "swhu_vs_huhu", "huhu_vs_swhu",
+  "husw_vs_huhu", "huhu_vs_husw",
+  "swhu_vs_swsw", "swsw_vs_swhu")
 
-plot_data <- summary %>%
-  pivot_wider(names_from = comparison, values_from = count) %>%
+within_host_comparisons <- c("huhu_vs_swsw", "swsw_vs_huhu")
+
+
+cross_host_data <- summary %>%
+  filter(comparison %in% cross_host_comparisons) %>%
   mutate(
-    "human-swine vs human-human" = husw_vs_huhu - huhu_vs_husw,
-    "human-swine vs swine-swine" = husw_vs_swsw - swsw_vs_husw,
-    "swine-human vs human-human" = swhu_vs_huhu - huhu_vs_swhu,
-    "swine-human vs swine-swine" = swhu_vs_swsw - swsw_vs_swhu,
-    "human-human vs swine-swine" = huhu_vs_swsw - swsw_vs_huhu,
-  ) %>%
-  select(segment, "swine-human vs human-human", "human-swine vs swine-swine", 
-         "human-swine vs human-human",  "swine-human vs swine-swine", "human-human vs swine-swine")
+    # Relabel the comparison values
+    comparison = case_when(
+      comparison == "husw_vs_swsw" ~ "human-swine > swine-swine",
+      comparison == "swsw_vs_husw" ~ "human-swine < swine-swine",
+      comparison == "swhu_vs_huhu" ~ "swine-human > human-human",
+      comparison == "huhu_vs_swhu" ~ "swine-human < human-human",
+      comparison == "husw_vs_huhu" ~ "human-swine > human-human",
+      comparison == "huhu_vs_husw" ~ "human-swine < human-human",
+      comparison == "swhu_vs_swsw" ~ "swine-human > swine-swine",
+      comparison == "swsw_vs_swhu" ~ "swine-human < swine-swine")
+  )
 
-plot_c_data <- plot_data %>%
-  pivot_longer(
-    cols = -segment,
-    names_to = "comparison",
-    values_to = "ratio"
-  ) %>%
-  filter(comparison %in% c("swine-human vs human-human", "human-swine vs swine-swine", "human-swine vs human-human",  "swine-human vs swine-swine"))
+within_host_data <- summary %>%
+  filter(comparison %in% within_host_comparisons) %>%
+  mutate(
+    comparison = case_when(
+      comparison == "huhu_vs_swsw" ~ "human-human > swine-swine",
+      comparison == "swsw_vs_huhu" ~ "human-human < swine-swine")
+  )
 
+comparison_order <- c("swine-human > human-human", "swine-human < human-human",
+                      "human-swine > human-human","human-swine < human-human",
+                      "swine-human > swine-swine", "swine-human < swine-swine",
+                      "human-swine > swine-swine", "human-swine < swine-swine",
+                      "human-human > swine-swine", "human-human < swine-swine")
 
-plot_d_data <- plot_data %>%
-  pivot_longer(
-    cols = -segment,
-    names_to = "comparison",
-    values_to = "ratio"
-  ) %>%
-  filter(comparison == c("human-human vs swine-swine"))
+cross_host_data$comparison <- factor(cross_host_data$comparison, levels=comparison_order)
 
-comparison_order <- c("swine-human vs human-human", "human-swine vs swine-swine", 
-                      "human-swine vs human-human",  "swine-human vs swine-swine",
-                      "human-human vs swine-swine")
-plot_c_data$comparison <- factor(plot_c_data$comparison, levels=comparison_order)
-plot_d_data$comparison <- factor(plot_d_data$comparison, levels=comparison_order)
+within_host_data$comparison <- factor(within_host_data$comparison, levels=comparison_order)
 
 
+comparison_colors <- c(
+  "human-swine > swine-swine" = "#89B177",
+  "human-swine < swine-swine" = "#89B177",
+  "human-swine > human-human" = "#C1E3AE",
+  "human-swine < human-human" = "#C1E3AE",
+  "swine-human > swine-swine" = "#FFE6AA",
+  "swine-human < swine-swine" = "#FFE6AA",
+  "swine-human > human-human" = "#FFBF60",
+  "swine-human < human-human" = "#FFBF60",
+  "human-human > swine-swine" = "#D78B5E",
+  "human-human < swine-swine" = "#45BACF")
 
-plot_c <- ggplot(plot_c_data, aes(x = comparison, y = ratio, fill = comparison)) +
-  geom_bar(stat = "identity", position = position_dodge()) +
+plot_c <- ggplot(cross_host_data, aes(x = comparison, y = count, fill = comparison, linetype = comparison)) +
+  geom_bar(stat = "identity", 
+           position = position_dodge(width = 0.9), 
+           color = "black", 
+           linewidth = 0.25) +
   labs(title = "",
        x = "",
-       y = "Count") +
-  scale_fill_manual(values = c("#FFBF60","#89B177", "#C1E3AE", "#FFE6AA")) +
-  scale_y_continuous(limits = c(-100,111)) +
-  geom_hline(yintercept = 0, linetype = 2, color = "grey60", size = 0.3) +
+       y = "Number of positions with higher substitution rate") +
+  scale_fill_manual(values = comparison_colors) +
+  scale_linetype_manual(values = c(
+    "human-swine > swine-swine" = "solid",
+    "human-swine < swine-swine" = "dashed",
+    "swine-human > human-human" = "solid",
+    "swine-human < human-human" = "dashed",
+    "human-swine > human-human" = "solid",
+    "human-swine < human-human" = "dashed",
+    "swine-human > swine-swine" = "solid",
+    "swine-human < swine-swine" = "dashed"
+  )) +
   facet_wrap(~segment, ncol = 7) +
   theme_classic() +
   theme1
-plot_c <- plot_c + guides(fill = guide_legend(nrow = 2, byrow = TRUE))
+plot_c <- plot_c + guides(fill = guide_legend(nrow = 4, byrow = TRUE))
 
-plot_d <- ggplot(plot_d_data, aes(x = segment, y = ratio, fill = comparison)) +
-  geom_bar(stat = "identity", position = position_dodge()) +
+
+plot_d <- ggplot(within_host_data, aes(x = segment, y = count, fill = comparison, linetype = comparison)) +
+  geom_bar(stat = "identity", 
+           position = position_dodge(width = 0.85), 
+           color = "black",
+           linewidth = 0.25) +
   labs(title = "",
        x = "",
-       y = "Count") +
-  scale_fill_manual(values = c("#91A178")) +
-  scale_y_continuous(limits = c(-100,111)) +
-  geom_hline(yintercept = 0, linetype = 2, color = "grey60", size = 0.3) +
+       y = "Number of positions with higher substitution rate") +
+  scale_fill_manual(values = comparison_colors) +
+  scale_linetype_manual(values = c(
+    "human-human > swine-swine" = "solid",
+    "human-human < swine-swine" = "solid")) +
   theme_classic() +
   theme3
 
@@ -877,5 +909,4 @@ bayes_positions <- combined_data %>%
 
 write.table(bayes_positions, "figures_tables/figure2_mut_count_plots/bayes_positions.txt",
             sep = "\t", row.names = FALSE, quote = FALSE)
-
 
