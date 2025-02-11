@@ -1,1179 +1,1179 @@
-# node_from	node_to	branch_len	seqpos	trait_from	trait_to	traitprob_from	traitprob_to	residue_from	residue_to	branch_type	Mutation
-1	2	9.19879	3	human	human	0.966	0.981	S	P	swine-human-human	S3P
-1	82	0.68814	70	human	human	0.966	1.0	G	S	swine-human-human	G70S
-3	4	7.82058	43	human	human	0.995	1.0	D	N	human-human-human	D43N
-3	4	7.82058	47	human	human	0.995	1.0	E	D	human-human-human	E47D
-4	seq_059	11.00274	14	human	human	1.0	1.0	M	V	human-human-human	M14V
-5	8	5.75569	14	human	human	0.996	1.0	M	L	human-human-human	M14L
-5	8	5.75569	22	human	human	0.996	1.0	G	E	human-human-human	G22E
-5	8	5.75569	63	human	human	0.996	1.0	G	E	human-human-human	G63E
-5	8	5.75569	86	human	human	0.996	1.0	R	K	human-human-human	R86K
-5	8	5.75569	104	human	human	0.996	1.0	Q	H	human-human-human	Q104H
-5	6	3.52033	31	human	human	0.996	1.0	M	I	human-human-human	M31I
-6	seq_060	1.96452	47	human	human	1.0	1.0	E	K	human-human-human	E47K
-8	seq_048	0.7319	26	human	human	1.0	1.0	E	G	human-human-human	E26G
-12	13	4.85951	107	human	human	0.959	0.985	L	F	human-human-human	L107F
-14	seq_032	3.68485	52	human	human	0.993	1.0	M	L	human-human-human	M52L
-14	seq_055	2.68485	22	human	human	0.993	1.0	G	D	human-human-human	G22D
-16	17	4.35269	60	swine	swine	0.826	1.0	N	S	swine-swine-swine	N60S
-16	18	3.92823	26	swine	swine	0.826	0.623	E	G	swine-swine-swine	E26G
-18	19	12.83263	3	swine	human	0.623	0.948	P	S	swine-swine-human	P3S
-18	19	12.83263	60	swine	human	0.623	0.948	N	H	swine-swine-human	N60H
-18	19	12.83263	89	swine	human	0.623	0.948	I	T	swine-swine-human	I89T
-18	seq_023	9.50256	70	swine	human	0.623	1.0	G	S	swine-swine-human	G70S
-18	seq_023	9.50256	85	swine	human	0.623	1.0	H	Q	swine-swine-human	H85Q
-18	seq_023	9.50256	98	swine	human	0.623	1.0	T	R	swine-swine-human	T98R
-18	seq_023	9.50256	100	swine	human	0.623	1.0	M	I	swine-swine-human	M100I
-18	seq_023	9.50256	101	swine	human	0.623	1.0	Q	E	swine-swine-human	Q101E
-18	seq_023	9.50256	116	swine	human	0.623	1.0	F	I	swine-swine-human	F116I
-19	20	5.39402	6	human	human	0.948	0.998	V	L	swine-human-human	V6L
-19	23	0.74659	4	human	human	0.948	0.957	N	H	swine-human-human	N4H
-23	24	9.50737	52	human	human	0.957	0.995	M	L	human-human-human	M52L
-23	seq_008	4.92334	89	human	human	0.957	1.0	T	I	human-human-human	T89I
-23	seq_008	4.92334	91	human	human	0.957	1.0	E	D	human-human-human	E91D
-25	seq_353	2.11274	49	human	swine	1.0	1.0	V	I	human-human-swine	V49I
-25	seq_353	2.11274	92	human	swine	1.0	1.0	N	S	human-human-swine	N92S
-26	seq_069	8.16878	39	human	human	0.998	1.0	K	R	human-human-human	K39R
-26	seq_069	8.16878	92	human	human	0.998	1.0	N	S	human-human-human	N92S
-27	seq_101	9.49725	26	human	human	0.997	1.0	G	E	human-human-human	G26E
-27	seq_101	9.49725	52	human	human	0.997	1.0	L	M	human-human-human	L52M
-35	seq_605	43.52073	6	human	swine	0.788	1.0	V	I	human-human-swine	V6I
-35	seq_605	43.52073	26	human	swine	0.788	1.0	E	G	human-human-swine	E26G
-35	seq_605	43.52073	36	human	swine	0.788	1.0	E	K	human-human-swine	E36K
-35	seq_605	43.52073	60	human	swine	0.788	1.0	N	T	human-human-swine	N60T
-35	seq_605	43.52073	64	human	swine	0.788	1.0	K	R	human-human-swine	K64R
-35	seq_605	43.52073	119	human	swine	0.788	1.0	Q	X	human-human-swine	Q119X
-36	37	0.31356	57	human	human	0.659	0.63	S	L	human-human-human	S57L
-36	seq_406	16.79066	19	human	swine	0.659	1.0	M	L	human-human-swine	M19L
-36	seq_406	16.79066	27	human	swine	0.659	1.0	D	G	human-human-swine	D27G
-36	seq_406	16.79066	31	human	swine	0.659	1.0	M	I	human-human-swine	M31I
-36	seq_406	16.79066	48	human	swine	0.659	1.0	A	S	human-human-swine	A48S
-36	seq_406	16.79066	60	human	swine	0.659	1.0	N	G	human-human-swine	N60G
-37	seq_296	6.47709	31	human	swine	0.63	1.0	M	V	human-human-swine	M31V
-37	seq_296	6.47709	63	human	swine	0.63	1.0	G	E	human-human-swine	G63E
-38	seq_352	10.14198	25	human	swine	0.612	1.0	S	L	human-human-swine	S25L
-38	seq_352	10.14198	52	human	swine	0.612	1.0	M	R	human-human-swine	M52R
-44	45	2.30106	60	human	human	0.972	0.99	N	S	human-human-human	N60S
-44	46	13.05598	40	human	human	0.972	1.0	L	I	human-human-human	L40I
-45	seq_040	2.94252	112	human	human	0.99	1.0	E	Q	human-human-human	E112Q
-45	seq_040	2.94252	116	human	human	0.99	1.0	F	I	human-human-human	F116I
-45	seq_040	2.94252	118	human	human	0.99	1.0	F	C	human-human-human	F118C
-50	seq_012	1.71668	107	human	human	1.0	1.0	F	S	human-human-human	F107S
-51	seq_240	1.22409	118	human	swine	0.979	1.0	F	V	human-human-swine	F118V
-51	seq_241	1.22409	110	human	swine	0.979	1.0	E	A	human-human-swine	E110A
-51	seq_241	1.22409	118	human	swine	0.979	1.0	F	C	human-human-swine	F118C
-53	seq_002	0.0	122	human	human	1.0	1.0	N	X	human-human-human	N122X
-64	seq_135	9.28643	29	human	human	0.989	1.0	N	S	human-human-human	N29S
-64	seq_135	9.28643	32	human	human	0.989	1.0	I	V	human-human-human	I32V
-64	seq_135	9.28643	34	human	human	0.989	1.0	Q	R	human-human-human	Q34R
-64	seq_135	9.28643	63	human	human	0.989	1.0	G	E	human-human-human	G63E
-64	seq_135	9.28643	83	human	human	0.989	1.0	V	I	human-human-human	V83I
-64	seq_135	9.28643	88	human	human	0.989	1.0	K	I	human-human-human	K88I
-64	seq_135	9.28643	89	human	human	0.989	1.0	T	A	human-human-human	T89A
-65	seq_125	6.66261	16	human	human	0.983	1.0	M	I	human-human-human	M16I
-65	seq_125	6.66261	88	human	human	0.983	1.0	K	R	human-human-human	K88R
-65	seq_125	6.66261	115	human	human	0.983	1.0	T	A	human-human-human	T115A
-67	seq_119	6.52598	92	human	human	0.999	1.0	N	S	human-human-human	N92S
-68	69	3.57168	88	human	human	0.995	0.988	K	R	human-human-human	K88R
-68	seq_133	7.42664	32	human	human	0.995	1.0	I	V	human-human-human	I32V
-68	seq_133	7.42664	83	human	human	0.995	1.0	V	M	human-human-human	V83M
-68	seq_133	7.42664	89	human	human	0.995	1.0	T	A	human-human-human	T89A
-68	seq_133	7.42664	107	human	human	0.995	1.0	F	L	human-human-human	F107L
-68	seq_133	7.42664	115	human	human	0.995	1.0	T	A	human-human-human	T115A
-70	71	4.11844	57	human	human	0.936	0.987	L	Y	human-human-human	L57Y
-70	71	4.11844	60	human	human	0.936	0.987	N	S	human-human-human	N60S
-70	71	4.11844	63	human	human	0.936	0.987	G	E	human-human-human	G63E
-70	71	4.11844	83	human	human	0.936	0.987	V	I	human-human-human	V83I
-70	71	4.11844	88	human	human	0.936	0.987	R	K	human-human-human	R88K
-71	seq_159	3.761	14	human	human	0.987	1.0	L	M	human-human-human	L14M
-71	seq_159	3.761	89	human	human	0.987	1.0	T	A	human-human-human	T89A
-71	seq_159	3.761	107	human	human	0.987	1.0	F	L	human-human-human	F107L
-71	seq_159	3.761	115	human	human	0.987	1.0	T	A	human-human-human	T115A
-72	seq_706	1.58419	4	swine	swine	0.984	1.0	N	K	human-swine-swine	N4K
-79	seq_188	8.7003	113	human	human	0.999	1.0	I	X	human-human-human	I113X
-79	seq_188	8.7003	114	human	human	0.999	1.0	R	S	human-human-human	R114S
-79	seq_188	8.7003	115	human	human	0.999	1.0	T	L	human-human-human	T115L
-79	seq_188	8.7003	116	human	human	0.999	1.0	F	C	human-human-human	F116C
-79	seq_188	8.7003	117	human	human	0.999	1.0	S	P	human-human-human	S117P
-79	seq_188	8.7003	118	human	human	0.999	1.0	F	*	human-human-human	F118*
-79	seq_188	8.7003	120	human	human	0.999	1.0	L	F	human-human-human	L120F
-79	seq_188	8.7003	122	human	human	0.999	1.0	X	A	human-human-human	X122A
-80	seq_185	7.65106	14	human	human	0.998	1.0	L	M	human-human-human	L14M
-80	seq_185	7.65106	29	human	human	0.998	1.0	N	S	human-human-human	N29S
-80	seq_185	7.65106	32	human	human	0.998	1.0	I	V	human-human-human	I32V
-80	seq_185	7.65106	34	human	human	0.998	1.0	Q	R	human-human-human	Q34R
-80	seq_185	7.65106	107	human	human	0.998	1.0	F	L	human-human-human	F107L
-80	seq_185	7.65106	115	human	human	0.998	1.0	T	A	human-human-human	T115A
-82	83	46.49416	60	human	swine	1.0	0.926	N	S	human-human-swine	N60S
-85	seq_192	23.0873	14	swine	human	0.897	1.0	M	K	swine-swine-human	M14K
-85	seq_192	23.0873	31	swine	human	0.897	1.0	M	I	swine-swine-human	M31I
-85	seq_192	23.0873	40	swine	human	0.897	1.0	L	I	swine-swine-human	L40I
-85	seq_192	23.0873	56	swine	human	0.897	1.0	H	Y	swine-swine-human	H56Y
-85	seq_192	23.0873	60	swine	human	0.897	1.0	S	N	swine-swine-human	S60N
-85	seq_192	23.0873	88	swine	human	0.897	1.0	K	R	swine-swine-human	K88R
-85	86	11.84898	49	swine	swine	0.897	0.932	V	A	swine-swine-swine	V49A
-86	seq_388	13.15476	40	swine	swine	0.932	1.0	L	I	swine-swine-swine	L40I
-86	seq_388	13.15476	77	swine	swine	0.932	1.0	R	K	swine-swine-swine	R77K
-86	seq_388	13.15476	85	swine	swine	0.932	1.0	H	R	swine-swine-swine	H85R
-86	seq_338	9.23969	14	swine	swine	0.932	1.0	M	T	swine-swine-swine	M14T
-86	seq_338	9.23969	110	swine	swine	0.932	1.0	E	Q	swine-swine-swine	E110Q
-87	seq_348	26.2844	60	swine	swine	0.919	1.0	S	I	swine-swine-swine	S60I
-88	seq_399	16.50295	6	swine	swine	0.912	1.0	V	M	swine-swine-swine	V6M
-88	seq_399	16.50295	7	swine	swine	0.912	1.0	S	L	swine-swine-swine	S7L
-88	seq_399	16.50295	60	swine	swine	0.912	1.0	S	N	swine-swine-swine	S60N
-88	seq_399	16.50295	86	swine	swine	0.912	1.0	R	K	swine-swine-swine	R86K
-89	seq_183	25.23931	14	swine	human	0.908	1.0	M	V	swine-swine-human	M14V
-89	seq_183	25.23931	55	swine	human	0.908	1.0	L	F	swine-swine-human	L55F
-89	seq_183	25.23931	60	swine	human	0.908	1.0	S	R	swine-swine-human	S60R
-89	seq_183	25.23931	77	swine	human	0.908	1.0	R	K	swine-swine-human	R77K
-89	seq_421	23.99809	14	swine	swine	0.908	1.0	M	T	swine-swine-swine	M14T
-89	seq_421	23.99809	27	swine	swine	0.908	1.0	D	G	swine-swine-swine	D27G
-91	seq_466	7.04808	4	swine	swine	0.963	1.0	N	K	swine-swine-swine	N4K
-91	seq_466	7.04808	50	swine	swine	0.963	1.0	M	I	swine-swine-swine	M50I
-91	seq_466	7.04808	52	swine	swine	0.963	1.0	M	T	swine-swine-swine	M52T
-91	seq_466	7.04808	56	swine	swine	0.963	1.0	H	Y	swine-swine-swine	H56Y
-91	92	4.06431	49	swine	swine	0.963	0.985	V	L	swine-swine-swine	V49L
-91	92	4.06431	60	swine	swine	0.963	0.985	S	N	swine-swine-swine	S60N
-91	92	4.06431	70	swine	swine	0.963	0.985	S	G	swine-swine-swine	S70G
-94	seq_465	3.08716	13	swine	swine	0.99	1.0	L	M	swine-swine-swine	L13M
-94	seq_465	3.08716	18	swine	swine	0.99	1.0	K	Y	swine-swine-swine	K18Y
-94	seq_465	3.08716	32	swine	swine	0.99	1.0	I	M	swine-swine-swine	I32M
-94	seq_465	3.08716	59	swine	swine	0.99	1.0	Q	L	swine-swine-swine	Q59L
-94	seq_228	4.08716	92	swine	swine	0.99	1.0	N	S	swine-swine-swine	N92S
-95	seq_234	15.95414	70	swine	swine	0.977	1.0	G	S	swine-swine-swine	G70S
-95	seq_234	15.95414	120	swine	swine	0.977	1.0	L	F	swine-swine-swine	L120F
-96	97	1.75131	27	swine	swine	0.981	0.981	D	G	swine-swine-swine	D27G
-96	99	2.64775	26	swine	swine	0.981	0.981	E	K	swine-swine-swine	E26K
-96	99	2.64775	52	swine	swine	0.981	0.981	M	T	swine-swine-swine	M52T
-99	100	2.70172	3	swine	swine	0.981	0.958	S	L	swine-swine-swine	S3L
-99	102	1.96072	120	swine	swine	0.981	0.992	L	F	swine-swine-swine	L120F
-100	101	15.62184	64	swine	swine	0.958	0.975	K	R	swine-swine-swine	K64R
-100	101	15.62184	89	swine	swine	0.958	0.975	I	V	swine-swine-swine	I89V
-100	seq_383	14.89182	22	swine	swine	0.958	1.0	G	R	swine-swine-swine	G22R
-100	seq_383	14.89182	34	swine	swine	0.958	1.0	Q	K	swine-swine-swine	Q34K
-100	seq_383	14.89182	40	swine	swine	0.958	1.0	L	I	swine-swine-swine	L40I
-100	seq_383	14.89182	63	swine	swine	0.958	1.0	G	E	swine-swine-swine	G63E
-100	seq_383	14.89182	100	swine	swine	0.958	1.0	M	I	swine-swine-swine	M100I
-101	seq_715	15.27546	40	swine	swine	0.975	1.0	L	I	swine-swine-swine	L40I
-101	seq_715	15.27546	45	swine	swine	0.975	1.0	L	I	swine-swine-swine	L45I
-101	seq_715	15.27546	89	swine	swine	0.975	1.0	V	L	swine-swine-swine	V89L
-103	seq_225	18.03584	26	swine	swine	0.974	1.0	K	E	swine-swine-swine	K26E
-103	seq_283	17.03584	6	swine	swine	0.974	1.0	V	M	swine-swine-swine	V6M
-103	seq_283	17.03584	22	swine	swine	0.974	1.0	G	E	swine-swine-swine	G22E
-103	seq_283	17.03584	31	swine	swine	0.974	1.0	M	I	swine-swine-swine	M31I
-103	seq_283	17.03584	57	swine	swine	0.974	1.0	S	F	swine-swine-swine	S57F
-103	seq_283	17.03584	83	swine	swine	0.974	1.0	V	M	swine-swine-swine	V83M
-104	105	2.62518	60	swine	swine	0.992	0.99	N	S	swine-swine-swine	N60S
-105	seq_405	12.63308	67	swine	swine	0.99	1.0	E	K	swine-swine-swine	E67K
-107	seq_419	6.78969	3	swine	swine	0.976	1.0	S	P	swine-swine-swine	S3P
-107	seq_419	6.78969	48	swine	swine	0.976	1.0	A	X	swine-swine-swine	A48X
-107	seq_408	7.6204	3	swine	swine	0.976	1.0	S	X	swine-swine-swine	S3X
-107	seq_408	7.6204	48	swine	swine	0.976	1.0	A	S	swine-swine-swine	A48S
-107	seq_408	7.6204	89	swine	swine	0.976	1.0	I	T	swine-swine-swine	I89T
-108	seq_404	6.00331	2	swine	swine	0.994	1.0	D	X	swine-swine-swine	D2X
-108	seq_404	6.00331	48	swine	swine	0.994	1.0	A	T	swine-swine-swine	A48T
-111	seq_420	10.86854	14	swine	swine	0.986	1.0	M	L	swine-swine-swine	M14L
-112	seq_516	14.08383	60	swine	swine	0.986	1.0	S	N	swine-swine-swine	S60N
-113	seq_415	5.26124	27	swine	swine	0.974	1.0	D	G	swine-swine-swine	D27G
-113	seq_415	5.26124	48	swine	swine	0.974	1.0	A	V	swine-swine-swine	A48V
-114	seq_416	9.68714	3	swine	swine	0.97	1.0	S	P	swine-swine-swine	S3P
-114	seq_416	9.68714	52	swine	swine	0.97	1.0	T	M	swine-swine-swine	T52M
-115	seq_515	9.08598	13	swine	swine	0.961	1.0	L	M	swine-swine-swine	L13M
-115	seq_515	9.08598	22	swine	swine	0.961	1.0	G	V	swine-swine-swine	G22V
-115	seq_403	8.15179	60	swine	swine	0.961	1.0	S	N	swine-swine-swine	S60N
-116	117	2.20481	29	swine	swine	0.991	0.98	N	S	swine-swine-swine	N29S
-117	seq_637	6.27598	26	swine	swine	0.98	1.0	K	R	swine-swine-swine	K26R
-117	seq_637	6.27598	67	swine	swine	0.98	1.0	E	K	swine-swine-swine	E67K
-119	seq_279	14.15911	25	swine	swine	0.957	1.0	S	L	swine-swine-swine	S25L
-119	seq_279	14.15911	29	swine	swine	0.957	1.0	N	S	swine-swine-swine	N29S
-119	seq_455	19.59747	3	swine	swine	0.957	1.0	S	P	swine-swine-swine	S3P
-119	seq_455	19.59747	64	swine	swine	0.957	1.0	K	N	swine-swine-swine	K64N
-119	seq_455	19.59747	89	swine	swine	0.957	1.0	I	T	swine-swine-swine	I89T
-120	125	4.53908	120	swine	swine	0.979	0.991	F	L	swine-swine-swine	F120L
-121	seq_022	3.14564	118	swine	human	0.904	1.0	F	L	swine-swine-human	F118L
-121	seq_022	3.14564	120	swine	human	0.904	1.0	F	L	swine-swine-human	F120L
-121	123	5.14564	63	swine	swine	0.904	1.0	G	R	swine-swine-swine	G63R
-122	seq_307	3.98444	39	swine	swine	0.947	1.0	K	R	swine-swine-swine	K39R
-122	seq_307	3.98444	48	swine	swine	0.947	1.0	A	E	swine-swine-swine	A48E
-122	seq_307	3.98444	49	swine	swine	0.947	1.0	L	K	swine-swine-swine	L49K
-122	seq_307	3.98444	89	swine	swine	0.947	1.0	I	V	swine-swine-swine	I89V
-124	seq_206	3.12696	29	swine	swine	0.974	1.0	N	S	swine-swine-swine	N29S
-126	seq_504	16.0299	26	swine	swine	0.983	1.0	K	E	swine-swine-swine	K26E
-126	seq_504	16.0299	48	swine	swine	0.983	1.0	A	S	swine-swine-swine	A48S
-127	seq_494	15.33167	20	swine	swine	0.976	1.0	Q	R	swine-swine-swine	Q20R
-127	seq_494	15.33167	31	swine	swine	0.976	1.0	M	I	swine-swine-swine	M31I
-127	seq_494	15.33167	57	swine	swine	0.976	1.0	S	F	swine-swine-swine	S57F
-128	seq_815	9.10412	29	swine	swine	0.986	1.0	N	S	swine-swine-swine	N29S
-128	seq_815	9.10412	47	swine	swine	0.986	1.0	E	G	swine-swine-swine	E47G
-128	seq_815	9.10412	92	swine	swine	0.986	1.0	N	S	swine-swine-swine	N92S
-128	129	0.85415	32	swine	swine	0.986	0.977	I	V	swine-swine-swine	I32V
-129	seq_674	21.25133	10	swine	swine	0.977	1.0	Q	K	swine-swine-swine	Q10K
-129	seq_674	21.25133	26	swine	swine	0.977	1.0	K	M	swine-swine-swine	K26M
-129	seq_674	21.25133	33	swine	swine	0.977	1.0	T	M	swine-swine-swine	T33M
-129	seq_674	21.25133	34	swine	swine	0.977	1.0	Q	K	swine-swine-swine	Q34K
-129	seq_674	21.25133	60	swine	swine	0.977	1.0	N	S	swine-swine-swine	N60S
-130	seq_487	14.95135	6	swine	swine	0.966	1.0	V	M	swine-swine-swine	V6M
-130	seq_487	14.95135	64	swine	swine	0.966	1.0	K	R	swine-swine-swine	K64R
-130	seq_481	15.95135	31	swine	swine	0.966	1.0	M	I	swine-swine-swine	M31I
-130	seq_481	15.95135	63	swine	swine	0.966	1.0	G	E	swine-swine-swine	G63E
-130	seq_481	15.95135	89	swine	swine	0.966	1.0	I	M	swine-swine-swine	I89M
-130	seq_481	15.95135	93	swine	swine	0.966	1.0	S	T	swine-swine-swine	S93T
-132	seq_329	8.01217	6	swine	swine	0.991	1.0	V	M	swine-swine-swine	V6M
-132	seq_814	8.89573	9	swine	swine	0.991	1.0	F	Y	swine-swine-swine	F9Y
-132	seq_814	8.89573	23	swine	swine	0.991	1.0	S	P	swine-swine-swine	S23P
-133	134	3.29554	32	swine	swine	0.993	0.999	I	V	swine-swine-swine	I32V
-133	134	3.29554	64	swine	swine	0.993	0.999	K	R	swine-swine-swine	K64R
-136	seq_413	11.3515	36	swine	swine	0.998	1.0	E	K	swine-swine-swine	E36K
-136	seq_413	11.3515	57	swine	swine	0.998	1.0	S	Y	swine-swine-swine	S57Y
-136	seq_413	11.3515	106	swine	swine	0.998	1.0	L	X	swine-swine-swine	L106X
-137	138	1.11229	60	swine	swine	0.998	0.973	N	S	swine-swine-swine	N60S
-138	seq_379	10.9697	48	swine	swine	0.973	1.0	A	V	swine-swine-swine	A48V
-139	140	1.17306	14	swine	swine	0.956	0.963	M	V	swine-swine-swine	M14V
-139	140	1.17306	64	swine	swine	0.956	0.963	R	K	swine-swine-swine	R64K
-139	142	8.79429	31	swine	human	0.956	0.947	M	I	swine-swine-human	M31I
-140	seq_339	5.97565	3	swine	swine	0.963	1.0	S	P	swine-swine-swine	S3P
-140	seq_339	5.97565	49	swine	swine	0.963	1.0	L	V	swine-swine-swine	L49V
-140	seq_339	5.97565	52	swine	swine	0.963	1.0	T	M	swine-swine-swine	T52M
-140	seq_339	5.97565	60	swine	swine	0.963	1.0	S	N	swine-swine-swine	S60N
-140	seq_339	5.97565	63	swine	swine	0.963	1.0	G	E	swine-swine-swine	G63E
-140	seq_339	5.97565	86	swine	swine	0.963	1.0	R	K	swine-swine-swine	R86K
-140	seq_339	5.97565	89	swine	swine	0.963	1.0	I	V	swine-swine-swine	I89V
-140	seq_339	5.97565	104	swine	swine	0.963	1.0	Q	H	swine-swine-swine	Q104H
-143	seq_130	2.36368	8	human	human	1.0	1.0	S	T	human-human-human	S8T
-143	seq_130	2.36368	36	human	human	1.0	1.0	E	K	human-human-human	E36K
-145	146	0.81835	88	swine	swine	0.989	0.993	K	R	swine-swine-swine	K88R
-146	seq_671	14.87035	21	swine	swine	0.993	1.0	L	F	swine-swine-swine	L21F
-146	seq_671	14.87035	86	swine	swine	0.993	1.0	R	K	swine-swine-swine	R86K
-146	seq_671	14.87035	93	swine	swine	0.993	1.0	S	G	swine-swine-swine	S93G
-146	147	0.2965	60	swine	swine	0.993	0.995	N	S	swine-swine-swine	N60S
-147	seq_654	12.78968	83	swine	swine	0.995	1.0	V	M	swine-swine-swine	V83M
-149	150	3.78289	31	swine	swine	0.991	0.981	M	I	swine-swine-swine	M31I
-150	seq_554	11.80328	32	swine	swine	0.981	1.0	I	T	swine-swine-swine	I32T
-150	seq_554	11.80328	60	swine	swine	0.981	1.0	S	N	swine-swine-swine	S60N
-150	151	2.54324	18	swine	swine	0.981	0.993	K	N	swine-swine-swine	K18N
-152	seq_728	16.66412	6	swine	swine	0.987	1.0	V	M	swine-swine-swine	V6M
-152	seq_728	16.66412	48	swine	swine	0.987	1.0	A	T	swine-swine-swine	A48T
-152	seq_728	16.66412	60	swine	swine	0.987	1.0	S	N	swine-swine-swine	S60N
-152	seq_728	16.66412	83	swine	swine	0.987	1.0	V	L	swine-swine-swine	V83L
-152	seq_728	16.66412	89	swine	swine	0.987	1.0	I	V	swine-swine-swine	I89V
-153	seq_573	10.96778	52	swine	swine	0.977	1.0	T	K	swine-swine-swine	T52K
-153	seq_573	10.96778	86	swine	swine	0.977	1.0	R	K	swine-swine-swine	R86K
-154	seq_655	7.85647	3	swine	swine	0.976	1.0	S	P	swine-swine-swine	S3P
-154	seq_666	10.02085	57	swine	swine	0.976	1.0	S	F	swine-swine-swine	S57F
-154	seq_666	10.02085	89	swine	swine	0.976	1.0	I	M	swine-swine-swine	I89M
-155	156	1.15798	86	swine	swine	0.993	0.986	R	K	swine-swine-swine	R86K
-156	seq_632	6.8101	115	swine	swine	0.986	1.0	T	A	swine-swine-swine	T115A
-157	seq_558	11.79451	11	swine	swine	0.98	1.0	D	G	swine-swine-swine	D11G
-157	seq_558	11.79451	60	swine	swine	0.98	1.0	S	N	swine-swine-swine	S60N
-157	seq_558	11.79451	85	swine	swine	0.98	1.0	H	L	swine-swine-swine	H85L
-157	seq_558	11.79451	88	swine	swine	0.98	1.0	R	K	swine-swine-swine	R88K
-157	seq_558	11.79451	89	swine	swine	0.98	1.0	I	T	swine-swine-swine	I89T
-158	161	5.64734	89	swine	swine	0.977	0.966	I	M	swine-swine-swine	I89M
-159	seq_660	8.4699	26	swine	swine	0.946	1.0	K	R	swine-swine-swine	K26R
-159	seq_660	8.4699	29	swine	swine	0.946	1.0	N	S	swine-swine-swine	N29S
-159	seq_660	8.4699	60	swine	swine	0.946	1.0	S	N	swine-swine-swine	S60N
-160	seq_169	14.99622	3	swine	human	0.932	1.0	S	P	swine-swine-human	S3P
-160	seq_169	14.99622	44	swine	human	0.932	1.0	S	L	swine-swine-human	S44L
-160	seq_169	14.99622	60	swine	human	0.932	1.0	S	N	swine-swine-human	S60N
-160	seq_169	14.99622	88	swine	human	0.932	1.0	R	K	swine-swine-human	R88K
-160	seq_670	10.94142	6	swine	swine	0.932	1.0	V	M	swine-swine-swine	V6M
-160	seq_670	10.94142	29	swine	swine	0.932	1.0	N	S	swine-swine-swine	N29S
-161	162	1.726	31	swine	swine	0.966	0.971	M	I	swine-swine-swine	M31I
-162	seq_667	7.1744	60	swine	swine	0.971	1.0	S	N	swine-swine-swine	S60N
-162	seq_667	7.1744	83	swine	swine	0.971	1.0	V	L	swine-swine-swine	V83L
-162	seq_667	7.1744	89	swine	swine	0.971	1.0	M	V	swine-swine-swine	M89V
-162	seq_617	5.39632	23	swine	swine	0.971	1.0	S	P	swine-swine-swine	S23P
-162	seq_617	5.39632	48	swine	swine	0.971	1.0	A	S	swine-swine-swine	A48S
-163	165	0.32449	60	swine	swine	1.0	1.0	S	N	swine-swine-swine	S60N
-163	seq_759	0.96697	7	swine	swine	1.0	1.0	S	L	swine-swine-swine	S7L
-164	seq_758	0.64481	48	swine	swine	1.0	1.0	A	X	swine-swine-swine	A48X
-164	seq_758	0.64481	90	swine	swine	1.0	1.0	T	S	swine-swine-swine	T90S
-168	169	3.30008	6	swine	swine	0.998	0.974	V	M	swine-swine-swine	V6M
-169	170	6.34048	85	swine	swine	0.974	0.992	H	Q	swine-swine-swine	H85Q
-169	seq_680	12.37139	3	swine	swine	0.974	1.0	S	P	swine-swine-swine	S3P
-169	seq_680	12.37139	36	swine	swine	0.974	1.0	E	K	swine-swine-swine	E36K
-169	seq_680	12.37139	64	swine	swine	0.974	1.0	K	R	swine-swine-swine	K64R
-170	seq_663	6.03092	57	swine	swine	0.992	1.0	S	F	swine-swine-swine	S57F
-171	seq_520	10.70433	3	swine	swine	0.99	1.0	S	P	swine-swine-swine	S3P
-171	seq_520	10.70433	36	swine	swine	0.99	1.0	E	K	swine-swine-swine	E36K
-171	seq_518	9.9541	29	swine	swine	0.99	1.0	N	S	swine-swine-swine	N29S
-171	seq_518	9.9541	48	swine	swine	0.99	1.0	A	V	swine-swine-swine	A48V
-171	seq_518	9.9541	89	swine	swine	0.99	1.0	I	T	swine-swine-swine	I89T
-171	172	1.57569	39	swine	swine	0.99	0.978	K	R	swine-swine-swine	K39R
-172	seq_726	14.96471	40	swine	swine	0.978	1.0	L	I	swine-swine-swine	L40I
-172	seq_726	14.96471	50	swine	swine	0.978	1.0	M	I	swine-swine-swine	M50I
-172	seq_726	14.96471	63	swine	swine	0.978	1.0	G	E	swine-swine-swine	G63E
-172	seq_485	7.96471	58	swine	swine	0.978	1.0	L	I	swine-swine-swine	L58I
-174	seq_571	7.34786	6	swine	swine	0.972	1.0	V	M	swine-swine-swine	V6M
-174	seq_571	7.34786	63	swine	swine	0.972	1.0	G	E	swine-swine-swine	G63E
-174	seq_571	7.34786	71	swine	swine	0.972	1.0	Q	H	swine-swine-swine	Q71H
-175	seq_727	8.52388	23	swine	swine	0.976	1.0	S	P	swine-swine-swine	S23P
-175	seq_727	8.52388	48	swine	swine	0.976	1.0	A	V	swine-swine-swine	A48V
-177	178	1.90799	60	swine	swine	0.982	0.964	S	N	swine-swine-swine	S60N
-177	seq_668	3.18884	76	swine	swine	0.982	1.0	I	T	swine-swine-swine	I76T
-178	179	3.95959	14	swine	swine	0.964	0.897	M	K	swine-swine-swine	M14K
-178	179	3.95959	33	swine	swine	0.964	0.897	T	I	swine-swine-swine	T33I
-178	seq_773	6.1603	64	swine	swine	0.964	1.0	K	R	swine-swine-swine	K64R
-181	seq_442	11.52353	36	swine	swine	0.997	1.0	E	K	swine-swine-swine	E36K
-181	seq_442	11.52353	63	swine	swine	0.997	1.0	G	E	swine-swine-swine	G63E
-182	seq_426	10.03452	3	swine	swine	0.995	1.0	S	P	swine-swine-swine	S3P
-184	186	0.61497	31	swine	swine	0.979	0.976	M	I	swine-swine-swine	M31I
-185	seq_686	8.05333	64	swine	swine	0.983	1.0	K	R	swine-swine-swine	K64R
-185	seq_483	2.51086	83	swine	swine	0.983	1.0	V	M	swine-swine-swine	V83M
-185	seq_483	2.51086	89	swine	swine	0.983	1.0	I	L	swine-swine-swine	I89L
-186	seq_560	7.71954	57	swine	swine	0.976	1.0	S	F	swine-swine-swine	S57F
-186	seq_560	7.71954	63	swine	swine	0.976	1.0	G	E	swine-swine-swine	G63E
-186	seq_560	7.71954	67	swine	swine	0.976	1.0	E	K	swine-swine-swine	E67K
-186	seq_673	10.71954	26	swine	swine	0.976	1.0	K	E	swine-swine-swine	K26E
-188	seq_665	14.62339	49	swine	swine	0.985	1.0	L	V	swine-swine-swine	L49V
-188	seq_665	14.62339	56	swine	swine	0.985	1.0	H	Y	swine-swine-swine	H56Y
-188	seq_665	14.62339	60	swine	swine	0.985	1.0	S	N	swine-swine-swine	S60N
-189	seq_664	11.63044	3	swine	swine	0.981	1.0	S	P	swine-swine-swine	S3P
-190	seq_830	15.14296	63	swine	swine	0.987	1.0	G	E	swine-swine-swine	G63E
-191	seq_672	13.77067	12	swine	swine	0.983	1.0	I	M	swine-swine-swine	I12M
-191	seq_672	13.77067	120	swine	swine	0.983	1.0	L	F	swine-swine-swine	L120F
-192	seq_661	12.45362	63	swine	swine	0.967	1.0	G	E	swine-swine-swine	G63E
-195	seq_384	10.46104	86	swine	swine	0.981	1.0	R	K	swine-swine-swine	R86K
-195	seq_227	5.71309	42	swine	swine	0.981	1.0	R	K	swine-swine-swine	R42K
-196	seq_231	9.49701	27	swine	swine	0.993	1.0	D	G	swine-swine-swine	D27G
-196	seq_231	9.49701	63	swine	swine	0.993	1.0	G	E	swine-swine-swine	G63E
-196	seq_231	9.49701	77	swine	swine	0.993	1.0	R	K	swine-swine-swine	R77K
-198	200	1.24792	89	swine	swine	0.993	0.992	I	L	swine-swine-swine	I89L
-199	seq_196	11.40937	14	swine	swine	0.992	1.0	M	V	swine-swine-swine	M14V
-199	seq_196	11.40937	92	swine	swine	0.992	1.0	N	S	swine-swine-swine	N92S
-199	seq_410	12.15732	26	swine	swine	0.992	1.0	K	R	swine-swine-swine	K26R
-200	seq_284	8.25094	83	swine	swine	0.992	1.0	V	M	swine-swine-swine	V83M
-200	201	1.76258	64	swine	swine	0.992	0.982	K	R	swine-swine-swine	K64R
-201	seq_625	6.06918	59	swine	swine	0.982	1.0	Q	L	swine-swine-swine	Q59L
-201	seq_625	6.06918	63	swine	swine	0.982	1.0	G	E	swine-swine-swine	G63E
-201	seq_272	9.48836	93	swine	swine	0.982	1.0	S	G	swine-swine-swine	S93G
-202	seq_624	6.86653	57	swine	swine	0.989	1.0	S	F	swine-swine-swine	S57F
-202	seq_624	6.86653	86	swine	swine	0.989	1.0	R	K	swine-swine-swine	R86K
-202	203	1.8471	57	swine	swine	0.989	0.995	S	Y	swine-swine-swine	S57Y
-203	seq_268	5.43861	3	swine	swine	0.995	1.0	S	P	swine-swine-swine	S3P
-203	seq_268	5.43861	89	swine	swine	0.995	1.0	L	S	swine-swine-swine	L89S
-206	seq_449	11.08435	22	swine	swine	0.981	1.0	G	E	swine-swine-swine	G22E
-207	seq_619	15.29674	26	swine	swine	0.979	1.0	K	E	swine-swine-swine	K26E
-207	seq_619	15.29674	27	swine	swine	0.979	1.0	D	G	swine-swine-swine	D27G
-207	seq_619	15.29674	52	swine	swine	0.979	1.0	T	M	swine-swine-swine	T52M
-207	seq_619	15.29674	89	swine	swine	0.979	1.0	L	S	swine-swine-swine	L89S
-208	seq_507	10.67723	42	swine	swine	0.98	1.0	R	K	swine-swine-swine	R42K
-208	seq_507	10.67723	85	swine	swine	0.98	1.0	H	N	swine-swine-swine	H85N
-209	seq_452	7.62056	119	swine	swine	0.98	1.0	Q	L	swine-swine-swine	Q119L
-209	seq_452	7.62056	120	swine	swine	0.98	1.0	F	I	swine-swine-swine	F120I
-211	seq_769	15.95003	14	swine	swine	0.974	1.0	M	V	swine-swine-swine	M14V
-211	seq_769	15.95003	71	swine	swine	0.974	1.0	Q	L	swine-swine-swine	Q71L
-211	seq_754	16.45688	47	swine	swine	0.974	1.0	E	K	swine-swine-swine	E47K
-211	seq_754	16.45688	82	swine	swine	0.974	1.0	E	D	swine-swine-swine	E82D
-212	213	1.48938	92	swine	swine	0.976	0.97	N	S	swine-swine-swine	N92S
-212	215	7.48675	100	swine	swine	0.976	0.972	M	I	swine-swine-swine	M100I
-213	seq_767	14.03308	3	swine	swine	0.97	1.0	S	T	swine-swine-swine	S3T
-213	seq_767	14.03308	39	swine	swine	0.97	1.0	K	R	swine-swine-swine	K39R
-213	seq_767	14.03308	57	swine	swine	0.97	1.0	Y	H	swine-swine-swine	Y57H
-213	seq_767	14.03308	67	swine	swine	0.97	1.0	E	K	swine-swine-swine	E67K
-213	seq_767	14.03308	89	swine	swine	0.97	1.0	L	I	swine-swine-swine	L89I
-213	214	4.57177	3	swine	swine	0.97	0.978	S	P	swine-swine-swine	S3P
-214	seq_497	2.7558	81	swine	swine	0.978	1.0	E	D	swine-swine-swine	E81D
-214	seq_748	10.03939	86	swine	swine	0.978	1.0	R	K	swine-swine-swine	R86K
-215	seq_768	8.11242	52	swine	swine	0.972	1.0	T	M	swine-swine-swine	T52M
-216	218	5.13898	86	swine	swine	0.977	0.993	R	K	swine-swine-swine	R86K
-217	seq_757	4.38755	47	swine	swine	0.985	1.0	E	D	swine-swine-swine	E47D
-218	seq_749	2.84156	40	swine	swine	0.993	1.0	L	I	swine-swine-swine	L40I
-218	seq_749	2.84156	116	swine	swine	0.993	1.0	F	L	swine-swine-swine	F116L
-219	seq_189	3.70832	22	swine	human	0.999	1.0	G	E	swine-swine-human	G22E
-219	seq_189	3.70832	60	swine	human	0.999	1.0	N	S	swine-swine-human	N60S
-219	seq_189	3.70832	100	swine	human	0.999	1.0	I	L	swine-swine-human	I100L
-220	222	3.01939	60	swine	swine	0.993	0.998	N	D	swine-swine-swine	N60D
-221	seq_576	14.44017	120	swine	swine	0.969	1.0	F	L	swine-swine-swine	F120L
-221	seq_370	8.44108	57	swine	swine	0.969	1.0	Y	H	swine-swine-swine	Y57H
-222	seq_450	8.2474	26	swine	swine	0.998	1.0	K	R	swine-swine-swine	K26R
-222	seq_450	8.2474	52	swine	swine	0.998	1.0	T	M	swine-swine-swine	T52M
-222	seq_450	8.2474	64	swine	swine	0.998	1.0	K	R	swine-swine-swine	K64R
-222	seq_450	8.2474	83	swine	swine	0.998	1.0	V	M	swine-swine-swine	V83M
-223	224	1.58273	3	swine	swine	0.998	0.98	S	P	swine-swine-swine	S3P
-224	seq_750	18.10058	60	swine	swine	0.98	1.0	D	G	swine-swine-swine	D60G
-224	seq_750	18.10058	64	swine	swine	0.98	1.0	K	R	swine-swine-swine	K64R
-224	seq_441	11.04911	26	swine	swine	0.98	1.0	K	T	swine-swine-swine	K26T
-224	seq_441	11.04911	32	swine	swine	0.98	1.0	I	V	swine-swine-swine	I32V
-224	seq_441	11.04911	34	swine	swine	0.98	1.0	Q	K	swine-swine-swine	Q34K
-225	seq_785	15.83416	82	swine	swine	0.976	1.0	E	D	swine-swine-swine	E82D
-225	seq_490	7.92731	7	swine	swine	0.976	1.0	S	L	swine-swine-swine	S7L
-226	227	0.35003	83	swine	swine	0.998	0.998	V	M	swine-swine-swine	V83M
-228	seq_634	5.03772	7	swine	swine	0.993	1.0	S	L	swine-swine-swine	S7L
-228	seq_634	5.03772	83	swine	swine	0.993	1.0	M	T	swine-swine-swine	M83T
-228	seq_583	15.88704	63	swine	swine	0.993	1.0	G	X	swine-swine-swine	G63X
-229	230	1.99498	22	swine	swine	0.997	0.985	G	R	swine-swine-swine	G22R
-230	seq_640	6.33503	2	swine	swine	0.985	1.0	D	E	swine-swine-swine	D2E
-230	seq_640	6.33503	40	swine	swine	0.985	1.0	L	I	swine-swine-swine	L40I
-230	seq_513	8.34376	64	swine	swine	0.985	1.0	K	R	swine-swine-swine	K64R
-230	seq_513	8.34376	85	swine	swine	0.985	1.0	H	R	swine-swine-swine	H85R
-231	seq_647	10.52955	3	swine	swine	0.993	1.0	S	P	swine-swine-swine	S3P
-231	seq_647	10.52955	92	swine	swine	0.993	1.0	N	S	swine-swine-swine	N92S
-231	seq_647	10.52955	113	swine	swine	0.993	1.0	I	M	swine-swine-swine	I113M
-231	seq_630	4.93923	67	swine	swine	0.993	1.0	E	K	swine-swine-swine	E67K
-231	seq_630	4.93923	77	swine	swine	0.993	1.0	R	K	swine-swine-swine	R77K
-232	seq_500	7.21208	23	swine	swine	0.985	1.0	S	P	swine-swine-swine	S23P
-232	seq_500	7.21208	60	swine	swine	0.985	1.0	D	N	swine-swine-swine	D60N
-232	seq_683	12.69153	46	swine	swine	0.985	1.0	G	S	swine-swine-swine	G46S
-232	seq_683	12.69153	47	swine	swine	0.985	1.0	E	K	swine-swine-swine	E47K
-232	seq_683	12.69153	52	swine	swine	0.985	1.0	T	K	swine-swine-swine	T52K
-234	seq_477	5.57814	52	swine	swine	0.987	1.0	T	M	swine-swine-swine	T52M
-234	seq_477	5.57814	57	swine	swine	0.987	1.0	Y	H	swine-swine-swine	Y57H
-234	seq_477	5.57814	60	swine	swine	0.987	1.0	D	N	swine-swine-swine	D60N
-236	seq_751	9.16151	39	swine	swine	0.975	1.0	K	R	swine-swine-swine	K39R
-236	seq_751	9.16151	45	swine	swine	0.975	1.0	L	I	swine-swine-swine	L45I
-236	seq_751	9.16151	48	swine	swine	0.975	1.0	A	T	swine-swine-swine	A48T
-236	seq_620	5.71138	83	swine	swine	0.975	1.0	M	I	swine-swine-swine	M83I
-237	seq_642	8.29983	60	swine	swine	0.993	1.0	D	N	swine-swine-swine	D60N
-238	seq_676	13.26646	60	swine	swine	0.974	1.0	D	N	swine-swine-swine	D60N
-238	seq_676	13.26646	89	swine	swine	0.974	1.0	L	I	swine-swine-swine	L89I
-238	seq_675	12.90268	52	swine	swine	0.974	1.0	T	K	swine-swine-swine	T52K
-239	seq_429	5.74683	60	swine	swine	0.987	1.0	D	S	swine-swine-swine	D60S
-239	seq_651	7.98726	19	swine	swine	0.987	1.0	M	L	swine-swine-swine	M19L
-239	seq_651	7.98726	64	swine	swine	0.987	1.0	K	R	swine-swine-swine	K64R
-240	seq_116	7.94876	22	swine	human	0.972	1.0	G	R	swine-swine-human	G22R
-242	seq_623	0.41479	117	swine	swine	1.0	1.0	S	X	swine-swine-swine	S117X
-244	246	3.78735	79	swine	swine	0.982	0.979	L	M	swine-swine-swine	L79M
-245	seq_648	7.54167	29	swine	swine	0.978	1.0	N	S	swine-swine-swine	N29S
-245	seq_648	7.54167	31	swine	swine	0.978	1.0	M	I	swine-swine-swine	M31I
-245	seq_648	7.54167	39	swine	swine	0.978	1.0	K	R	swine-swine-swine	K39R
-246	seq_658	5.51402	57	swine	swine	0.979	1.0	Y	S	swine-swine-swine	Y57S
-246	seq_658	5.51402	60	swine	swine	0.979	1.0	D	N	swine-swine-swine	D60N
-247	248	8.03548	111	swine	swine	0.957	0.894	Q	H	swine-swine-swine	Q111H
-247	seq_764	14.72931	79	swine	swine	0.957	1.0	L	M	swine-swine-swine	L79M
-247	seq_764	14.72931	116	swine	swine	0.957	1.0	F	L	swine-swine-swine	F116L
-247	seq_764	14.72931	120	swine	swine	0.957	1.0	F	L	swine-swine-swine	F120L
-248	seq_840	5.80312	14	swine	swine	0.894	1.0	M	V	swine-swine-swine	M14V
-248	seq_838	3.2799	4	swine	swine	0.894	1.0	N	T	swine-swine-swine	N4T
-248	249	7.07442	39	swine	human	0.894	1.0	K	R	swine-swine-human	K39R
-249	seq_171	0.0	100	human	human	1.0	1.0	M	X	swine-human-human	M100X
-251	seq_197	7.58193	63	swine	swine	0.985	1.0	G	E	swine-swine-swine	G63E
-251	seq_197	7.58193	76	swine	swine	0.985	1.0	I	M	swine-swine-swine	I76M
-251	252	3.42369	57	swine	swine	0.985	0.977	S	F	swine-swine-swine	S57F
-252	seq_653	15.21834	23	swine	swine	0.977	1.0	S	P	swine-swine-swine	S23P
-252	seq_653	15.21834	31	swine	swine	0.977	1.0	M	I	swine-swine-swine	M31I
-252	seq_653	15.21834	63	swine	swine	0.977	1.0	G	E	swine-swine-swine	G63E
-252	seq_653	15.21834	83	swine	swine	0.977	1.0	V	M	swine-swine-swine	V83M
-252	253	1.44979	39	swine	swine	0.977	0.981	K	R	swine-swine-swine	K39R
-253	254	4.70406	14	swine	swine	0.981	0.985	M	T	swine-swine-swine	M14T
-253	254	4.70406	29	swine	swine	0.981	0.985	N	S	swine-swine-swine	N29S
-253	254	4.70406	83	swine	swine	0.981	0.985	V	M	swine-swine-swine	V83M
-253	seq_633	8.9605	22	swine	swine	0.981	1.0	G	E	swine-swine-swine	G22E
-254	257	4.14316	58	swine	swine	0.985	0.902	L	F	swine-swine-swine	L58F
-254	255	0.59947	20	swine	swine	0.985	0.993	Q	R	swine-swine-swine	Q20R
-257	seq_691	9.88314	22	swine	swine	0.902	1.0	G	E	swine-swine-swine	G22E
-257	seq_691	9.88314	57	swine	swine	0.902	1.0	F	L	swine-swine-swine	F57L
-257	seq_691	9.88314	120	swine	swine	0.902	1.0	F	L	swine-swine-swine	F120L
-260	seq_792	11.1214	14	swine	swine	0.75	1.0	T	M	swine-swine-swine	T14M
-260	seq_792	11.1214	29	swine	swine	0.75	1.0	S	N	swine-swine-swine	S29N
-260	seq_792	11.1214	52	swine	swine	0.75	1.0	T	K	swine-swine-swine	T52K
-260	seq_792	11.1214	55	swine	swine	0.75	1.0	L	F	swine-swine-swine	L55F
-260	seq_792	11.1214	83	swine	swine	0.75	1.0	M	I	swine-swine-swine	M83I
-263	seq_498	14.08415	29	swine	swine	0.978	1.0	N	S	swine-swine-swine	N29S
-263	seq_498	14.08415	89	swine	swine	0.978	1.0	I	M	swine-swine-swine	I89M
-264	265	2.13016	29	swine	swine	0.971	0.976	N	S	swine-swine-swine	N29S
-265	266	3.99357	100	swine	swine	0.976	0.962	M	L	swine-swine-swine	M100L
-266	seq_743	11.73401	3	swine	swine	0.962	1.0	S	P	swine-swine-swine	S3P
-266	seq_743	11.73401	14	swine	swine	0.962	1.0	M	V	swine-swine-swine	M14V
-266	seq_578	7.30414	22	swine	swine	0.962	1.0	G	E	swine-swine-swine	G22E
-266	seq_578	7.30414	63	swine	swine	0.962	1.0	G	E	swine-swine-swine	G63E
-267	268	7.2477	39	swine	swine	0.978	0.962	R	K	swine-swine-swine	R39K
-268	seq_787	8.50807	7	swine	swine	0.962	1.0	S	L	swine-swine-swine	S7L
-268	seq_787	8.50807	85	swine	swine	0.962	1.0	H	N	swine-swine-swine	H85N
-268	seq_787	8.50807	89	swine	swine	0.962	1.0	I	T	swine-swine-swine	I89T
-270	seq_684	7.12366	23	swine	swine	0.991	1.0	S	P	swine-swine-swine	S23P
-270	seq_684	7.12366	76	swine	swine	0.991	1.0	I	L	swine-swine-swine	I76L
-270	271	0.94163	63	swine	swine	0.991	0.993	G	E	swine-swine-swine	G63E
-271	seq_796	8.74339	29	swine	swine	0.993	1.0	S	N	swine-swine-swine	S29N
-271	seq_796	8.74339	57	swine	swine	0.993	1.0	F	S	swine-swine-swine	F57S
-271	seq_796	8.74339	60	swine	swine	0.993	1.0	N	S	swine-swine-swine	N60S
-272	seq_304	7.08834	57	swine	swine	0.991	1.0	S	F	swine-swine-swine	S57F
-273	305	0.47046	27	swine	swine	0.993	0.993	D	G	swine-swine-swine	D27G
-274	seq_427	13.07644	33	swine	swine	0.988	1.0	T	M	swine-swine-swine	T33M
-275	seq_635	7.43428	23	swine	swine	0.986	1.0	S	Y	swine-swine-swine	S23Y
-275	seq_635	7.43428	29	swine	swine	0.986	1.0	N	S	swine-swine-swine	N29S
-275	seq_635	7.43428	118	swine	swine	0.986	1.0	F	L	swine-swine-swine	F118L
-277	seq_479	7.74792	22	swine	swine	0.978	1.0	G	E	swine-swine-swine	G22E
-277	seq_479	7.74792	83	swine	swine	0.978	1.0	V	M	swine-swine-swine	V83M
-277	seq_479	7.74792	89	swine	swine	0.978	1.0	I	T	swine-swine-swine	I89T
-278	seq_503	5.7137	92	swine	swine	0.987	1.0	N	S	swine-swine-swine	N92S
-280	seq_446	2.25894	7	swine	swine	0.99	1.0	S	I	swine-swine-swine	S7I
-280	seq_752	10.965	60	swine	swine	0.99	1.0	N	H	swine-swine-swine	N60H
-281	284	1.95566	83	swine	swine	0.97	0.963	V	M	swine-swine-swine	V83M
-282	seq_574	9.40535	14	swine	swine	0.957	1.0	M	V	swine-swine-swine	M14V
-282	seq_574	9.40535	48	swine	swine	0.957	1.0	A	T	swine-swine-swine	A48T
-282	seq_574	9.40535	49	swine	swine	0.957	1.0	L	X	swine-swine-swine	L49X
-282	seq_574	9.40535	57	swine	swine	0.957	1.0	S	F	swine-swine-swine	S57F
-282	seq_574	9.40535	58	swine	swine	0.957	1.0	L	F	swine-swine-swine	L58F
-282	seq_574	9.40535	64	swine	swine	0.957	1.0	K	N	swine-swine-swine	K64N
-282	seq_574	9.40535	71	swine	swine	0.957	1.0	Q	R	swine-swine-swine	Q71R
-283	seq_793	6.80469	92	swine	swine	0.96	1.0	N	S	swine-swine-swine	N92S
-284	seq_557	9.99049	33	swine	swine	0.963	1.0	T	M	swine-swine-swine	T33M
-284	seq_557	9.99049	58	swine	swine	0.963	1.0	L	I	swine-swine-swine	L58I
-284	seq_557	9.99049	88	swine	swine	0.963	1.0	K	R	swine-swine-swine	K88R
-284	seq_557	9.99049	89	swine	swine	0.963	1.0	I	V	swine-swine-swine	I89V
-285	seq_478	6.12992	22	swine	swine	0.958	1.0	G	R	swine-swine-swine	G22R
-285	seq_478	6.12992	116	swine	swine	0.958	1.0	F	L	swine-swine-swine	F116L
-286	seq_499	7.6738	72	swine	swine	0.953	1.0	K	R	swine-swine-swine	K72R
-286	287	2.61632	83	swine	swine	0.953	0.897	M	I	swine-swine-swine	M83I
-287	288	3.65336	18	swine	swine	0.897	0.806	K	R	swine-swine-swine	K18R
-293	seq_644	0.69907	83	swine	swine	0.999	1.0	I	M	swine-swine-swine	I83M
-293	seq_643	1.78971	33	swine	swine	0.999	1.0	T	I	swine-swine-swine	T33I
-293	seq_643	1.78971	48	swine	swine	0.999	1.0	A	T	swine-swine-swine	A48T
-294	seq_688	6.99406	33	swine	swine	0.897	1.0	T	M	swine-swine-swine	T33M
-296	298	5.30992	14	swine	swine	0.932	0.923	M	V	swine-swine-swine	M14V
-296	298	5.30992	50	swine	swine	0.932	0.923	M	L	swine-swine-swine	M50L
-296	298	5.30992	60	swine	swine	0.932	0.923	N	S	swine-swine-swine	N60S
-300	seq_741	4.79624	57	swine	swine	0.988	1.0	S	A	swine-swine-swine	S57A
-300	seq_791	5.62147	40	swine	swine	0.988	1.0	L	I	swine-swine-swine	L40I
-300	seq_791	5.62147	83	swine	swine	0.988	1.0	I	M	swine-swine-swine	I83M
-302	seq_795	4.19814	89	swine	swine	0.962	1.0	I	T	swine-swine-swine	I89T
-302	seq_186	6.77669	48	swine	human	0.962	1.0	A	T	swine-swine-human	A48T
-302	seq_186	6.77669	51	swine	human	0.962	1.0	R	K	swine-swine-human	R51K
-302	seq_186	6.77669	63	swine	human	0.962	1.0	G	V	swine-swine-human	G63V
-304	seq_811	4.8543	3	swine	swine	0.988	1.0	S	P	swine-swine-swine	S3P
-305	seq_331	10.76305	22	swine	swine	0.993	1.0	G	E	swine-swine-swine	G22E
-306	309	0.31097	33	swine	swine	0.994	0.997	T	M	swine-swine-swine	T33M
-308	seq_766	10.81988	25	swine	swine	0.793	1.0	S	T	swine-swine-swine	S25T
-308	seq_766	10.81988	57	swine	swine	0.793	1.0	S	F	swine-swine-swine	S57F
-308	seq_447	3.0007	27	swine	swine	0.793	1.0	G	D	swine-swine-swine	G27D
-308	seq_447	3.0007	74	swine	swine	0.793	1.0	E	D	swine-swine-swine	E74D
-308	seq_447	3.0007	118	swine	swine	0.793	1.0	F	I	swine-swine-swine	F118I
-308	seq_447	3.0007	120	swine	swine	0.793	1.0	F	L	swine-swine-swine	F120L
-310	seq_652	11.48503	3	swine	swine	0.978	1.0	S	P	swine-swine-swine	S3P
-310	seq_652	11.48503	89	swine	swine	0.978	1.0	I	T	swine-swine-swine	I89T
-310	seq_652	11.48503	92	swine	swine	0.978	1.0	N	S	swine-swine-swine	N92S
-312	seq_601	19.5989	27	swine	swine	0.997	1.0	G	D	swine-swine-swine	G27D
-312	seq_601	19.5989	118	swine	swine	0.997	1.0	F	L	swine-swine-swine	F118L
-313	314	2.22181	48	swine	swine	0.997	0.977	A	S	swine-swine-swine	A48S
-314	seq_448	10.12556	5	swine	swine	0.977	1.0	T	I	swine-swine-swine	T5I
-314	seq_448	10.12556	52	swine	swine	0.977	1.0	T	M	swine-swine-swine	T52M
-314	seq_517	11.12259	27	swine	swine	0.977	1.0	G	D	swine-swine-swine	G27D
-315	seq_709	20.2018	19	swine	swine	0.997	1.0	M	L	swine-swine-swine	M19L
-315	seq_709	20.2018	27	swine	swine	0.997	1.0	G	D	swine-swine-swine	G27D
-315	seq_709	20.2018	33	swine	swine	0.997	1.0	M	I	swine-swine-swine	M33I
-315	seq_709	20.2018	60	swine	swine	0.997	1.0	N	D	swine-swine-swine	N60D
-315	seq_709	20.2018	63	swine	swine	0.997	1.0	G	E	swine-swine-swine	G63E
-315	seq_709	20.2018	85	swine	swine	0.997	1.0	H	Y	swine-swine-swine	H85Y
-317	seq_270	2.40861	7	swine	swine	0.994	1.0	S	L	swine-swine-swine	S7L
-317	318	4.70259	27	swine	swine	0.994	0.985	G	D	swine-swine-swine	G27D
-317	318	4.70259	60	swine	swine	0.994	0.985	N	T	swine-swine-swine	N60T
-317	318	4.70259	85	swine	swine	0.994	0.985	H	Y	swine-swine-swine	H85Y
-318	seq_453	4.70602	92	swine	swine	0.985	1.0	N	S	swine-swine-swine	N92S
-319	seq_509	11.2344	57	swine	swine	0.988	1.0	S	Y	swine-swine-swine	S57Y
-319	seq_509	11.2344	89	swine	swine	0.988	1.0	I	T	swine-swine-swine	I89T
-320	seq_510	11.26037	27	swine	swine	0.985	1.0	G	D	swine-swine-swine	G27D
-320	seq_510	11.26037	29	swine	swine	0.985	1.0	N	S	swine-swine-swine	N29S
-320	seq_510	11.26037	31	swine	swine	0.985	1.0	M	I	swine-swine-swine	M31I
-320	seq_639	10.4943	76	swine	swine	0.985	1.0	I	L	swine-swine-swine	I76L
-322	seq_657	10.43187	6	swine	swine	0.973	1.0	V	M	swine-swine-swine	V6M
-322	seq_657	10.43187	26	swine	swine	0.973	1.0	K	E	swine-swine-swine	K26E
-322	seq_657	10.43187	27	swine	swine	0.973	1.0	G	D	swine-swine-swine	G27D
-322	seq_657	10.43187	115	swine	swine	0.973	1.0	T	A	swine-swine-swine	T115A
-322	seq_657	10.43187	120	swine	swine	0.973	1.0	F	L	swine-swine-swine	F120L
-322	seq_602	11.34694	22	swine	swine	0.973	1.0	G	E	swine-swine-swine	G22E
-322	seq_602	11.34694	33	swine	swine	0.973	1.0	M	T	swine-swine-swine	M33T
-322	seq_602	11.34694	86	swine	swine	0.973	1.0	R	K	swine-swine-swine	R86K
-325	seq_476	8.90208	14	swine	swine	0.997	1.0	M	V	swine-swine-swine	M14V
-326	seq_273	3.02615	22	swine	swine	1.0	1.0	G	R	swine-swine-swine	G22R
-326	330	1.88011	44	swine	swine	1.0	0.992	S	T	swine-swine-swine	S44T
-327	seq_508	9.51538	83	swine	swine	0.999	1.0	V	I	swine-swine-swine	V83I
-329	seq_506	7.99585	52	swine	swine	0.995	1.0	T	N	swine-swine-swine	T52N
-329	seq_641	5.99792	35	swine	swine	0.995	1.0	F	L	swine-swine-swine	F35L
-330	332	4.18853	39	swine	swine	0.992	0.978	K	R	swine-swine-swine	K39R
-330	332	4.18853	57	swine	swine	0.992	0.978	S	T	swine-swine-swine	S57T
-331	seq_428	2.76407	31	swine	swine	0.992	1.0	M	I	swine-swine-swine	M31I
-331	seq_428	2.76407	82	swine	swine	0.992	1.0	E	D	swine-swine-swine	E82D
-331	seq_489	3.93119	10	swine	swine	0.992	1.0	Q	K	swine-swine-swine	Q10K
-332	333	4.62326	22	swine	swine	0.978	1.0	G	E	swine-swine-swine	G22E
-332	333	4.62326	33	swine	swine	0.978	1.0	M	T	swine-swine-swine	M33T
-332	333	4.62326	52	swine	swine	0.978	1.0	T	K	swine-swine-swine	T52K
-333	seq_690	3.45479	27	swine	swine	1.0	1.0	G	D	swine-swine-swine	G27D
-336	seq_713	14.20147	3	swine	swine	0.992	1.0	S	P	swine-swine-swine	S3P
-336	seq_713	14.20147	27	swine	swine	0.992	1.0	G	D	swine-swine-swine	G27D
-336	seq_713	14.20147	29	swine	swine	0.992	1.0	N	S	swine-swine-swine	N29S
-336	seq_713	14.20147	120	swine	swine	0.992	1.0	F	L	swine-swine-swine	F120L
-337	seq_493	6.72153	60	swine	swine	0.996	1.0	N	D	swine-swine-swine	N60D
-339	seq_613	8.8037	23	swine	swine	0.986	1.0	S	P	swine-swine-swine	S23P
-339	seq_613	8.8037	86	swine	swine	0.986	1.0	R	K	swine-swine-swine	R86K
-340	345	0.58895	57	swine	swine	1.0	0.998	S	F	swine-swine-swine	S57F
-340	342	8.5895	83	swine	swine	1.0	0.998	V	M	swine-swine-swine	V83M
-341	seq_496	6.25817	23	swine	swine	0.984	1.0	S	P	swine-swine-swine	S23P
-342	seq_610	2.19953	120	swine	swine	0.998	1.0	F	L	swine-swine-swine	F120L
-343	344	1.99063	63	swine	swine	0.998	0.988	G	E	swine-swine-swine	G63E
-344	seq_488	5.27636	52	swine	swine	0.988	1.0	T	M	swine-swine-swine	T52M
-345	seq_492	7.07132	63	swine	swine	0.998	1.0	G	E	swine-swine-swine	G63E
-345	seq_492	7.07132	85	swine	swine	0.998	1.0	H	Q	swine-swine-swine	H85Q
-346	347	2.25643	27	swine	swine	0.997	0.994	G	D	swine-swine-swine	G27D
-347	seq_512	6.06624	23	swine	swine	0.994	1.0	S	P	swine-swine-swine	S23P
-347	seq_512	6.06624	39	swine	swine	0.994	1.0	K	R	swine-swine-swine	K39R
-347	seq_512	6.06624	57	swine	swine	0.994	1.0	F	S	swine-swine-swine	F57S
-348	seq_473	4.8376	85	swine	swine	0.991	1.0	H	Q	swine-swine-swine	H85Q
-348	seq_612	10.48158	47	swine	swine	0.991	1.0	E	G	swine-swine-swine	E47G
-348	seq_612	10.48158	57	swine	swine	0.991	1.0	F	S	swine-swine-swine	F57S
-348	seq_612	10.48158	111	swine	swine	0.991	1.0	Q	R	swine-swine-swine	Q111R
-350	seq_615	10.53142	44	swine	swine	0.988	1.0	S	T	swine-swine-swine	S44T
-350	seq_615	10.53142	48	swine	swine	0.988	1.0	A	T	swine-swine-swine	A48T
-350	seq_615	10.53142	52	swine	swine	0.988	1.0	T	K	swine-swine-swine	T52K
-350	351	3.14591	89	swine	swine	0.988	0.975	I	M	swine-swine-swine	I89M
-351	seq_614	7.59043	64	swine	swine	0.975	1.0	K	R	swine-swine-swine	K64R
-351	seq_614	7.59043	88	swine	swine	0.975	1.0	K	Q	swine-swine-swine	K88Q
-353	seq_629	6.09354	48	swine	swine	0.988	1.0	A	S	swine-swine-swine	A48S
-353	seq_629	6.09354	89	swine	swine	0.988	1.0	I	T	swine-swine-swine	I89T
-355	seq_712	10.3592	111	swine	swine	0.984	1.0	Q	L	swine-swine-swine	Q111L
-356	357	1.99106	63	swine	swine	0.989	0.982	G	E	swine-swine-swine	G63E
-357	seq_770	7.78893	59	swine	swine	0.982	1.0	Q	L	swine-swine-swine	Q59L
-357	seq_770	7.78893	64	swine	swine	0.982	1.0	K	R	swine-swine-swine	K64R
-358	seq_611	5.72194	22	swine	swine	0.99	1.0	G	E	swine-swine-swine	G22E
-358	seq_611	5.72194	33	swine	swine	0.99	1.0	M	T	swine-swine-swine	M33T
-360	seq_761	7.42298	27	swine	swine	0.988	1.0	G	D	swine-swine-swine	G27D
-360	seq_761	7.42298	39	swine	swine	0.988	1.0	K	R	swine-swine-swine	K39R
-361	seq_762	7.25926	27	swine	swine	0.989	1.0	G	D	swine-swine-swine	G27D
-361	seq_762	7.25926	31	swine	swine	0.989	1.0	M	I	swine-swine-swine	M31I
-361	seq_762	7.25926	39	swine	swine	0.989	1.0	K	R	swine-swine-swine	K39R
-361	seq_762	7.25926	64	swine	swine	0.989	1.0	K	R	swine-swine-swine	K64R
-361	seq_763	7.08424	57	swine	swine	0.989	1.0	S	F	swine-swine-swine	S57F
-361	seq_763	7.08424	71	swine	swine	0.989	1.0	Q	H	swine-swine-swine	Q71H
-361	seq_763	7.08424	89	swine	swine	0.989	1.0	I	L	swine-swine-swine	I89L
-362	363	1.9948	34	swine	swine	0.966	0.994	Q	R	swine-swine-swine	Q34R
-363	365	2.05388	52	swine	swine	0.994	0.999	M	T	swine-swine-swine	M52T
-364	seq_294	1.08157	36	swine	swine	0.995	1.0	E	K	swine-swine-swine	E36K
-366	seq_258	4.0125	3	swine	swine	0.965	1.0	S	F	swine-swine-swine	S3F
-366	seq_258	4.0125	34	swine	swine	0.965	1.0	Q	K	swine-swine-swine	Q34K
-366	367	30.74063	63	swine	swine	0.965	0.812	G	E	swine-swine-swine	G63E
-366	367	30.74063	86	swine	swine	0.965	0.812	R	K	swine-swine-swine	R86K
-366	367	30.74063	113	swine	swine	0.965	0.812	I	M	swine-swine-swine	I113M
-367	seq_260	4.27461	22	swine	swine	0.812	1.0	G	R	swine-swine-swine	G22R
-368	369	4.4909	89	human	human	0.825	0.993	I	M	swine-human-human	I89M
-368	seq_193	6.77923	39	human	human	0.825	1.0	K	R	swine-human-human	K39R
-368	seq_193	6.77923	83	human	human	0.825	1.0	V	I	swine-human-human	V83I
-369	seq_194	2.86157	92	human	human	0.993	1.0	N	S	human-human-human	N92S
-369	seq_039	2.86294	83	human	human	0.993	1.0	V	L	human-human-human	V83L
-369	370	2.86294	85	human	human	0.993	1.0	H	Q	human-human-human	H85Q
-374	376	0.28747	7	swine	swine	0.75	0.76	S	L	swine-swine-swine	S7L
-374	375	0.65584	48	swine	swine	0.75	0.793	A	T	swine-swine-swine	A48T
-375	seq_407	10.29014	31	swine	swine	0.793	1.0	M	I	swine-swine-swine	M31I
-375	seq_407	10.29014	49	swine	swine	0.793	1.0	V	L	swine-swine-swine	V49L
-375	seq_407	10.29014	86	swine	swine	0.793	1.0	K	R	swine-swine-swine	K86R
-375	seq_407	10.29014	89	swine	swine	0.793	1.0	M	I	swine-swine-swine	M89I
-376	377	3.54717	29	swine	swine	0.76	0.849	N	S	swine-swine-swine	N29S
-376	377	3.54717	76	swine	swine	0.76	0.849	I	V	swine-swine-swine	I76V
-376	377	3.54717	113	swine	swine	0.76	0.849	I	M	swine-swine-swine	I113M
-376	seq_369	29.65851	6	swine	swine	0.76	1.0	V	M	swine-swine-swine	V6M
-376	seq_369	29.65851	32	swine	swine	0.76	1.0	V	I	swine-swine-swine	V32I
-376	seq_369	29.65851	34	swine	swine	0.76	1.0	Q	R	swine-swine-swine	Q34R
-376	seq_369	29.65851	48	swine	swine	0.76	1.0	A	S	swine-swine-swine	A48S
-376	seq_369	29.65851	85	swine	swine	0.76	1.0	H	Q	swine-swine-swine	H85Q
-376	seq_369	29.65851	88	swine	swine	0.76	1.0	K	R	swine-swine-swine	K88R
-377	380	4.17594	23	swine	swine	0.849	0.905	S	P	swine-swine-swine	S23P
-378	seq_368	19.66114	29	swine	swine	0.902	1.0	S	N	swine-swine-swine	S29N
-378	seq_368	19.66114	67	swine	swine	0.902	1.0	E	K	swine-swine-swine	E67K
-378	seq_368	19.66114	76	swine	swine	0.902	1.0	V	I	swine-swine-swine	V76I
-378	seq_368	19.66114	89	swine	swine	0.902	1.0	M	K	swine-swine-swine	M89K
-379	seq_367	17.17165	22	swine	swine	0.918	1.0	G	E	swine-swine-swine	G22E
-379	seq_367	17.17165	32	swine	swine	0.918	1.0	V	I	swine-swine-swine	V32I
-379	seq_367	17.17165	39	swine	swine	0.918	1.0	K	R	swine-swine-swine	K39R
-379	seq_328	9.17165	89	swine	swine	0.918	1.0	M	T	swine-swine-swine	M89T
-380	381	13.38024	31	swine	swine	0.905	0.941	M	I	swine-swine-swine	M31I
-380	381	13.38024	48	swine	swine	0.905	0.941	A	T	swine-swine-swine	A48T
-380	seq_829	7.93403	67	swine	swine	0.905	1.0	E	D	swine-swine-swine	E67D
-380	seq_829	7.93403	88	swine	swine	0.905	1.0	K	R	swine-swine-swine	K88R
-380	seq_702	36.37924	14	swine	swine	0.905	1.0	M	T	swine-swine-swine	M14T
-380	seq_702	36.37924	52	swine	swine	0.905	1.0	M	I	swine-swine-swine	M52I
-380	seq_702	36.37924	57	swine	swine	0.905	1.0	Y	H	swine-swine-swine	Y57H
-380	seq_702	36.37924	120	swine	swine	0.905	1.0	L	F	swine-swine-swine	L120F
-381	seq_292	9.55516	27	swine	swine	0.941	1.0	G	D	swine-swine-swine	G27D
-381	seq_292	9.55516	29	swine	swine	0.941	1.0	S	N	swine-swine-swine	S29N
-381	seq_366	8.55516	35	swine	swine	0.941	1.0	F	L	swine-swine-swine	F35L
-381	seq_366	8.55516	83	swine	swine	0.941	1.0	V	M	swine-swine-swine	V83M
-382	seq_256	1.82026	48	swine	swine	0.965	1.0	A	T	swine-swine-swine	A48T
-385	seq_282	18.15467	36	swine	swine	0.948	1.0	E	K	swine-swine-swine	E36K
-385	seq_282	18.15467	85	swine	swine	0.948	1.0	H	Y	swine-swine-swine	H85Y
-385	seq_280	17.15467	6	swine	swine	0.948	1.0	V	M	swine-swine-swine	V6M
-385	seq_280	17.15467	29	swine	swine	0.948	1.0	N	S	swine-swine-swine	N29S
-388	389	11.98859	14	swine	swine	0.985	0.963	M	V	swine-swine-swine	M14V
-388	389	11.98859	89	swine	swine	0.985	0.963	M	I	swine-swine-swine	M89I
-388	390	0.74216	60	swine	swine	0.985	0.983	N	S	swine-swine-swine	N60S
-389	seq_364	9.17921	4	swine	swine	0.963	1.0	N	I	swine-swine-swine	N4I
-389	seq_364	9.17921	22	swine	swine	0.963	1.0	G	E	swine-swine-swine	G22E
-389	seq_364	9.17921	26	swine	swine	0.963	1.0	E	G	swine-swine-swine	E26G
-389	seq_364	9.17921	31	swine	swine	0.963	1.0	M	I	swine-swine-swine	M31I
-389	seq_364	9.17921	32	swine	swine	0.963	1.0	V	I	swine-swine-swine	V32I
-389	seq_202	4.59838	86	swine	swine	0.963	1.0	K	R	swine-swine-swine	K86R
-392	seq_246	19.07064	6	swine	swine	0.959	1.0	V	M	swine-swine-swine	V6M
-392	seq_246	19.07064	27	swine	swine	0.959	1.0	G	D	swine-swine-swine	G27D
-392	seq_246	19.07064	48	swine	swine	0.959	1.0	A	T	swine-swine-swine	A48T
-392	seq_246	19.07064	70	swine	swine	0.959	1.0	G	S	swine-swine-swine	G70S
-392	seq_246	19.07064	81	swine	swine	0.959	1.0	E	D	swine-swine-swine	E81D
-396	seq_045	1.82011	27	human	human	0.822	1.0	G	D	swine-human-human	G27D
-396	seq_045	1.82011	49	human	human	0.822	1.0	V	I	swine-human-human	V49I
-397	401	1.68497	60	swine	swine	0.978	0.977	N	S	swine-swine-swine	N60S
-397	398	2.0391	89	swine	swine	0.978	0.961	M	I	swine-swine-swine	M89I
-398	seq_431	22.75546	6	swine	swine	0.961	1.0	V	M	swine-swine-swine	V6M
-398	seq_431	22.75546	22	swine	swine	0.961	1.0	G	K	swine-swine-swine	G22K
-398	seq_431	22.75546	31	swine	swine	0.961	1.0	M	I	swine-swine-swine	M31I
-398	seq_431	22.75546	52	swine	swine	0.961	1.0	M	T	swine-swine-swine	M52T
-398	399	7.69412	34	swine	swine	0.961	0.953	R	Q	swine-swine-swine	R34Q
-398	399	7.69412	49	swine	swine	0.961	0.953	V	I	swine-swine-swine	V49I
-399	400	3.42373	6	swine	swine	0.953	0.964	V	M	swine-swine-swine	V6M
-399	400	3.42373	85	swine	swine	0.953	0.964	H	Q	swine-swine-swine	H85Q
-399	400	3.42373	89	swine	swine	0.953	0.964	I	T	swine-swine-swine	I89T
-399	seq_245	10.47937	86	swine	swine	0.953	1.0	K	R	swine-swine-swine	K86R
-400	seq_244	7.05564	44	swine	swine	0.964	1.0	S	L	swine-swine-swine	S44L
-400	seq_244	7.05564	89	swine	swine	0.964	1.0	T	K	swine-swine-swine	T89K
-402	403	5.80443	22	swine	human	0.961	0.982	G	E	swine-swine-human	G22E
-402	403	5.80443	92	swine	human	0.961	0.982	N	S	swine-swine-human	N92S
-404	seq_277	17.55554	6	swine	swine	0.956	1.0	V	L	swine-swine-swine	V6L
-404	seq_277	17.55554	22	swine	swine	0.956	1.0	G	E	swine-swine-swine	G22E
-404	seq_277	17.55554	49	swine	swine	0.956	1.0	V	I	swine-swine-swine	V49I
-404	seq_277	17.55554	89	swine	swine	0.956	1.0	M	I	swine-swine-swine	M89I
-405	seq_330	13.65806	3	swine	swine	0.95	1.0	S	A	swine-swine-swine	S3A
-405	seq_330	13.65806	27	swine	swine	0.95	1.0	G	D	swine-swine-swine	G27D
-405	406	4.80355	49	swine	swine	0.95	0.944	V	L	swine-swine-swine	V49L
-405	406	4.80355	57	swine	swine	0.95	0.944	Y	H	swine-swine-swine	Y57H
-405	406	4.80355	86	swine	swine	0.95	0.944	K	R	swine-swine-swine	K86R
-406	seq_387	15.3504	27	swine	swine	0.944	1.0	G	D	swine-swine-swine	G27D
-406	seq_387	15.3504	32	swine	swine	0.944	1.0	V	I	swine-swine-swine	V32I
-407	seq_278	2.89608	93	swine	swine	0.979	1.0	S	G	swine-swine-swine	S93G
-408	seq_454	7.10154	22	swine	swine	0.976	1.0	G	E	swine-swine-swine	G22E
-408	seq_454	7.10154	89	swine	swine	0.976	1.0	M	V	swine-swine-swine	M89V
-408	seq_454	7.10154	92	swine	swine	0.976	1.0	N	S	swine-swine-swine	N92S
-411	413	5.4279	14	human	swine	0.909	0.8	M	K	human-human-swine	M14K
-411	413	5.4279	48	human	swine	0.909	0.8	A	S	human-human-swine	A48S
-411	413	5.4279	120	human	swine	0.909	0.8	L	F	human-human-swine	L120F
-411	415	0.21711	48	human	human	0.909	0.873	A	T	human-human-human	A48T
-413	seq_358	7.04603	49	swine	swine	0.8	1.0	V	A	human-swine-swine	V49A
-414	seq_360	4.95245	89	swine	swine	0.866	1.0	M	I	swine-swine-swine	M89I
-414	seq_248	7.37437	32	swine	swine	0.866	1.0	V	I	swine-swine-swine	V32I
-416	seq_374	16.46609	32	human	swine	0.875	1.0	V	I	human-human-swine	V32I
-416	seq_374	16.46609	44	human	swine	0.875	1.0	S	L	human-human-swine	S44L
-416	seq_374	16.46609	52	human	swine	0.875	1.0	M	T	human-human-swine	M52T
-416	seq_374	16.46609	60	human	swine	0.875	1.0	S	N	human-human-swine	S60N
-416	seq_374	16.46609	120	human	swine	0.875	1.0	L	F	human-human-swine	L120F
-418	seq_365	7.04048	22	swine	swine	0.812	1.0	G	E	swine-swine-swine	G22E
-418	seq_365	7.04048	60	swine	swine	0.812	1.0	S	N	swine-swine-swine	S60N
-418	seq_365	7.04048	86	swine	swine	0.812	1.0	K	R	swine-swine-swine	K86R
-419	seq_363	6.5193	22	swine	swine	0.847	1.0	G	E	swine-swine-swine	G22E
-419	seq_363	6.5193	27	swine	swine	0.847	1.0	G	D	swine-swine-swine	G27D
-419	seq_363	6.5193	48	swine	swine	0.847	1.0	S	Y	swine-swine-swine	S48Y
-422	seq_361	6.65234	53	swine	swine	0.723	1.0	G	A	human-swine-swine	G53A
-422	seq_361	6.65234	61	swine	swine	0.723	1.0	R	T	human-swine-swine	R61T
-422	seq_361	6.65234	65	swine	swine	0.723	1.0	W	G	human-swine-swine	W65G
-422	seq_361	6.65234	85	swine	swine	0.723	1.0	H	L	human-swine-swine	H85L
-422	seq_361	6.65234	109	swine	swine	0.723	1.0	V	L	human-swine-swine	V109L
-422	seq_361	6.65234	114	swine	swine	0.723	1.0	R	K	human-swine-swine	R114K
-422	seq_361	6.65234	119	swine	swine	0.723	1.0	Q	H	human-swine-swine	Q119H
-423	seq_357	3.49243	12	swine	swine	0.929	1.0	I	L	swine-swine-swine	I12L
-423	seq_356	8.28309	27	swine	swine	0.929	1.0	G	D	swine-swine-swine	G27D
-423	seq_356	8.28309	86	swine	swine	0.929	1.0	K	R	swine-swine-swine	K86R
-423	seq_356	8.28309	89	swine	swine	0.929	1.0	M	T	swine-swine-swine	M89T
-424	seq_274	14.45874	39	human	swine	0.903	1.0	K	R	human-human-swine	K39R
-424	425	1.01163	86	human	human	0.903	0.91	K	R	human-human-human	K86R
-425	426	6.17876	27	human	swine	0.91	0.999	G	D	human-human-swine	G27D
-425	427	0.88286	48	human	human	0.91	0.938	A	T	human-human-human	A48T
-427	430	1.68796	27	human	human	0.938	0.795	G	D	human-human-human	G27D
-430	seq_014	3.87629	4	human	human	0.795	1.0	N	T	human-human-human	N4T
-430	seq_014	3.87629	63	human	human	0.795	1.0	E	D	human-human-human	E63D
-430	seq_014	3.87629	89	human	human	0.795	1.0	M	S	human-human-human	M89S
-430	431	0.78424	89	human	swine	0.795	0.89	M	A	human-human-swine	M89A
-431	432	4.09205	48	swine	swine	0.89	1.0	T	A	human-swine-swine	T48A
-431	466	0.95729	37	swine	swine	0.89	0.905	S	A	human-swine-swine	S37A
-433	seq_470	11.81229	10	swine	swine	0.925	1.0	Q	E	swine-swine-swine	Q10E
-433	seq_470	11.81229	14	swine	swine	0.925	1.0	M	K	swine-swine-swine	M14K
-433	seq_470	11.81229	111	swine	swine	0.925	1.0	Q	R	swine-swine-swine	Q111R
-434	seq_218	5.13275	116	swine	swine	0.929	1.0	F	L	swine-swine-swine	F116L
-434	seq_340	12.13275	48	swine	swine	0.929	1.0	T	A	swine-swine-swine	T48A
-434	seq_340	12.13275	53	swine	swine	0.929	1.0	G	R	swine-swine-swine	G53R
-434	seq_340	12.13275	60	swine	swine	0.929	1.0	S	N	swine-swine-swine	S60N
-434	seq_340	12.13275	64	swine	swine	0.929	1.0	K	R	swine-swine-swine	K64R
-435	436	0.73095	40	swine	swine	0.909	0.951	I	V	swine-swine-swine	I40V
-435	seq_375	7.86192	48	swine	swine	0.909	1.0	T	A	swine-swine-swine	T48A
-435	seq_375	7.86192	53	swine	swine	0.909	1.0	G	R	swine-swine-swine	G53R
-435	seq_375	7.86192	55	swine	swine	0.909	1.0	L	F	swine-swine-swine	L55F
-436	seq_219	5.13097	16	swine	swine	0.951	1.0	M	I	swine-swine-swine	M16I
-436	seq_219	5.13097	81	swine	swine	0.951	1.0	E	G	swine-swine-swine	E81G
-436	437	0.35139	52	swine	swine	0.951	0.961	M	T	swine-swine-swine	M52T
-437	seq_223	3.77957	80	swine	swine	0.961	1.0	I	T	swine-swine-swine	I80T
-438	439	6.46942	19	swine	swine	0.963	0.961	M	L	swine-swine-swine	M19L
-438	439	6.46942	32	swine	swine	0.963	0.961	V	I	swine-swine-swine	V32I
-439	seq_373	7.19235	22	swine	swine	0.961	1.0	G	R	swine-swine-swine	G22R
-439	seq_373	7.19235	60	swine	swine	0.961	1.0	S	N	swine-swine-swine	S60N
-441	seq_823	10.03391	52	swine	swine	0.966	1.0	T	K	swine-swine-swine	T52K
-441	seq_823	10.03391	60	swine	swine	0.966	1.0	S	R	swine-swine-swine	S60R
-441	seq_823	10.03391	89	swine	swine	0.966	1.0	A	E	swine-swine-swine	A89E
-442	seq_539	7.62986	48	swine	swine	0.967	1.0	T	N	swine-swine-swine	T48N
-442	seq_539	7.62986	89	swine	swine	0.967	1.0	A	V	swine-swine-swine	A89V
-443	444	0.47149	92	swine	swine	0.979	0.979	N	S	swine-swine-swine	N92S
-444	seq_599	12.8831	31	swine	swine	0.979	1.0	M	I	swine-swine-swine	M31I
-444	seq_599	12.8831	52	swine	swine	0.979	1.0	T	M	swine-swine-swine	T52M
-444	seq_599	12.8831	64	swine	swine	0.979	1.0	K	R	swine-swine-swine	K64R
-444	seq_599	12.8831	89	swine	swine	0.979	1.0	A	T	swine-swine-swine	A89T
-444	445	0.36	80	swine	swine	0.979	0.979	I	T	swine-swine-swine	I80T
-445	seq_314	9.99456	31	swine	swine	0.979	1.0	M	I	swine-swine-swine	M31I
-445	seq_314	9.99456	40	swine	swine	0.979	1.0	V	I	swine-swine-swine	V40I
-445	seq_314	9.99456	52	swine	swine	0.979	1.0	T	A	swine-swine-swine	T52A
-445	seq_314	9.99456	53	swine	swine	0.979	1.0	G	R	swine-swine-swine	G53R
-446	seq_393	6.95537	34	swine	swine	0.978	1.0	R	L	swine-swine-swine	R34L
-446	seq_393	6.95537	52	swine	swine	0.978	1.0	T	M	swine-swine-swine	T52M
-446	seq_393	6.95537	60	swine	swine	0.978	1.0	S	N	swine-swine-swine	S60N
-446	seq_393	6.95537	92	swine	swine	0.978	1.0	S	N	swine-swine-swine	S92N
-446	seq_355	9.41838	11	swine	swine	0.978	1.0	D	G	swine-swine-swine	D11G
-446	seq_355	9.41838	40	swine	swine	0.978	1.0	V	L	swine-swine-swine	V40L
-447	seq_821	12.45401	14	swine	swine	0.977	1.0	M	I	swine-swine-swine	M14I
-447	seq_821	12.45401	49	swine	swine	0.977	1.0	V	I	swine-swine-swine	V49I
-447	seq_821	12.45401	88	swine	swine	0.977	1.0	K	R	swine-swine-swine	K88R
-448	seq_378	10.93611	48	swine	swine	0.975	1.0	T	S	swine-swine-swine	T48S
-449	seq_310	9.45848	89	swine	swine	0.971	1.0	A	E	swine-swine-swine	A89E
-450	451	2.39517	48	swine	swine	0.968	0.941	T	N	swine-swine-swine	T48N
-450	seq_820	11.04134	6	swine	swine	0.968	1.0	V	M	swine-swine-swine	V6M
-450	seq_820	11.04134	41	swine	swine	0.968	1.0	Y	F	swine-swine-swine	Y41F
-451	452	1.26599	22	swine	swine	0.941	0.951	G	R	swine-swine-swine	G22R
-451	453	1.19062	60	swine	swine	0.941	0.909	S	N	swine-swine-swine	S60N
-452	seq_336	5.79114	20	swine	swine	0.951	1.0	Q	R	swine-swine-swine	Q20R
-452	seq_336	5.79114	22	swine	swine	0.951	1.0	R	S	swine-swine-swine	R22S
-452	seq_336	5.79114	64	swine	swine	0.951	1.0	K	N	swine-swine-swine	K64N
-452	seq_677	8.99936	32	swine	swine	0.951	1.0	V	I	swine-swine-swine	V32I
-452	seq_677	8.99936	85	swine	swine	0.951	1.0	H	Q	swine-swine-swine	H85Q
-453	456	0.56255	49	swine	swine	0.909	0.876	V	I	swine-swine-swine	V49I
-453	454	5.00547	29	swine	swine	0.909	0.999	N	S	swine-swine-swine	N29S
-456	seq_380	5.66835	29	swine	swine	0.876	1.0	N	S	swine-swine-swine	N29S
-456	457	3.6348	31	swine	human	0.876	0.602	M	I	swine-swine-human	M31I
-456	457	3.6348	48	swine	human	0.876	0.602	N	S	swine-swine-human	N48S
-457	seq_137	7.12944	34	human	human	0.602	1.0	R	Q	swine-human-human	R34Q
-457	seq_137	7.12944	89	human	human	0.602	1.0	A	V	swine-human-human	A89V
-459	460	0.68626	40	human	human	0.621	0.611	V	I	human-human-human	V40I
-463	464	1.36034	81	swine	swine	0.601	0.722	E	D	swine-swine-swine	E81D
-463	seq_780	10.04607	60	swine	swine	0.601	1.0	N	S	swine-swine-swine	N60S
-463	seq_780	10.04607	83	swine	swine	0.601	1.0	V	M	swine-swine-swine	V83M
-464	465	2.39144	83	swine	swine	0.722	0.85	V	M	swine-swine-swine	V83M
-464	seq_806	9.67788	4	swine	swine	0.722	1.0	N	G	swine-swine-swine	N4G
-464	seq_806	9.67788	6	swine	swine	0.722	1.0	V	E	swine-swine-swine	V6E
-464	seq_806	9.67788	9	swine	swine	0.722	1.0	F	C	swine-swine-swine	F9C
-464	seq_806	9.67788	14	swine	swine	0.722	1.0	M	V	swine-swine-swine	M14V
-465	seq_808	7.26731	16	swine	swine	0.85	1.0	M	I	swine-swine-swine	M16I
-465	seq_808	7.26731	81	swine	swine	0.85	1.0	D	G	swine-swine-swine	D81G
-465	seq_808	7.26731	85	swine	swine	0.85	1.0	H	Q	swine-swine-swine	H85Q
-465	seq_777	6.29702	2	swine	swine	0.85	1.0	D	Y	swine-swine-swine	D2Y
-465	seq_777	6.29702	6	swine	swine	0.85	1.0	V	F	swine-swine-swine	V6F
-465	seq_777	6.29702	76	swine	swine	0.85	1.0	I	V	swine-swine-swine	I76V
-466	467	4.05756	6	swine	swine	0.905	0.664	V	M	swine-swine-swine	V6M
-467	seq_144	17.08268	60	swine	human	0.664	1.0	S	N	swine-swine-human	S60N
-467	seq_144	17.08268	82	swine	human	0.664	1.0	E	K	swine-swine-human	E82K
-467	seq_144	17.08268	83	swine	human	0.664	1.0	V	I	swine-swine-human	V83I
-467	seq_144	17.08268	89	swine	human	0.664	1.0	A	T	swine-swine-human	A89T
-469	seq_696	12.71524	60	human	swine	0.999	1.0	S	N	swine-human-swine	S60N
-469	seq_696	12.71524	72	human	swine	0.999	1.0	K	R	swine-human-swine	K72R
-469	seq_696	12.71524	74	human	swine	0.999	1.0	E	D	swine-human-swine	E74D
-469	seq_696	12.71524	83	human	swine	0.999	1.0	M	T	swine-human-swine	M83T
-469	seq_696	12.71524	89	human	swine	0.999	1.0	A	S	swine-human-swine	A89S
-469	470	1.55927	7	human	human	0.999	0.718	S	L	swine-human-human	S7L
-469	471	1.5065	89	human	human	0.999	0.98	A	E	swine-human-human	A89E
-469	seq_723	11.29333	35	human	swine	0.999	1.0	F	L	swine-human-swine	F35L
-469	seq_723	11.29333	39	human	swine	0.999	1.0	K	R	swine-human-swine	K39R
-469	seq_723	11.29333	50	human	swine	0.999	1.0	M	I	swine-human-swine	M50I
-469	seq_723	11.29333	57	human	swine	0.999	1.0	Y	H	swine-human-swine	Y57H
-469	seq_723	11.29333	89	human	swine	0.999	1.0	A	M	swine-human-swine	A89M
-469	seq_723	11.29333	115	human	swine	0.999	1.0	A	T	swine-human-swine	A115T
-469	seq_834	12.71524	6	human	swine	0.999	1.0	M	T	swine-human-swine	M6T
-469	seq_834	12.71524	83	human	swine	0.999	1.0	M	V	swine-human-swine	M83V
-469	seq_834	12.71524	115	human	swine	0.999	1.0	A	T	swine-human-swine	A115T
-470	seq_700	11.22994	85	human	swine	0.718	1.0	H	N	human-human-swine	H85N
-470	seq_700	11.22994	89	human	swine	0.718	1.0	A	T	human-human-swine	A89T
-470	seq_698	10.79433	29	human	swine	0.718	1.0	N	S	human-human-swine	N29S
-470	seq_698	10.79433	83	human	swine	0.718	1.0	M	I	human-human-swine	M83I
-473	seq_717	11.17154	27	human	swine	0.84	1.0	D	G	human-human-swine	D27G
-473	seq_717	11.17154	32	human	swine	0.84	1.0	V	I	human-human-swine	V32I
-473	seq_717	11.17154	60	human	swine	0.84	1.0	S	C	human-human-swine	S60C
-473	seq_717	11.17154	83	human	swine	0.84	1.0	M	I	human-human-swine	M83I
-473	seq_717	11.17154	89	human	swine	0.84	1.0	A	V	human-human-swine	A89V
-473	seq_717	11.17154	100	human	swine	0.84	1.0	M	I	human-human-swine	M100I
-475	seq_746	4.40615	87	swine	swine	0.961	1.0	M	I	human-swine-swine	M87I
-475	seq_746	4.40615	92	swine	swine	0.961	1.0	S	N	human-swine-swine	S92N
-475	seq_772	4.99731	89	swine	swine	0.961	1.0	A	V	human-swine-swine	A89V
-475	seq_729	2.77053	33	swine	swine	0.961	1.0	T	M	human-swine-swine	T33M
-477	seq_747	12.12432	81	human	swine	0.864	1.0	E	D	human-human-swine	E81D
-477	seq_747	12.12432	89	human	swine	0.864	1.0	A	V	human-human-swine	A89V
-477	seq_167	12.64618	115	human	human	0.864	1.0	A	T	human-human-human	A115T
-478	seq_693	11.4456	26	human	swine	0.882	1.0	E	G	human-human-swine	E26G
-478	seq_693	11.4456	60	human	swine	0.882	1.0	S	N	human-human-swine	S60N
-478	seq_693	11.4456	85	human	swine	0.882	1.0	H	Q	human-human-swine	H85Q
-478	seq_693	11.4456	115	human	swine	0.882	1.0	A	T	human-human-swine	A115T
-478	seq_694	11.62916	14	human	swine	0.882	1.0	M	V	human-human-swine	M14V
-478	seq_694	11.62916	22	human	swine	0.882	1.0	G	E	human-human-swine	G22E
-478	seq_694	11.62916	89	human	swine	0.882	1.0	A	T	human-human-swine	A89T
-481	482	8.66124	14	swine	swine	0.663	1.0	M	I	human-swine-swine	M14I
-481	482	8.66124	83	swine	swine	0.663	1.0	M	V	human-swine-swine	M83V
-481	482	8.66124	120	swine	swine	0.663	1.0	L	F	human-swine-swine	L120F
-481	seq_354	0.86142	121	swine	swine	0.663	1.0	I	X	human-swine-swine	I121X
-484	seq_085	1.01436	67	human	human	1.0	1.0	E	K	human-human-human	E67K
-485	seq_079	1.02701	54	human	human	1.0	1.0	D	N	human-human-human	D54N
-486	487	1.05267	28	human	swine	1.0	0.974	L	W	human-human-swine	L28W
-493	seq_083	0.5294	63	human	human	1.0	1.0	E	K	human-human-human	E63K
-497	seq_164	9.67922	26	human	human	0.92	1.0	E	G	human-human-human	E26G
-497	seq_164	9.67922	67	human	human	0.92	1.0	E	D	human-human-human	E67D
-497	seq_164	9.67922	89	human	human	0.92	1.0	A	T	human-human-human	A89T
-497	seq_832	8.15123	19	human	swine	0.92	1.0	M	I	human-human-swine	M19I
-508	509	1.23713	89	human	human	1.0	0.993	A	V	human-human-human	A89V
-509	seq_841	12.61164	26	human	swine	0.993	1.0	E	G	human-human-swine	E26G
-509	seq_841	12.61164	31	human	swine	0.993	1.0	M	I	human-human-swine	M31I
-509	seq_841	12.61164	34	human	swine	0.993	1.0	R	Q	human-human-swine	R34Q
-509	seq_841	12.61164	67	human	swine	0.993	1.0	E	A	human-human-swine	E67A
-509	seq_841	12.61164	83	human	swine	0.993	1.0	M	I	human-human-swine	M83I
-509	seq_841	12.61164	115	human	swine	0.993	1.0	A	S	human-human-swine	A115S
-510	seq_707	10.91047	83	human	swine	0.816	1.0	M	I	human-human-swine	M83I
-510	seq_707	10.91047	85	human	swine	0.816	1.0	H	Q	human-human-swine	H85Q
-510	seq_707	10.91047	115	human	swine	0.816	1.0	A	S	human-human-swine	A115S
-510	seq_707	10.91047	120	human	swine	0.816	1.0	L	F	human-human-swine	L120F
-511	seq_833	10.3788	83	human	swine	0.662	1.0	M	I	human-human-swine	M83I
-511	seq_833	10.3788	92	human	swine	0.662	1.0	N	S	human-human-swine	N92S
-511	seq_837	10.65003	85	human	swine	0.662	1.0	H	Y	human-human-swine	H85Y
-512	seq_835	11.9623	115	human	swine	0.648	1.0	A	T	human-human-swine	A115T
-514	seq_779	11.01363	6	swine	swine	0.789	1.0	M	I	swine-swine-swine	M6I
-514	seq_779	11.01363	32	swine	swine	0.789	1.0	V	I	swine-swine-swine	V32I
-514	seq_779	11.01363	48	swine	swine	0.789	1.0	T	A	swine-swine-swine	T48A
-514	seq_779	11.01363	89	swine	swine	0.789	1.0	A	V	swine-swine-swine	A89V
-515	seq_839	8.29077	40	swine	swine	0.838	1.0	I	L	swine-swine-swine	I40L
-515	seq_839	8.29077	52	swine	swine	0.838	1.0	M	L	swine-swine-swine	M52L
-515	seq_839	8.29077	55	swine	swine	0.838	1.0	L	I	swine-swine-swine	L55I
-515	seq_839	8.29077	64	swine	swine	0.838	1.0	K	R	swine-swine-swine	K64R
-516	seq_788	8.87627	52	swine	swine	0.865	1.0	M	V	swine-swine-swine	M52V
-516	seq_788	8.87627	72	swine	swine	0.865	1.0	K	R	swine-swine-swine	K72R
-516	seq_788	8.87627	115	swine	swine	0.865	1.0	A	T	swine-swine-swine	A115T
-516	seq_678	2.98284	41	swine	swine	0.865	1.0	Y	F	swine-swine-swine	Y41F
-516	seq_678	2.98284	64	swine	swine	0.865	1.0	K	R	swine-swine-swine	K64R
-517	518	1.9157	48	human	human	0.999	0.959	T	A	human-human-human	T48A
-518	521	2.18811	2	human	human	0.959	0.999	D	E	human-human-human	D2E
-518	521	2.18811	29	human	human	0.959	0.999	N	S	human-human-human	N29S
-518	521	2.18811	83	human	human	0.959	0.999	M	I	human-human-human	M83I
-523	seq_160	6.9806	2	human	human	0.997	1.0	E	D	human-human-human	E2D
-523	seq_160	6.9806	6	human	human	0.997	1.0	M	V	human-human-human	M6V
-525	seq_124	23.48285	2	human	human	1.0	1.0	E	D	human-human-human	E2D
-525	seq_124	23.48285	29	human	human	1.0	1.0	S	N	human-human-human	S29N
-525	seq_124	23.48285	48	human	human	1.0	1.0	A	T	human-human-human	A48T
-525	seq_124	23.48285	52	human	human	1.0	1.0	M	I	human-human-human	M52I
-525	seq_124	23.48285	83	human	human	1.0	1.0	I	M	human-human-human	I83M
-526	seq_191	9.10101	14	human	human	0.972	1.0	M	L	human-human-human	M14L
-526	seq_191	9.10101	29	human	human	0.972	1.0	S	N	human-human-human	S29N
-526	seq_191	9.10101	32	human	human	0.972	1.0	V	I	human-human-human	V32I
-526	seq_191	9.10101	115	human	human	0.972	1.0	A	T	human-human-human	A115T
-526	seq_184	8.45992	85	human	human	0.972	1.0	H	Q	human-human-human	H85Q
-526	seq_184	8.45992	105	human	human	0.972	1.0	L	I	human-human-human	L105I
-528	seq_701	9.77643	26	swine	swine	0.655	1.0	E	G	swine-swine-swine	E26G
-528	seq_701	9.77643	88	swine	swine	0.655	1.0	K	R	swine-swine-swine	K88R
-528	seq_697	10.98465	60	swine	swine	0.655	1.0	S	N	swine-swine-swine	S60N
-528	seq_697	10.98465	76	swine	swine	0.655	1.0	I	V	swine-swine-swine	I76V
-530	seq_724	8.4648	48	swine	swine	0.74	1.0	T	A	swine-swine-swine	T48A
-530	seq_810	12.62644	60	swine	swine	0.74	1.0	S	N	swine-swine-swine	S60N
-530	seq_810	12.62644	83	swine	swine	0.74	1.0	M	V	swine-swine-swine	M83V
-530	seq_810	12.62644	85	swine	swine	0.74	1.0	H	Q	swine-swine-swine	H85Q
-531	532	4.83458	31	swine	swine	0.792	0.966	M	I	swine-swine-swine	M31I
-531	532	4.83458	48	swine	swine	0.792	0.966	T	A	swine-swine-swine	T48A
-531	532	4.83458	83	swine	swine	0.792	0.966	M	I	swine-swine-swine	M83I
-531	532	4.83458	111	swine	swine	0.792	0.966	Q	L	swine-swine-swine	Q111L
-531	seq_812	10.203	29	swine	swine	0.792	1.0	N	S	swine-swine-swine	N29S
-531	seq_812	10.203	58	swine	swine	0.792	1.0	L	F	swine-swine-swine	L58F
-531	seq_812	10.203	115	swine	swine	0.792	1.0	A	T	swine-swine-swine	A115T
-534	seq_178	5.18985	36	swine	human	0.94	1.0	E	G	swine-swine-human	E36G
-535	536	1.98959	14	swine	swine	0.989	1.0	M	V	swine-swine-swine	M14V
-538	seq_094	1.0515	16	human	human	1.0	1.0	M	I	human-human-human	M16I
-544	seq_692	9.3726	31	human	swine	1.0	1.0	M	V	human-human-swine	M31V
-544	seq_692	9.3726	62	human	swine	1.0	1.0	N	T	human-human-swine	N62T
-544	seq_692	9.3726	63	human	swine	1.0	1.0	E	K	human-human-swine	E63K
-544	seq_692	9.3726	83	human	swine	1.0	1.0	M	I	human-human-swine	M83I
-544	seq_570	2.26849	115	human	swine	1.0	1.0	A	T	human-human-swine	A115T
-546	seq_818	1.03215	68	swine	swine	0.994	1.0	Q	K	swine-swine-swine	Q68K
-546	seq_818	1.03215	112	swine	swine	0.994	1.0	E	G	swine-swine-swine	E112G
-546	seq_816	0.80201	48	swine	swine	0.994	1.0	T	N	swine-swine-swine	T48N
-547	548	0.52487	52	human	swine	0.999	1.0	M	V	human-human-swine	M52V
-550	seq_771	10.5959	76	swine	swine	0.999	1.0	I	M	human-swine-swine	I76M
-550	seq_771	10.5959	88	swine	swine	0.999	1.0	K	R	human-swine-swine	K88R
-550	seq_771	10.5959	99	swine	swine	0.999	1.0	F	Y	human-swine-swine	F99Y
-557	seq_285	10.52956	22	swine	swine	0.954	1.0	G	R	swine-swine-swine	G22R
-558	seq_458	7.1198	60	swine	swine	0.986	1.0	S	N	swine-swine-swine	S60N
-558	seq_458	7.1198	88	swine	swine	0.986	1.0	K	I	swine-swine-swine	K88I
-559	seq_220	2.82558	19	swine	swine	0.996	1.0	M	L	swine-swine-swine	M19L
-559	seq_220	2.82558	31	swine	swine	0.996	1.0	M	I	swine-swine-swine	M31I
-559	seq_220	2.82558	89	swine	swine	0.996	1.0	A	V	swine-swine-swine	A89V
-559	560	0.43258	57	swine	swine	0.996	0.997	Y	H	swine-swine-swine	Y57H
-561	seq_224	1.38398	117	swine	swine	0.997	1.0	S	P	swine-swine-swine	S117P
-561	seq_469	4.79928	64	swine	swine	0.997	1.0	K	R	swine-swine-swine	K64R
-561	seq_469	4.79928	81	swine	swine	0.997	1.0	E	D	swine-swine-swine	E81D
-562	seq_461	11.62861	52	swine	swine	0.993	1.0	M	V	swine-swine-swine	M52V
-562	seq_461	11.62861	72	swine	swine	0.993	1.0	K	I	swine-swine-swine	K72I
-562	seq_461	11.62861	74	swine	swine	0.993	1.0	E	G	swine-swine-swine	E74G
-562	seq_461	11.62861	85	swine	swine	0.993	1.0	H	Q	swine-swine-swine	H85Q
-562	seq_461	11.62861	86	swine	swine	0.993	1.0	R	K	swine-swine-swine	R86K
-562	564	1.07458	89	swine	swine	0.993	0.971	A	T	swine-swine-swine	A89T
-564	566	4.75676	23	swine	swine	0.971	1.0	S	Y	swine-swine-swine	S23Y
-564	566	4.75676	26	swine	swine	0.971	1.0	E	G	swine-swine-swine	E26G
-565	seq_053	2.27494	4	swine	human	0.798	1.0	N	T	swine-swine-human	N4T
-568	seq_392	8.87599	14	swine	swine	0.972	1.0	M	I	swine-swine-swine	M14I
-568	seq_392	8.87599	22	swine	swine	0.972	1.0	G	R	swine-swine-swine	G22R
-568	seq_392	8.87599	48	swine	swine	0.972	1.0	T	A	swine-swine-swine	T48A
-568	seq_468	8.87325	32	swine	swine	0.972	1.0	V	I	swine-swine-swine	V32I
-568	seq_468	8.87325	49	swine	swine	0.972	1.0	V	L	swine-swine-swine	V49L
-568	seq_468	8.87325	89	swine	swine	0.972	1.0	A	E	swine-swine-swine	A89E
-569	570	0.66692	54	swine	swine	0.999	1.0	D	N	swine-swine-swine	D54N
-569	seq_217	1.54568	15	swine	swine	0.999	1.0	R	G	swine-swine-swine	R15G
-569	seq_217	1.54568	48	swine	swine	0.999	1.0	T	P	swine-swine-swine	T48P
-570	seq_236	0.87876	111	swine	swine	1.0	1.0	Q	R	swine-swine-swine	Q111R
-571	seq_333	8.15058	85	swine	swine	0.981	1.0	H	Q	swine-swine-swine	H85Q
-572	seq_827	13.76601	89	swine	swine	0.975	1.0	A	T	swine-swine-swine	A89T
-573	574	1.9129	12	swine	swine	0.761	0.937	I	T	swine-swine-swine	I12T
-574	575	1.17278	64	swine	swine	0.937	0.987	K	R	swine-swine-swine	K64R
-574	seq_349	4.89059	2	swine	swine	0.937	1.0	D	E	swine-swine-swine	D2E
-574	seq_349	4.89059	7	swine	swine	0.937	1.0	S	T	swine-swine-swine	S7T
-574	seq_349	4.89059	51	swine	swine	0.937	1.0	R	S	swine-swine-swine	R51S
-574	seq_349	4.89059	108	swine	swine	0.937	1.0	E	Q	swine-swine-swine	E108Q
-574	seq_349	4.89059	118	swine	swine	0.937	1.0	F	L	swine-swine-swine	F118L
-575	seq_334	0.91507	121	swine	swine	0.987	1.0	I	F	swine-swine-swine	I121F
-575	seq_098	0.66575	76	swine	human	0.987	1.0	I	M	swine-swine-human	I76M
-578	580	1.29481	14	human	human	0.993	0.99	M	T	swine-human-human	M14T
-581	seq_351	0.79087	118	swine	swine	0.952	1.0	F	L	human-swine-swine	F118L
-582	seq_128	3.32813	19	human	human	0.978	1.0	M	L	human-human-human	M19L
-584	seq_695	8.98198	48	human	swine	0.69	1.0	T	A	human-human-swine	T48A
-584	seq_695	8.98198	60	human	swine	0.69	1.0	S	R	human-human-swine	S60R
-584	seq_718	10.3296	14	human	swine	0.69	1.0	T	M	human-human-swine	T14M
-584	seq_718	10.3296	67	human	swine	0.69	1.0	E	K	human-human-swine	E67K
-584	seq_718	10.3296	86	human	swine	0.69	1.0	R	K	human-human-swine	R86K
-585	seq_699	9.6749	29	human	swine	0.826	1.0	N	S	human-human-swine	N29S
-585	seq_699	9.6749	63	human	swine	0.826	1.0	E	K	human-human-swine	E63K
-585	seq_699	9.6749	76	human	swine	0.826	1.0	I	M	human-human-swine	I76M
-585	seq_699	9.6749	89	human	swine	0.826	1.0	A	E	human-human-swine	A89E
-585	seq_699	9.6749	113	human	swine	0.826	1.0	I	M	human-human-swine	I113M
-588	seq_213	1.84243	40	swine	swine	0.997	1.0	I	V	swine-swine-swine	I40V
-589	590	3.38579	23	swine	swine	0.992	1.0	S	P	swine-swine-swine	S23P
-589	590	3.38579	121	swine	swine	0.992	1.0	I	M	swine-swine-swine	I121M
-591	seq_579	12.98197	31	swine	swine	0.986	1.0	M	V	swine-swine-swine	M31V
-591	seq_423	6.56827	39	swine	swine	0.986	1.0	K	R	swine-swine-swine	K39R
-593	seq_432	11.12394	14	swine	swine	0.994	1.0	M	L	swine-swine-swine	M14L
-593	seq_432	11.12394	48	swine	swine	0.994	1.0	T	A	swine-swine-swine	T48A
-593	seq_432	11.12394	60	swine	swine	0.994	1.0	S	I	swine-swine-swine	S60I
-594	seq_424	9.08904	22	swine	swine	0.966	1.0	G	R	swine-swine-swine	G22R
-594	seq_424	9.08904	85	swine	swine	0.966	1.0	H	Q	swine-swine-swine	H85Q
-594	seq_424	9.08904	89	swine	swine	0.966	1.0	A	V	swine-swine-swine	A89V
-594	seq_424	9.08904	92	swine	swine	0.966	1.0	N	S	swine-swine-swine	N92S
-594	595	1.83719	89	swine	swine	0.966	0.978	A	T	swine-swine-swine	A89T
-595	seq_824	8.98884	54	swine	swine	0.978	1.0	D	T	swine-swine-swine	D54T
-595	596	0.49144	60	swine	swine	0.978	0.981	S	N	swine-swine-swine	S60N
-598	seq_456	3.97877	52	swine	swine	0.983	1.0	M	I	swine-swine-swine	M52I
-598	seq_456	3.97877	113	swine	swine	0.983	1.0	I	M	swine-swine-swine	I113M
-599	seq_737	9.89731	20	swine	swine	0.965	1.0	Q	R	swine-swine-swine	Q20R
-599	seq_545	5.32471	32	swine	swine	0.965	1.0	V	I	swine-swine-swine	V32I
-599	seq_545	5.32471	52	swine	swine	0.965	1.0	M	V	swine-swine-swine	M52V
-599	seq_545	5.32471	74	swine	swine	0.965	1.0	E	D	swine-swine-swine	E74D
-601	seq_598	7.19485	88	swine	swine	0.959	1.0	K	R	swine-swine-swine	K88R
-602	seq_300	2.56583	14	swine	swine	0.969	1.0	M	L	swine-swine-swine	M14L
-602	seq_377	4.31377	27	swine	swine	0.969	1.0	D	G	swine-swine-swine	D27G
-603	seq_549	9.39397	89	swine	swine	0.968	1.0	T	I	swine-swine-swine	T89I
-604	605	3.12202	88	swine	swine	0.961	0.967	K	R	swine-swine-swine	K88R
-604	seq_800	10.50823	55	swine	swine	0.961	1.0	L	F	swine-swine-swine	L55F
-605	seq_734	6.25898	2	swine	swine	0.967	1.0	D	N	swine-swine-swine	D2N
-605	seq_734	6.25898	92	swine	swine	0.967	1.0	N	T	swine-swine-swine	N92T
-607	seq_126	3.08607	3	swine	human	0.634	1.0	S	Y	swine-swine-human	S3Y
-607	seq_550	7.28028	2	swine	swine	0.634	1.0	D	E	swine-swine-swine	D2E
-607	seq_550	7.28028	89	swine	swine	0.634	1.0	T	M	swine-swine-swine	T89M
-608	seq_541	5.10862	85	swine	swine	0.781	1.0	H	Q	swine-swine-swine	H85Q
-608	seq_805	10.77985	14	swine	swine	0.781	1.0	M	V	swine-swine-swine	M14V
-609	seq_828	9.09279	29	swine	swine	0.652	1.0	N	S	swine-swine-swine	N29S
-609	seq_394	2.65443	92	swine	swine	0.652	1.0	N	T	swine-swine-swine	N92T
-610	seq_564	7.07797	26	swine	swine	0.604	1.0	E	G	swine-swine-swine	E26G
-610	seq_564	7.07797	34	swine	swine	0.604	1.0	R	Q	swine-swine-swine	R34Q
-610	seq_564	7.07797	88	swine	swine	0.604	1.0	K	R	swine-swine-swine	K88R
-610	seq_564	7.07797	115	swine	swine	0.604	1.0	T	A	swine-swine-swine	T115A
-611	seq_593	7.55954	6	swine	swine	0.634	1.0	V	L	swine-swine-swine	V6L
-611	seq_546	6.12666	47	swine	swine	0.634	1.0	E	K	swine-swine-swine	E47K
-611	seq_546	6.12666	89	swine	swine	0.634	1.0	T	M	swine-swine-swine	T89M
-611	seq_546	6.12666	91	swine	swine	0.634	1.0	E	D	swine-swine-swine	E91D
-613	614	2.36419	29	swine	swine	0.607	0.772	N	S	swine-swine-swine	N29S
-613	617	1.24827	89	swine	swine	0.607	0.834	T	M	swine-swine-swine	T89M
-613	seq_735	10.16192	2	swine	swine	0.607	1.0	D	N	swine-swine-swine	D2N
-613	seq_735	10.16192	71	swine	swine	0.607	1.0	Q	L	swine-swine-swine	Q71L
-614	seq_733	7.55729	48	swine	swine	0.772	1.0	T	N	swine-swine-swine	T48N
-615	seq_704	8.61744	60	swine	swine	0.665	1.0	N	S	swine-swine-swine	N60S
-615	seq_556	4.19004	14	swine	swine	0.665	1.0	M	I	swine-swine-swine	M14I
-615	seq_556	4.19004	19	swine	swine	0.665	1.0	M	L	swine-swine-swine	M19L
-616	seq_132	1.04593	19	human	human	0.993	1.0	M	I	swine-human-human	M19I
-617	618	1.119	60	swine	swine	0.834	0.959	N	S	swine-swine-swine	N60S
-617	seq_708	7.63865	89	swine	swine	0.834	1.0	M	I	swine-swine-swine	M89I
-619	seq_543	1.47167	29	swine	swine	0.992	1.0	N	S	swine-swine-swine	N29S
-620	seq_568	3.53727	64	swine	swine	0.974	1.0	K	R	swine-swine-swine	K64R
-620	seq_568	3.53727	82	swine	swine	0.974	1.0	E	K	swine-swine-swine	E82K
-621	seq_540	4.07865	120	swine	swine	0.652	1.0	L	F	swine-swine-swine	L120F
-624	seq_799	7.89929	2	swine	swine	0.865	1.0	D	E	swine-swine-swine	D2E
-624	seq_799	7.89929	26	swine	swine	0.865	1.0	E	G	swine-swine-swine	E26G
-624	seq_799	7.89929	32	swine	swine	0.865	1.0	V	I	swine-swine-swine	V32I
-625	seq_567	2.43215	77	swine	swine	0.935	1.0	R	K	swine-swine-swine	R77K
-625	seq_567	2.43215	92	swine	swine	0.935	1.0	N	S	swine-swine-swine	N92S
-625	seq_566	2.35291	89	swine	swine	0.935	1.0	T	K	swine-swine-swine	T89K
-627	seq_173	1.86049	49	human	human	0.999	1.0	V	L	human-human-human	V49L
-628	seq_179	0.55652	71	human	human	1.0	1.0	Q	K	human-human-human	Q71K
-629	seq_463	11.79418	31	swine	swine	0.766	1.0	M	I	swine-swine-swine	M31I
-629	seq_463	11.79418	32	swine	swine	0.766	1.0	V	I	swine-swine-swine	V32I
-629	seq_463	11.79418	43	swine	swine	0.766	1.0	D	N	swine-swine-swine	D43N
-629	seq_463	11.79418	83	swine	swine	0.766	1.0	V	M	swine-swine-swine	V83M
-629	seq_341	6.87068	48	swine	swine	0.766	1.0	T	A	swine-swine-swine	T48A
-629	seq_341	6.87068	63	swine	swine	0.766	1.0	E	G	swine-swine-swine	E63G
-629	seq_341	6.87068	86	swine	swine	0.766	1.0	R	K	swine-swine-swine	R86K
-629	seq_341	6.87068	89	swine	swine	0.766	1.0	A	M	swine-swine-swine	A89M
-631	seq_389	2.81214	31	human	swine	0.675	1.0	M	I	human-human-swine	M31I
-632	seq_590	7.23775	32	human	swine	0.999	1.0	V	A	human-human-swine	V32A
-632	seq_590	7.23775	34	human	swine	0.999	1.0	R	Q	human-human-swine	R34Q
-636	seq_586	10.86755	35	swine	swine	0.609	1.0	F	L	human-swine-swine	F35L
-636	seq_586	10.86755	81	swine	swine	0.609	1.0	E	D	human-swine-swine	E81D
-636	seq_586	10.86755	83	swine	swine	0.609	1.0	V	I	human-swine-swine	V83I
-637	seq_588	8.04229	29	swine	swine	0.806	1.0	N	S	swine-swine-swine	N29S
-637	seq_606	8.93585	27	swine	swine	0.806	1.0	D	G	swine-swine-swine	D27G
-637	seq_606	8.93585	99	swine	swine	0.806	1.0	F	Y	swine-swine-swine	F99Y
-641	seq_462	5.91369	11	swine	swine	0.86	1.0	D	N	human-swine-swine	D11N
-641	seq_462	5.91369	12	swine	swine	0.86	1.0	I	R	human-swine-swine	I12R
-641	seq_462	5.91369	18	swine	swine	0.86	1.0	K	I	human-swine-swine	K18I
-641	seq_462	5.91369	19	swine	swine	0.86	1.0	M	V	human-swine-swine	M19V
-641	seq_462	5.91369	34	swine	swine	0.86	1.0	R	G	human-swine-swine	R34G
-641	seq_462	5.91369	35	swine	swine	0.86	1.0	F	C	human-swine-swine	F35C
-641	seq_462	5.91369	37	swine	swine	0.86	1.0	A	S	human-swine-swine	A37S
-641	seq_462	5.91369	42	swine	swine	0.86	1.0	R	G	human-swine-swine	R42G
-641	seq_462	5.91369	51	swine	swine	0.86	1.0	R	K	human-swine-swine	R51K
-646	seq_595	12.28981	39	human	swine	0.633	1.0	K	R	human-human-swine	K39R
-646	seq_595	12.28981	85	human	swine	0.633	1.0	H	Q	human-human-swine	H85Q
-646	seq_595	12.28981	100	human	swine	0.633	1.0	M	I	human-human-swine	M100I
-648	seq_825	8.15856	37	swine	swine	0.604	1.0	A	S	swine-swine-swine	A37S
-648	seq_825	8.15856	55	swine	swine	0.604	1.0	L	F	swine-swine-swine	L55F
-649	seq_587	12.33666	3	human	swine	0.648	1.0	S	F	human-human-swine	S3F
-649	seq_587	12.33666	6	human	swine	0.648	1.0	V	M	human-human-swine	V6M
-649	seq_587	12.33666	19	human	swine	0.648	1.0	M	L	human-human-swine	M19L
-649	seq_587	12.33666	29	human	swine	0.648	1.0	N	S	human-human-swine	N29S
-649	seq_587	12.33666	52	human	swine	0.648	1.0	M	T	human-human-swine	M52T
-649	seq_587	12.33666	89	human	swine	0.648	1.0	A	V	human-human-swine	A89V
-651	seq_538	11.00588	81	human	swine	0.635	1.0	E	G	human-human-swine	E81G
-652	seq_522	5.58696	89	human	swine	0.649	1.0	A	T	human-human-swine	A89T
-652	seq_067	3.1349	48	human	human	0.649	1.0	T	N	human-human-human	T48N
-652	seq_067	3.1349	115	human	human	0.649	1.0	T	A	human-human-human	T115A
-654	655	1.99403	49	swine	swine	0.968	0.995	V	I	swine-swine-swine	V49I
-656	seq_523	1.84099	22	swine	swine	0.99	1.0	G	R	swine-swine-swine	G22R
-657	seq_140	1.68997	89	swine	human	0.986	1.0	A	T	swine-swine-human	A89T
-657	seq_547	0.74438	60	swine	swine	0.986	1.0	N	T	swine-swine-swine	N60T
-662	seq_594	9.16759	83	swine	swine	0.697	1.0	V	I	swine-swine-swine	V83I
-662	seq_594	9.16759	89	swine	swine	0.697	1.0	A	V	swine-swine-swine	A89V
-663	seq_591	10.17084	89	swine	swine	0.752	1.0	A	V	swine-swine-swine	A89V
-664	665	1.74787	14	swine	swine	0.808	0.908	M	K	swine-swine-swine	M14K
-665	seq_548	5.57102	89	swine	swine	0.908	1.0	A	V	swine-swine-swine	A89V
-665	seq_443	3.44398	22	swine	swine	0.908	1.0	G	E	swine-swine-swine	G22E
-665	seq_443	3.44398	100	swine	swine	0.908	1.0	M	I	swine-swine-swine	M100I
-666	seq_434	5.27204	27	swine	swine	0.741	1.0	D	G	swine-swine-swine	D27G
-668	seq_797	5.13035	89	human	swine	1.0	1.0	A	T	human-human-swine	A89T
-669	670	1.6467	100	human	human	0.999	1.0	M	I	human-human-human	M100I
-672	seq_174	14.8302	26	swine	human	0.751	1.0	E	G	swine-swine-human	E26G
-672	seq_531	7.36993	64	swine	swine	0.751	1.0	K	R	swine-swine-swine	K64R
-672	seq_565	10.41689	3	swine	swine	0.751	1.0	S	F	swine-swine-swine	S3F
-672	seq_565	10.41689	27	swine	swine	0.751	1.0	D	G	swine-swine-swine	D27G
-672	seq_565	10.41689	29	swine	swine	0.751	1.0	N	S	swine-swine-swine	N29S
-672	seq_565	10.41689	100	swine	swine	0.751	1.0	M	I	swine-swine-swine	M100I
-674	seq_433	2.83818	76	swine	swine	0.967	1.0	I	L	swine-swine-swine	I76L
-675	676	0.60565	89	swine	swine	0.991	0.999	A	V	swine-swine-swine	A89V
-675	seq_739	9.37106	63	swine	swine	0.991	1.0	E	G	swine-swine-swine	E63G
-675	seq_739	9.37106	85	swine	swine	0.991	1.0	H	N	swine-swine-swine	H85N
-675	seq_739	9.37106	100	swine	swine	0.991	1.0	M	I	swine-swine-swine	M100I
-681	seq_803	7.46849	86	swine	swine	1.0	1.0	R	K	swine-swine-swine	R86K
-683	seq_182	7.34826	60	swine	human	0.851	1.0	N	T	swine-swine-human	N60T
-684	seq_736	6.02406	27	swine	swine	0.857	1.0	D	G	swine-swine-swine	D27G
+# node_from	node_to	branch_len	seqpos	trait_from	trait_to	traitprob_from	traitprob_to	residue_from	residue_to	branch_type	external	Mutation
+1	2	9.19879	3	human	human	0.966	0.981	S	P	swine-human-human	0	S3P
+1	82	0.68814	70	human	human	0.966	1.0	G	S	swine-human-human	0	G70S
+3	4	7.82058	43	human	human	0.995	1.0	D	N	human-human-human	0	D43N
+3	4	7.82058	47	human	human	0.995	1.0	E	D	human-human-human	0	E47D
+4	seq_059	11.00274	14	human	human	1.0	1.0	M	V	human-human-human	1	M14V
+5	8	5.75569	14	human	human	0.996	1.0	M	L	human-human-human	0	M14L
+5	8	5.75569	22	human	human	0.996	1.0	G	E	human-human-human	0	G22E
+5	8	5.75569	63	human	human	0.996	1.0	G	E	human-human-human	0	G63E
+5	8	5.75569	86	human	human	0.996	1.0	R	K	human-human-human	0	R86K
+5	8	5.75569	104	human	human	0.996	1.0	Q	H	human-human-human	0	Q104H
+5	6	3.52033	31	human	human	0.996	1.0	M	I	human-human-human	0	M31I
+6	seq_060	1.96452	47	human	human	1.0	1.0	E	K	human-human-human	1	E47K
+8	seq_048	0.7319	26	human	human	1.0	1.0	E	G	human-human-human	1	E26G
+12	13	4.85951	107	human	human	0.959	0.985	L	F	human-human-human	0	L107F
+14	seq_055	2.68485	22	human	human	0.993	1.0	G	D	human-human-human	1	G22D
+14	seq_032	3.68485	52	human	human	0.993	1.0	M	L	human-human-human	1	M52L
+16	17	4.35269	60	swine	swine	0.826	1.0	N	S	swine-swine-swine	0	N60S
+16	18	3.92823	26	swine	swine	0.826	0.623	E	G	swine-swine-swine	0	E26G
+18	seq_023	9.50256	70	swine	human	0.623	1.0	G	S	swine-swine-human	1	G70S
+18	seq_023	9.50256	85	swine	human	0.623	1.0	H	Q	swine-swine-human	1	H85Q
+18	seq_023	9.50256	98	swine	human	0.623	1.0	T	R	swine-swine-human	1	T98R
+18	seq_023	9.50256	100	swine	human	0.623	1.0	M	I	swine-swine-human	1	M100I
+18	seq_023	9.50256	101	swine	human	0.623	1.0	Q	E	swine-swine-human	1	Q101E
+18	seq_023	9.50256	116	swine	human	0.623	1.0	F	I	swine-swine-human	1	F116I
+18	19	12.83263	3	swine	human	0.623	0.948	P	S	swine-swine-human	0	P3S
+18	19	12.83263	60	swine	human	0.623	0.948	N	H	swine-swine-human	0	N60H
+18	19	12.83263	89	swine	human	0.623	0.948	I	T	swine-swine-human	0	I89T
+19	20	5.39402	6	human	human	0.948	0.998	V	L	swine-human-human	0	V6L
+19	23	0.74659	4	human	human	0.948	0.957	N	H	swine-human-human	0	N4H
+23	24	9.50737	52	human	human	0.957	0.995	M	L	human-human-human	0	M52L
+23	seq_008	4.92334	89	human	human	0.957	1.0	T	I	human-human-human	1	T89I
+23	seq_008	4.92334	91	human	human	0.957	1.0	E	D	human-human-human	1	E91D
+25	seq_353	2.11274	49	human	swine	1.0	1.0	V	I	human-human-swine	1	V49I
+25	seq_353	2.11274	92	human	swine	1.0	1.0	N	S	human-human-swine	1	N92S
+26	seq_069	8.16878	39	human	human	0.998	1.0	K	R	human-human-human	1	K39R
+26	seq_069	8.16878	92	human	human	0.998	1.0	N	S	human-human-human	1	N92S
+27	seq_101	9.49725	26	human	human	0.997	1.0	G	E	human-human-human	1	G26E
+27	seq_101	9.49725	52	human	human	0.997	1.0	L	M	human-human-human	1	L52M
+35	seq_605	43.52073	6	human	swine	0.788	1.0	V	I	human-human-swine	1	V6I
+35	seq_605	43.52073	26	human	swine	0.788	1.0	E	G	human-human-swine	1	E26G
+35	seq_605	43.52073	36	human	swine	0.788	1.0	E	K	human-human-swine	1	E36K
+35	seq_605	43.52073	60	human	swine	0.788	1.0	N	T	human-human-swine	1	N60T
+35	seq_605	43.52073	64	human	swine	0.788	1.0	K	R	human-human-swine	1	K64R
+35	seq_605	43.52073	119	human	swine	0.788	1.0	Q	X	human-human-swine	1	Q119X
+36	seq_406	16.79066	19	human	swine	0.659	1.0	M	L	human-human-swine	1	M19L
+36	seq_406	16.79066	27	human	swine	0.659	1.0	D	G	human-human-swine	1	D27G
+36	seq_406	16.79066	31	human	swine	0.659	1.0	M	I	human-human-swine	1	M31I
+36	seq_406	16.79066	48	human	swine	0.659	1.0	A	S	human-human-swine	1	A48S
+36	seq_406	16.79066	60	human	swine	0.659	1.0	N	G	human-human-swine	1	N60G
+36	37	0.31356	57	human	human	0.659	0.63	S	L	human-human-human	0	S57L
+37	seq_296	6.47709	31	human	swine	0.63	1.0	M	V	human-human-swine	1	M31V
+37	seq_296	6.47709	63	human	swine	0.63	1.0	G	E	human-human-swine	1	G63E
+38	seq_352	10.14198	25	human	swine	0.612	1.0	S	L	human-human-swine	1	S25L
+38	seq_352	10.14198	52	human	swine	0.612	1.0	M	R	human-human-swine	1	M52R
+44	45	2.30106	60	human	human	0.972	0.99	N	S	human-human-human	0	N60S
+44	46	13.05598	40	human	human	0.972	1.0	L	I	human-human-human	0	L40I
+45	seq_040	2.94252	112	human	human	0.99	1.0	E	Q	human-human-human	1	E112Q
+45	seq_040	2.94252	116	human	human	0.99	1.0	F	I	human-human-human	1	F116I
+45	seq_040	2.94252	118	human	human	0.99	1.0	F	C	human-human-human	1	F118C
+50	seq_012	1.71668	107	human	human	1.0	1.0	F	S	human-human-human	1	F107S
+51	seq_241	1.22409	110	human	swine	0.979	1.0	E	A	human-human-swine	1	E110A
+51	seq_241	1.22409	118	human	swine	0.979	1.0	F	C	human-human-swine	1	F118C
+51	seq_240	1.22409	118	human	swine	0.979	1.0	F	V	human-human-swine	1	F118V
+53	seq_002	0.0	122	human	human	1.0	1.0	N	X	human-human-human	1	N122X
+64	seq_135	9.28643	29	human	human	0.989	1.0	N	S	human-human-human	1	N29S
+64	seq_135	9.28643	32	human	human	0.989	1.0	I	V	human-human-human	1	I32V
+64	seq_135	9.28643	34	human	human	0.989	1.0	Q	R	human-human-human	1	Q34R
+64	seq_135	9.28643	63	human	human	0.989	1.0	G	E	human-human-human	1	G63E
+64	seq_135	9.28643	83	human	human	0.989	1.0	V	I	human-human-human	1	V83I
+64	seq_135	9.28643	88	human	human	0.989	1.0	K	I	human-human-human	1	K88I
+64	seq_135	9.28643	89	human	human	0.989	1.0	T	A	human-human-human	1	T89A
+65	seq_125	6.66261	16	human	human	0.983	1.0	M	I	human-human-human	1	M16I
+65	seq_125	6.66261	88	human	human	0.983	1.0	K	R	human-human-human	1	K88R
+65	seq_125	6.66261	115	human	human	0.983	1.0	T	A	human-human-human	1	T115A
+67	seq_119	6.52598	92	human	human	0.999	1.0	N	S	human-human-human	1	N92S
+68	seq_133	7.42664	32	human	human	0.995	1.0	I	V	human-human-human	1	I32V
+68	seq_133	7.42664	83	human	human	0.995	1.0	V	M	human-human-human	1	V83M
+68	seq_133	7.42664	89	human	human	0.995	1.0	T	A	human-human-human	1	T89A
+68	seq_133	7.42664	107	human	human	0.995	1.0	F	L	human-human-human	1	F107L
+68	seq_133	7.42664	115	human	human	0.995	1.0	T	A	human-human-human	1	T115A
+68	69	3.57168	88	human	human	0.995	0.988	K	R	human-human-human	0	K88R
+70	71	4.11844	57	human	human	0.936	0.987	L	Y	human-human-human	0	L57Y
+70	71	4.11844	60	human	human	0.936	0.987	N	S	human-human-human	0	N60S
+70	71	4.11844	63	human	human	0.936	0.987	G	E	human-human-human	0	G63E
+70	71	4.11844	83	human	human	0.936	0.987	V	I	human-human-human	0	V83I
+70	71	4.11844	88	human	human	0.936	0.987	R	K	human-human-human	0	R88K
+71	seq_159	3.761	14	human	human	0.987	1.0	L	M	human-human-human	1	L14M
+71	seq_159	3.761	89	human	human	0.987	1.0	T	A	human-human-human	1	T89A
+71	seq_159	3.761	107	human	human	0.987	1.0	F	L	human-human-human	1	F107L
+71	seq_159	3.761	115	human	human	0.987	1.0	T	A	human-human-human	1	T115A
+72	seq_706	1.58419	4	swine	swine	0.984	1.0	N	K	human-swine-swine	1	N4K
+79	seq_188	8.7003	113	human	human	0.999	1.0	I	X	human-human-human	1	I113X
+79	seq_188	8.7003	114	human	human	0.999	1.0	R	S	human-human-human	1	R114S
+79	seq_188	8.7003	115	human	human	0.999	1.0	T	L	human-human-human	1	T115L
+79	seq_188	8.7003	116	human	human	0.999	1.0	F	C	human-human-human	1	F116C
+79	seq_188	8.7003	117	human	human	0.999	1.0	S	P	human-human-human	1	S117P
+79	seq_188	8.7003	118	human	human	0.999	1.0	F	*	human-human-human	1	F118*
+79	seq_188	8.7003	120	human	human	0.999	1.0	L	F	human-human-human	1	L120F
+79	seq_188	8.7003	122	human	human	0.999	1.0	X	A	human-human-human	1	X122A
+80	seq_185	7.65106	14	human	human	0.998	1.0	L	M	human-human-human	1	L14M
+80	seq_185	7.65106	29	human	human	0.998	1.0	N	S	human-human-human	1	N29S
+80	seq_185	7.65106	32	human	human	0.998	1.0	I	V	human-human-human	1	I32V
+80	seq_185	7.65106	34	human	human	0.998	1.0	Q	R	human-human-human	1	Q34R
+80	seq_185	7.65106	107	human	human	0.998	1.0	F	L	human-human-human	1	F107L
+80	seq_185	7.65106	115	human	human	0.998	1.0	T	A	human-human-human	1	T115A
+82	83	46.49416	60	human	swine	1.0	0.926	N	S	human-human-swine	0	N60S
+85	seq_192	23.0873	14	swine	human	0.897	1.0	M	K	swine-swine-human	1	M14K
+85	seq_192	23.0873	31	swine	human	0.897	1.0	M	I	swine-swine-human	1	M31I
+85	seq_192	23.0873	40	swine	human	0.897	1.0	L	I	swine-swine-human	1	L40I
+85	seq_192	23.0873	56	swine	human	0.897	1.0	H	Y	swine-swine-human	1	H56Y
+85	seq_192	23.0873	60	swine	human	0.897	1.0	S	N	swine-swine-human	1	S60N
+85	seq_192	23.0873	88	swine	human	0.897	1.0	K	R	swine-swine-human	1	K88R
+85	86	11.84898	49	swine	swine	0.897	0.932	V	A	swine-swine-swine	0	V49A
+86	seq_338	9.23969	14	swine	swine	0.932	1.0	M	T	swine-swine-swine	1	M14T
+86	seq_338	9.23969	110	swine	swine	0.932	1.0	E	Q	swine-swine-swine	1	E110Q
+86	seq_388	13.15476	40	swine	swine	0.932	1.0	L	I	swine-swine-swine	1	L40I
+86	seq_388	13.15476	77	swine	swine	0.932	1.0	R	K	swine-swine-swine	1	R77K
+86	seq_388	13.15476	85	swine	swine	0.932	1.0	H	R	swine-swine-swine	1	H85R
+87	seq_348	26.2844	60	swine	swine	0.919	1.0	S	I	swine-swine-swine	1	S60I
+88	seq_399	16.50295	6	swine	swine	0.912	1.0	V	M	swine-swine-swine	1	V6M
+88	seq_399	16.50295	7	swine	swine	0.912	1.0	S	L	swine-swine-swine	1	S7L
+88	seq_399	16.50295	60	swine	swine	0.912	1.0	S	N	swine-swine-swine	1	S60N
+88	seq_399	16.50295	86	swine	swine	0.912	1.0	R	K	swine-swine-swine	1	R86K
+89	seq_183	25.23931	14	swine	human	0.908	1.0	M	V	swine-swine-human	1	M14V
+89	seq_183	25.23931	55	swine	human	0.908	1.0	L	F	swine-swine-human	1	L55F
+89	seq_183	25.23931	60	swine	human	0.908	1.0	S	R	swine-swine-human	1	S60R
+89	seq_183	25.23931	77	swine	human	0.908	1.0	R	K	swine-swine-human	1	R77K
+89	seq_421	23.99809	14	swine	swine	0.908	1.0	M	T	swine-swine-swine	1	M14T
+89	seq_421	23.99809	27	swine	swine	0.908	1.0	D	G	swine-swine-swine	1	D27G
+91	seq_466	7.04808	4	swine	swine	0.963	1.0	N	K	swine-swine-swine	1	N4K
+91	seq_466	7.04808	50	swine	swine	0.963	1.0	M	I	swine-swine-swine	1	M50I
+91	seq_466	7.04808	52	swine	swine	0.963	1.0	M	T	swine-swine-swine	1	M52T
+91	seq_466	7.04808	56	swine	swine	0.963	1.0	H	Y	swine-swine-swine	1	H56Y
+91	92	4.06431	49	swine	swine	0.963	0.985	V	L	swine-swine-swine	0	V49L
+91	92	4.06431	60	swine	swine	0.963	0.985	S	N	swine-swine-swine	0	S60N
+91	92	4.06431	70	swine	swine	0.963	0.985	S	G	swine-swine-swine	0	S70G
+94	seq_228	4.08716	92	swine	swine	0.99	1.0	N	S	swine-swine-swine	1	N92S
+94	seq_465	3.08716	13	swine	swine	0.99	1.0	L	M	swine-swine-swine	1	L13M
+94	seq_465	3.08716	18	swine	swine	0.99	1.0	K	Y	swine-swine-swine	1	K18Y
+94	seq_465	3.08716	32	swine	swine	0.99	1.0	I	M	swine-swine-swine	1	I32M
+94	seq_465	3.08716	59	swine	swine	0.99	1.0	Q	L	swine-swine-swine	1	Q59L
+95	seq_234	15.95414	70	swine	swine	0.977	1.0	G	S	swine-swine-swine	1	G70S
+95	seq_234	15.95414	120	swine	swine	0.977	1.0	L	F	swine-swine-swine	1	L120F
+96	97	1.75131	27	swine	swine	0.981	0.981	D	G	swine-swine-swine	0	D27G
+96	99	2.64775	26	swine	swine	0.981	0.981	E	K	swine-swine-swine	0	E26K
+96	99	2.64775	52	swine	swine	0.981	0.981	M	T	swine-swine-swine	0	M52T
+99	100	2.70172	3	swine	swine	0.981	0.958	S	L	swine-swine-swine	0	S3L
+99	102	1.96072	120	swine	swine	0.981	0.992	L	F	swine-swine-swine	0	L120F
+100	seq_383	14.89182	22	swine	swine	0.958	1.0	G	R	swine-swine-swine	1	G22R
+100	seq_383	14.89182	34	swine	swine	0.958	1.0	Q	K	swine-swine-swine	1	Q34K
+100	seq_383	14.89182	40	swine	swine	0.958	1.0	L	I	swine-swine-swine	1	L40I
+100	seq_383	14.89182	63	swine	swine	0.958	1.0	G	E	swine-swine-swine	1	G63E
+100	seq_383	14.89182	100	swine	swine	0.958	1.0	M	I	swine-swine-swine	1	M100I
+100	101	15.62184	64	swine	swine	0.958	0.975	K	R	swine-swine-swine	0	K64R
+100	101	15.62184	89	swine	swine	0.958	0.975	I	V	swine-swine-swine	0	I89V
+101	seq_715	15.27546	40	swine	swine	0.975	1.0	L	I	swine-swine-swine	1	L40I
+101	seq_715	15.27546	45	swine	swine	0.975	1.0	L	I	swine-swine-swine	1	L45I
+101	seq_715	15.27546	89	swine	swine	0.975	1.0	V	L	swine-swine-swine	1	V89L
+103	seq_283	17.03584	6	swine	swine	0.974	1.0	V	M	swine-swine-swine	1	V6M
+103	seq_283	17.03584	22	swine	swine	0.974	1.0	G	E	swine-swine-swine	1	G22E
+103	seq_283	17.03584	31	swine	swine	0.974	1.0	M	I	swine-swine-swine	1	M31I
+103	seq_283	17.03584	57	swine	swine	0.974	1.0	S	F	swine-swine-swine	1	S57F
+103	seq_283	17.03584	83	swine	swine	0.974	1.0	V	M	swine-swine-swine	1	V83M
+103	seq_225	18.03584	26	swine	swine	0.974	1.0	K	E	swine-swine-swine	1	K26E
+104	105	2.62518	60	swine	swine	0.992	0.99	N	S	swine-swine-swine	0	N60S
+105	seq_405	12.63308	67	swine	swine	0.99	1.0	E	K	swine-swine-swine	1	E67K
+107	seq_408	7.6204	3	swine	swine	0.976	1.0	S	X	swine-swine-swine	1	S3X
+107	seq_408	7.6204	48	swine	swine	0.976	1.0	A	S	swine-swine-swine	1	A48S
+107	seq_408	7.6204	89	swine	swine	0.976	1.0	I	T	swine-swine-swine	1	I89T
+107	seq_419	6.78969	3	swine	swine	0.976	1.0	S	P	swine-swine-swine	1	S3P
+107	seq_419	6.78969	48	swine	swine	0.976	1.0	A	X	swine-swine-swine	1	A48X
+108	seq_404	6.00331	2	swine	swine	0.994	1.0	D	X	swine-swine-swine	1	D2X
+108	seq_404	6.00331	48	swine	swine	0.994	1.0	A	T	swine-swine-swine	1	A48T
+111	seq_420	10.86854	14	swine	swine	0.986	1.0	M	L	swine-swine-swine	1	M14L
+112	seq_516	14.08383	60	swine	swine	0.986	1.0	S	N	swine-swine-swine	1	S60N
+113	seq_415	5.26124	27	swine	swine	0.974	1.0	D	G	swine-swine-swine	1	D27G
+113	seq_415	5.26124	48	swine	swine	0.974	1.0	A	V	swine-swine-swine	1	A48V
+114	seq_416	9.68714	3	swine	swine	0.97	1.0	S	P	swine-swine-swine	1	S3P
+114	seq_416	9.68714	52	swine	swine	0.97	1.0	T	M	swine-swine-swine	1	T52M
+115	seq_515	9.08598	13	swine	swine	0.961	1.0	L	M	swine-swine-swine	1	L13M
+115	seq_515	9.08598	22	swine	swine	0.961	1.0	G	V	swine-swine-swine	1	G22V
+115	seq_403	8.15179	60	swine	swine	0.961	1.0	S	N	swine-swine-swine	1	S60N
+116	117	2.20481	29	swine	swine	0.991	0.98	N	S	swine-swine-swine	0	N29S
+117	seq_637	6.27598	26	swine	swine	0.98	1.0	K	R	swine-swine-swine	1	K26R
+117	seq_637	6.27598	67	swine	swine	0.98	1.0	E	K	swine-swine-swine	1	E67K
+119	seq_279	14.15911	25	swine	swine	0.957	1.0	S	L	swine-swine-swine	1	S25L
+119	seq_279	14.15911	29	swine	swine	0.957	1.0	N	S	swine-swine-swine	1	N29S
+119	seq_455	19.59747	3	swine	swine	0.957	1.0	S	P	swine-swine-swine	1	S3P
+119	seq_455	19.59747	64	swine	swine	0.957	1.0	K	N	swine-swine-swine	1	K64N
+119	seq_455	19.59747	89	swine	swine	0.957	1.0	I	T	swine-swine-swine	1	I89T
+120	125	4.53908	120	swine	swine	0.979	0.991	F	L	swine-swine-swine	0	F120L
+121	seq_022	3.14564	118	swine	human	0.904	1.0	F	L	swine-swine-human	1	F118L
+121	seq_022	3.14564	120	swine	human	0.904	1.0	F	L	swine-swine-human	1	F120L
+121	123	5.14564	63	swine	swine	0.904	1.0	G	R	swine-swine-swine	0	G63R
+122	seq_307	3.98444	39	swine	swine	0.947	1.0	K	R	swine-swine-swine	1	K39R
+122	seq_307	3.98444	48	swine	swine	0.947	1.0	A	E	swine-swine-swine	1	A48E
+122	seq_307	3.98444	49	swine	swine	0.947	1.0	L	K	swine-swine-swine	1	L49K
+122	seq_307	3.98444	89	swine	swine	0.947	1.0	I	V	swine-swine-swine	1	I89V
+124	seq_206	3.12696	29	swine	swine	0.974	1.0	N	S	swine-swine-swine	1	N29S
+126	seq_504	16.0299	26	swine	swine	0.983	1.0	K	E	swine-swine-swine	1	K26E
+126	seq_504	16.0299	48	swine	swine	0.983	1.0	A	S	swine-swine-swine	1	A48S
+127	seq_494	15.33167	20	swine	swine	0.976	1.0	Q	R	swine-swine-swine	1	Q20R
+127	seq_494	15.33167	31	swine	swine	0.976	1.0	M	I	swine-swine-swine	1	M31I
+127	seq_494	15.33167	57	swine	swine	0.976	1.0	S	F	swine-swine-swine	1	S57F
+128	129	0.85415	32	swine	swine	0.986	0.977	I	V	swine-swine-swine	0	I32V
+128	seq_815	9.10412	29	swine	swine	0.986	1.0	N	S	swine-swine-swine	1	N29S
+128	seq_815	9.10412	47	swine	swine	0.986	1.0	E	G	swine-swine-swine	1	E47G
+128	seq_815	9.10412	92	swine	swine	0.986	1.0	N	S	swine-swine-swine	1	N92S
+129	seq_674	21.25133	10	swine	swine	0.977	1.0	Q	K	swine-swine-swine	1	Q10K
+129	seq_674	21.25133	26	swine	swine	0.977	1.0	K	M	swine-swine-swine	1	K26M
+129	seq_674	21.25133	33	swine	swine	0.977	1.0	T	M	swine-swine-swine	1	T33M
+129	seq_674	21.25133	34	swine	swine	0.977	1.0	Q	K	swine-swine-swine	1	Q34K
+129	seq_674	21.25133	60	swine	swine	0.977	1.0	N	S	swine-swine-swine	1	N60S
+130	seq_487	14.95135	6	swine	swine	0.966	1.0	V	M	swine-swine-swine	1	V6M
+130	seq_487	14.95135	64	swine	swine	0.966	1.0	K	R	swine-swine-swine	1	K64R
+130	seq_481	15.95135	31	swine	swine	0.966	1.0	M	I	swine-swine-swine	1	M31I
+130	seq_481	15.95135	63	swine	swine	0.966	1.0	G	E	swine-swine-swine	1	G63E
+130	seq_481	15.95135	89	swine	swine	0.966	1.0	I	M	swine-swine-swine	1	I89M
+130	seq_481	15.95135	93	swine	swine	0.966	1.0	S	T	swine-swine-swine	1	S93T
+132	seq_329	8.01217	6	swine	swine	0.991	1.0	V	M	swine-swine-swine	1	V6M
+132	seq_814	8.89573	9	swine	swine	0.991	1.0	F	Y	swine-swine-swine	1	F9Y
+132	seq_814	8.89573	23	swine	swine	0.991	1.0	S	P	swine-swine-swine	1	S23P
+133	134	3.29554	32	swine	swine	0.993	0.999	I	V	swine-swine-swine	0	I32V
+133	134	3.29554	64	swine	swine	0.993	0.999	K	R	swine-swine-swine	0	K64R
+136	seq_413	11.3515	36	swine	swine	0.998	1.0	E	K	swine-swine-swine	1	E36K
+136	seq_413	11.3515	57	swine	swine	0.998	1.0	S	Y	swine-swine-swine	1	S57Y
+136	seq_413	11.3515	106	swine	swine	0.998	1.0	L	X	swine-swine-swine	1	L106X
+137	138	1.11229	60	swine	swine	0.998	0.973	N	S	swine-swine-swine	0	N60S
+138	seq_379	10.9697	48	swine	swine	0.973	1.0	A	V	swine-swine-swine	1	A48V
+139	140	1.17306	14	swine	swine	0.956	0.963	M	V	swine-swine-swine	0	M14V
+139	140	1.17306	64	swine	swine	0.956	0.963	R	K	swine-swine-swine	0	R64K
+139	142	8.79429	31	swine	human	0.956	0.947	M	I	swine-swine-human	0	M31I
+140	seq_339	5.97565	3	swine	swine	0.963	1.0	S	P	swine-swine-swine	1	S3P
+140	seq_339	5.97565	49	swine	swine	0.963	1.0	L	V	swine-swine-swine	1	L49V
+140	seq_339	5.97565	52	swine	swine	0.963	1.0	T	M	swine-swine-swine	1	T52M
+140	seq_339	5.97565	60	swine	swine	0.963	1.0	S	N	swine-swine-swine	1	S60N
+140	seq_339	5.97565	63	swine	swine	0.963	1.0	G	E	swine-swine-swine	1	G63E
+140	seq_339	5.97565	86	swine	swine	0.963	1.0	R	K	swine-swine-swine	1	R86K
+140	seq_339	5.97565	89	swine	swine	0.963	1.0	I	V	swine-swine-swine	1	I89V
+140	seq_339	5.97565	104	swine	swine	0.963	1.0	Q	H	swine-swine-swine	1	Q104H
+143	seq_130	2.36368	8	human	human	1.0	1.0	S	T	human-human-human	1	S8T
+143	seq_130	2.36368	36	human	human	1.0	1.0	E	K	human-human-human	1	E36K
+145	146	0.81835	88	swine	swine	0.989	0.993	K	R	swine-swine-swine	0	K88R
+146	147	0.2965	60	swine	swine	0.993	0.995	N	S	swine-swine-swine	0	N60S
+146	seq_671	14.87035	21	swine	swine	0.993	1.0	L	F	swine-swine-swine	1	L21F
+146	seq_671	14.87035	86	swine	swine	0.993	1.0	R	K	swine-swine-swine	1	R86K
+146	seq_671	14.87035	93	swine	swine	0.993	1.0	S	G	swine-swine-swine	1	S93G
+147	seq_654	12.78968	83	swine	swine	0.995	1.0	V	M	swine-swine-swine	1	V83M
+149	150	3.78289	31	swine	swine	0.991	0.981	M	I	swine-swine-swine	0	M31I
+150	151	2.54324	18	swine	swine	0.981	0.993	K	N	swine-swine-swine	0	K18N
+150	seq_554	11.80328	32	swine	swine	0.981	1.0	I	T	swine-swine-swine	1	I32T
+150	seq_554	11.80328	60	swine	swine	0.981	1.0	S	N	swine-swine-swine	1	S60N
+152	seq_728	16.66412	6	swine	swine	0.987	1.0	V	M	swine-swine-swine	1	V6M
+152	seq_728	16.66412	48	swine	swine	0.987	1.0	A	T	swine-swine-swine	1	A48T
+152	seq_728	16.66412	60	swine	swine	0.987	1.0	S	N	swine-swine-swine	1	S60N
+152	seq_728	16.66412	83	swine	swine	0.987	1.0	V	L	swine-swine-swine	1	V83L
+152	seq_728	16.66412	89	swine	swine	0.987	1.0	I	V	swine-swine-swine	1	I89V
+153	seq_573	10.96778	52	swine	swine	0.977	1.0	T	K	swine-swine-swine	1	T52K
+153	seq_573	10.96778	86	swine	swine	0.977	1.0	R	K	swine-swine-swine	1	R86K
+154	seq_666	10.02085	57	swine	swine	0.976	1.0	S	F	swine-swine-swine	1	S57F
+154	seq_666	10.02085	89	swine	swine	0.976	1.0	I	M	swine-swine-swine	1	I89M
+154	seq_655	7.85647	3	swine	swine	0.976	1.0	S	P	swine-swine-swine	1	S3P
+155	156	1.15798	86	swine	swine	0.993	0.986	R	K	swine-swine-swine	0	R86K
+156	seq_632	6.8101	115	swine	swine	0.986	1.0	T	A	swine-swine-swine	1	T115A
+157	seq_558	11.79451	11	swine	swine	0.98	1.0	D	G	swine-swine-swine	1	D11G
+157	seq_558	11.79451	60	swine	swine	0.98	1.0	S	N	swine-swine-swine	1	S60N
+157	seq_558	11.79451	85	swine	swine	0.98	1.0	H	L	swine-swine-swine	1	H85L
+157	seq_558	11.79451	88	swine	swine	0.98	1.0	R	K	swine-swine-swine	1	R88K
+157	seq_558	11.79451	89	swine	swine	0.98	1.0	I	T	swine-swine-swine	1	I89T
+158	161	5.64734	89	swine	swine	0.977	0.966	I	M	swine-swine-swine	0	I89M
+159	seq_660	8.4699	26	swine	swine	0.946	1.0	K	R	swine-swine-swine	1	K26R
+159	seq_660	8.4699	29	swine	swine	0.946	1.0	N	S	swine-swine-swine	1	N29S
+159	seq_660	8.4699	60	swine	swine	0.946	1.0	S	N	swine-swine-swine	1	S60N
+160	seq_169	14.99622	3	swine	human	0.932	1.0	S	P	swine-swine-human	1	S3P
+160	seq_169	14.99622	44	swine	human	0.932	1.0	S	L	swine-swine-human	1	S44L
+160	seq_169	14.99622	60	swine	human	0.932	1.0	S	N	swine-swine-human	1	S60N
+160	seq_169	14.99622	88	swine	human	0.932	1.0	R	K	swine-swine-human	1	R88K
+160	seq_670	10.94142	6	swine	swine	0.932	1.0	V	M	swine-swine-swine	1	V6M
+160	seq_670	10.94142	29	swine	swine	0.932	1.0	N	S	swine-swine-swine	1	N29S
+161	162	1.726	31	swine	swine	0.966	0.971	M	I	swine-swine-swine	0	M31I
+162	seq_667	7.1744	60	swine	swine	0.971	1.0	S	N	swine-swine-swine	1	S60N
+162	seq_667	7.1744	83	swine	swine	0.971	1.0	V	L	swine-swine-swine	1	V83L
+162	seq_667	7.1744	89	swine	swine	0.971	1.0	M	V	swine-swine-swine	1	M89V
+162	seq_617	5.39632	23	swine	swine	0.971	1.0	S	P	swine-swine-swine	1	S23P
+162	seq_617	5.39632	48	swine	swine	0.971	1.0	A	S	swine-swine-swine	1	A48S
+163	seq_759	0.96697	7	swine	swine	1.0	1.0	S	L	swine-swine-swine	1	S7L
+163	165	0.32449	60	swine	swine	1.0	1.0	S	N	swine-swine-swine	0	S60N
+164	seq_758	0.64481	48	swine	swine	1.0	1.0	A	X	swine-swine-swine	1	A48X
+164	seq_758	0.64481	90	swine	swine	1.0	1.0	T	S	swine-swine-swine	1	T90S
+168	169	3.30008	6	swine	swine	0.998	0.974	V	M	swine-swine-swine	0	V6M
+169	170	6.34048	85	swine	swine	0.974	0.992	H	Q	swine-swine-swine	0	H85Q
+169	seq_680	12.37139	3	swine	swine	0.974	1.0	S	P	swine-swine-swine	1	S3P
+169	seq_680	12.37139	36	swine	swine	0.974	1.0	E	K	swine-swine-swine	1	E36K
+169	seq_680	12.37139	64	swine	swine	0.974	1.0	K	R	swine-swine-swine	1	K64R
+170	seq_663	6.03092	57	swine	swine	0.992	1.0	S	F	swine-swine-swine	1	S57F
+171	172	1.57569	39	swine	swine	0.99	0.978	K	R	swine-swine-swine	0	K39R
+171	seq_518	9.9541	29	swine	swine	0.99	1.0	N	S	swine-swine-swine	1	N29S
+171	seq_518	9.9541	48	swine	swine	0.99	1.0	A	V	swine-swine-swine	1	A48V
+171	seq_518	9.9541	89	swine	swine	0.99	1.0	I	T	swine-swine-swine	1	I89T
+171	seq_520	10.70433	3	swine	swine	0.99	1.0	S	P	swine-swine-swine	1	S3P
+171	seq_520	10.70433	36	swine	swine	0.99	1.0	E	K	swine-swine-swine	1	E36K
+172	seq_726	14.96471	40	swine	swine	0.978	1.0	L	I	swine-swine-swine	1	L40I
+172	seq_726	14.96471	50	swine	swine	0.978	1.0	M	I	swine-swine-swine	1	M50I
+172	seq_726	14.96471	63	swine	swine	0.978	1.0	G	E	swine-swine-swine	1	G63E
+172	seq_485	7.96471	58	swine	swine	0.978	1.0	L	I	swine-swine-swine	1	L58I
+174	seq_571	7.34786	6	swine	swine	0.972	1.0	V	M	swine-swine-swine	1	V6M
+174	seq_571	7.34786	63	swine	swine	0.972	1.0	G	E	swine-swine-swine	1	G63E
+174	seq_571	7.34786	71	swine	swine	0.972	1.0	Q	H	swine-swine-swine	1	Q71H
+175	seq_727	8.52388	23	swine	swine	0.976	1.0	S	P	swine-swine-swine	1	S23P
+175	seq_727	8.52388	48	swine	swine	0.976	1.0	A	V	swine-swine-swine	1	A48V
+177	178	1.90799	60	swine	swine	0.982	0.964	S	N	swine-swine-swine	0	S60N
+177	seq_668	3.18884	76	swine	swine	0.982	1.0	I	T	swine-swine-swine	1	I76T
+178	179	3.95959	14	swine	swine	0.964	0.897	M	K	swine-swine-swine	0	M14K
+178	179	3.95959	33	swine	swine	0.964	0.897	T	I	swine-swine-swine	0	T33I
+178	seq_773	6.1603	64	swine	swine	0.964	1.0	K	R	swine-swine-swine	1	K64R
+181	seq_442	11.52353	36	swine	swine	0.997	1.0	E	K	swine-swine-swine	1	E36K
+181	seq_442	11.52353	63	swine	swine	0.997	1.0	G	E	swine-swine-swine	1	G63E
+182	seq_426	10.03452	3	swine	swine	0.995	1.0	S	P	swine-swine-swine	1	S3P
+184	186	0.61497	31	swine	swine	0.979	0.976	M	I	swine-swine-swine	0	M31I
+185	seq_483	2.51086	83	swine	swine	0.983	1.0	V	M	swine-swine-swine	1	V83M
+185	seq_483	2.51086	89	swine	swine	0.983	1.0	I	L	swine-swine-swine	1	I89L
+185	seq_686	8.05333	64	swine	swine	0.983	1.0	K	R	swine-swine-swine	1	K64R
+186	seq_673	10.71954	26	swine	swine	0.976	1.0	K	E	swine-swine-swine	1	K26E
+186	seq_560	7.71954	57	swine	swine	0.976	1.0	S	F	swine-swine-swine	1	S57F
+186	seq_560	7.71954	63	swine	swine	0.976	1.0	G	E	swine-swine-swine	1	G63E
+186	seq_560	7.71954	67	swine	swine	0.976	1.0	E	K	swine-swine-swine	1	E67K
+188	seq_665	14.62339	49	swine	swine	0.985	1.0	L	V	swine-swine-swine	1	L49V
+188	seq_665	14.62339	56	swine	swine	0.985	1.0	H	Y	swine-swine-swine	1	H56Y
+188	seq_665	14.62339	60	swine	swine	0.985	1.0	S	N	swine-swine-swine	1	S60N
+189	seq_664	11.63044	3	swine	swine	0.981	1.0	S	P	swine-swine-swine	1	S3P
+190	seq_830	15.14296	63	swine	swine	0.987	1.0	G	E	swine-swine-swine	1	G63E
+191	seq_672	13.77067	12	swine	swine	0.983	1.0	I	M	swine-swine-swine	1	I12M
+191	seq_672	13.77067	120	swine	swine	0.983	1.0	L	F	swine-swine-swine	1	L120F
+192	seq_661	12.45362	63	swine	swine	0.967	1.0	G	E	swine-swine-swine	1	G63E
+195	seq_227	5.71309	42	swine	swine	0.981	1.0	R	K	swine-swine-swine	1	R42K
+195	seq_384	10.46104	86	swine	swine	0.981	1.0	R	K	swine-swine-swine	1	R86K
+196	seq_231	9.49701	27	swine	swine	0.993	1.0	D	G	swine-swine-swine	1	D27G
+196	seq_231	9.49701	63	swine	swine	0.993	1.0	G	E	swine-swine-swine	1	G63E
+196	seq_231	9.49701	77	swine	swine	0.993	1.0	R	K	swine-swine-swine	1	R77K
+198	200	1.24792	89	swine	swine	0.993	0.992	I	L	swine-swine-swine	0	I89L
+199	seq_196	11.40937	14	swine	swine	0.992	1.0	M	V	swine-swine-swine	1	M14V
+199	seq_196	11.40937	92	swine	swine	0.992	1.0	N	S	swine-swine-swine	1	N92S
+199	seq_410	12.15732	26	swine	swine	0.992	1.0	K	R	swine-swine-swine	1	K26R
+200	seq_284	8.25094	83	swine	swine	0.992	1.0	V	M	swine-swine-swine	1	V83M
+200	201	1.76258	64	swine	swine	0.992	0.982	K	R	swine-swine-swine	0	K64R
+201	seq_272	9.48836	93	swine	swine	0.982	1.0	S	G	swine-swine-swine	1	S93G
+201	seq_625	6.06918	59	swine	swine	0.982	1.0	Q	L	swine-swine-swine	1	Q59L
+201	seq_625	6.06918	63	swine	swine	0.982	1.0	G	E	swine-swine-swine	1	G63E
+202	203	1.8471	57	swine	swine	0.989	0.995	S	Y	swine-swine-swine	0	S57Y
+202	seq_624	6.86653	57	swine	swine	0.989	1.0	S	F	swine-swine-swine	1	S57F
+202	seq_624	6.86653	86	swine	swine	0.989	1.0	R	K	swine-swine-swine	1	R86K
+203	seq_268	5.43861	3	swine	swine	0.995	1.0	S	P	swine-swine-swine	1	S3P
+203	seq_268	5.43861	89	swine	swine	0.995	1.0	L	S	swine-swine-swine	1	L89S
+206	seq_449	11.08435	22	swine	swine	0.981	1.0	G	E	swine-swine-swine	1	G22E
+207	seq_619	15.29674	26	swine	swine	0.979	1.0	K	E	swine-swine-swine	1	K26E
+207	seq_619	15.29674	27	swine	swine	0.979	1.0	D	G	swine-swine-swine	1	D27G
+207	seq_619	15.29674	52	swine	swine	0.979	1.0	T	M	swine-swine-swine	1	T52M
+207	seq_619	15.29674	89	swine	swine	0.979	1.0	L	S	swine-swine-swine	1	L89S
+208	seq_507	10.67723	42	swine	swine	0.98	1.0	R	K	swine-swine-swine	1	R42K
+208	seq_507	10.67723	85	swine	swine	0.98	1.0	H	N	swine-swine-swine	1	H85N
+209	seq_452	7.62056	119	swine	swine	0.98	1.0	Q	L	swine-swine-swine	1	Q119L
+209	seq_452	7.62056	120	swine	swine	0.98	1.0	F	I	swine-swine-swine	1	F120I
+211	seq_754	16.45688	47	swine	swine	0.974	1.0	E	K	swine-swine-swine	1	E47K
+211	seq_754	16.45688	82	swine	swine	0.974	1.0	E	D	swine-swine-swine	1	E82D
+211	seq_769	15.95003	14	swine	swine	0.974	1.0	M	V	swine-swine-swine	1	M14V
+211	seq_769	15.95003	71	swine	swine	0.974	1.0	Q	L	swine-swine-swine	1	Q71L
+212	213	1.48938	92	swine	swine	0.976	0.97	N	S	swine-swine-swine	0	N92S
+212	215	7.48675	100	swine	swine	0.976	0.972	M	I	swine-swine-swine	0	M100I
+213	seq_767	14.03308	3	swine	swine	0.97	1.0	S	T	swine-swine-swine	1	S3T
+213	seq_767	14.03308	39	swine	swine	0.97	1.0	K	R	swine-swine-swine	1	K39R
+213	seq_767	14.03308	57	swine	swine	0.97	1.0	Y	H	swine-swine-swine	1	Y57H
+213	seq_767	14.03308	67	swine	swine	0.97	1.0	E	K	swine-swine-swine	1	E67K
+213	seq_767	14.03308	89	swine	swine	0.97	1.0	L	I	swine-swine-swine	1	L89I
+213	214	4.57177	3	swine	swine	0.97	0.978	S	P	swine-swine-swine	0	S3P
+214	seq_497	2.7558	81	swine	swine	0.978	1.0	E	D	swine-swine-swine	1	E81D
+214	seq_748	10.03939	86	swine	swine	0.978	1.0	R	K	swine-swine-swine	1	R86K
+215	seq_768	8.11242	52	swine	swine	0.972	1.0	T	M	swine-swine-swine	1	T52M
+216	218	5.13898	86	swine	swine	0.977	0.993	R	K	swine-swine-swine	0	R86K
+217	seq_757	4.38755	47	swine	swine	0.985	1.0	E	D	swine-swine-swine	1	E47D
+218	seq_749	2.84156	40	swine	swine	0.993	1.0	L	I	swine-swine-swine	1	L40I
+218	seq_749	2.84156	116	swine	swine	0.993	1.0	F	L	swine-swine-swine	1	F116L
+219	seq_189	3.70832	22	swine	human	0.999	1.0	G	E	swine-swine-human	1	G22E
+219	seq_189	3.70832	60	swine	human	0.999	1.0	N	S	swine-swine-human	1	N60S
+219	seq_189	3.70832	100	swine	human	0.999	1.0	I	L	swine-swine-human	1	I100L
+220	222	3.01939	60	swine	swine	0.993	0.998	N	D	swine-swine-swine	0	N60D
+221	seq_576	14.44017	120	swine	swine	0.969	1.0	F	L	swine-swine-swine	1	F120L
+221	seq_370	8.44108	57	swine	swine	0.969	1.0	Y	H	swine-swine-swine	1	Y57H
+222	seq_450	8.2474	26	swine	swine	0.998	1.0	K	R	swine-swine-swine	1	K26R
+222	seq_450	8.2474	52	swine	swine	0.998	1.0	T	M	swine-swine-swine	1	T52M
+222	seq_450	8.2474	64	swine	swine	0.998	1.0	K	R	swine-swine-swine	1	K64R
+222	seq_450	8.2474	83	swine	swine	0.998	1.0	V	M	swine-swine-swine	1	V83M
+223	224	1.58273	3	swine	swine	0.998	0.98	S	P	swine-swine-swine	0	S3P
+224	seq_750	18.10058	60	swine	swine	0.98	1.0	D	G	swine-swine-swine	1	D60G
+224	seq_750	18.10058	64	swine	swine	0.98	1.0	K	R	swine-swine-swine	1	K64R
+224	seq_441	11.04911	26	swine	swine	0.98	1.0	K	T	swine-swine-swine	1	K26T
+224	seq_441	11.04911	32	swine	swine	0.98	1.0	I	V	swine-swine-swine	1	I32V
+224	seq_441	11.04911	34	swine	swine	0.98	1.0	Q	K	swine-swine-swine	1	Q34K
+225	seq_490	7.92731	7	swine	swine	0.976	1.0	S	L	swine-swine-swine	1	S7L
+225	seq_785	15.83416	82	swine	swine	0.976	1.0	E	D	swine-swine-swine	1	E82D
+226	227	0.35003	83	swine	swine	0.998	0.998	V	M	swine-swine-swine	0	V83M
+228	seq_634	5.03772	7	swine	swine	0.993	1.0	S	L	swine-swine-swine	1	S7L
+228	seq_634	5.03772	83	swine	swine	0.993	1.0	M	T	swine-swine-swine	1	M83T
+228	seq_583	15.88704	63	swine	swine	0.993	1.0	G	X	swine-swine-swine	1	G63X
+229	230	1.99498	22	swine	swine	0.997	0.985	G	R	swine-swine-swine	0	G22R
+230	seq_513	8.34376	64	swine	swine	0.985	1.0	K	R	swine-swine-swine	1	K64R
+230	seq_513	8.34376	85	swine	swine	0.985	1.0	H	R	swine-swine-swine	1	H85R
+230	seq_640	6.33503	2	swine	swine	0.985	1.0	D	E	swine-swine-swine	1	D2E
+230	seq_640	6.33503	40	swine	swine	0.985	1.0	L	I	swine-swine-swine	1	L40I
+231	seq_630	4.93923	67	swine	swine	0.993	1.0	E	K	swine-swine-swine	1	E67K
+231	seq_630	4.93923	77	swine	swine	0.993	1.0	R	K	swine-swine-swine	1	R77K
+231	seq_647	10.52955	3	swine	swine	0.993	1.0	S	P	swine-swine-swine	1	S3P
+231	seq_647	10.52955	92	swine	swine	0.993	1.0	N	S	swine-swine-swine	1	N92S
+231	seq_647	10.52955	113	swine	swine	0.993	1.0	I	M	swine-swine-swine	1	I113M
+232	seq_683	12.69153	46	swine	swine	0.985	1.0	G	S	swine-swine-swine	1	G46S
+232	seq_683	12.69153	47	swine	swine	0.985	1.0	E	K	swine-swine-swine	1	E47K
+232	seq_683	12.69153	52	swine	swine	0.985	1.0	T	K	swine-swine-swine	1	T52K
+232	seq_500	7.21208	23	swine	swine	0.985	1.0	S	P	swine-swine-swine	1	S23P
+232	seq_500	7.21208	60	swine	swine	0.985	1.0	D	N	swine-swine-swine	1	D60N
+234	seq_477	5.57814	52	swine	swine	0.987	1.0	T	M	swine-swine-swine	1	T52M
+234	seq_477	5.57814	57	swine	swine	0.987	1.0	Y	H	swine-swine-swine	1	Y57H
+234	seq_477	5.57814	60	swine	swine	0.987	1.0	D	N	swine-swine-swine	1	D60N
+236	seq_751	9.16151	39	swine	swine	0.975	1.0	K	R	swine-swine-swine	1	K39R
+236	seq_751	9.16151	45	swine	swine	0.975	1.0	L	I	swine-swine-swine	1	L45I
+236	seq_751	9.16151	48	swine	swine	0.975	1.0	A	T	swine-swine-swine	1	A48T
+236	seq_620	5.71138	83	swine	swine	0.975	1.0	M	I	swine-swine-swine	1	M83I
+237	seq_642	8.29983	60	swine	swine	0.993	1.0	D	N	swine-swine-swine	1	D60N
+238	seq_675	12.90268	52	swine	swine	0.974	1.0	T	K	swine-swine-swine	1	T52K
+238	seq_676	13.26646	60	swine	swine	0.974	1.0	D	N	swine-swine-swine	1	D60N
+238	seq_676	13.26646	89	swine	swine	0.974	1.0	L	I	swine-swine-swine	1	L89I
+239	seq_651	7.98726	19	swine	swine	0.987	1.0	M	L	swine-swine-swine	1	M19L
+239	seq_651	7.98726	64	swine	swine	0.987	1.0	K	R	swine-swine-swine	1	K64R
+239	seq_429	5.74683	60	swine	swine	0.987	1.0	D	S	swine-swine-swine	1	D60S
+240	seq_116	7.94876	22	swine	human	0.972	1.0	G	R	swine-swine-human	1	G22R
+242	seq_623	0.41479	117	swine	swine	1.0	1.0	S	X	swine-swine-swine	1	S117X
+244	246	3.78735	79	swine	swine	0.982	0.979	L	M	swine-swine-swine	0	L79M
+245	seq_648	7.54167	29	swine	swine	0.978	1.0	N	S	swine-swine-swine	1	N29S
+245	seq_648	7.54167	31	swine	swine	0.978	1.0	M	I	swine-swine-swine	1	M31I
+245	seq_648	7.54167	39	swine	swine	0.978	1.0	K	R	swine-swine-swine	1	K39R
+246	seq_658	5.51402	57	swine	swine	0.979	1.0	Y	S	swine-swine-swine	1	Y57S
+246	seq_658	5.51402	60	swine	swine	0.979	1.0	D	N	swine-swine-swine	1	D60N
+247	248	8.03548	111	swine	swine	0.957	0.894	Q	H	swine-swine-swine	0	Q111H
+247	seq_764	14.72931	79	swine	swine	0.957	1.0	L	M	swine-swine-swine	1	L79M
+247	seq_764	14.72931	116	swine	swine	0.957	1.0	F	L	swine-swine-swine	1	F116L
+247	seq_764	14.72931	120	swine	swine	0.957	1.0	F	L	swine-swine-swine	1	F120L
+248	249	7.07442	39	swine	human	0.894	1.0	K	R	swine-swine-human	0	K39R
+248	seq_838	3.2799	4	swine	swine	0.894	1.0	N	T	swine-swine-swine	1	N4T
+248	seq_840	5.80312	14	swine	swine	0.894	1.0	M	V	swine-swine-swine	1	M14V
+249	seq_171	0.0	100	human	human	1.0	1.0	M	X	swine-human-human	1	M100X
+251	252	3.42369	57	swine	swine	0.985	0.977	S	F	swine-swine-swine	0	S57F
+251	seq_197	7.58193	63	swine	swine	0.985	1.0	G	E	swine-swine-swine	1	G63E
+251	seq_197	7.58193	76	swine	swine	0.985	1.0	I	M	swine-swine-swine	1	I76M
+252	seq_653	15.21834	23	swine	swine	0.977	1.0	S	P	swine-swine-swine	1	S23P
+252	seq_653	15.21834	31	swine	swine	0.977	1.0	M	I	swine-swine-swine	1	M31I
+252	seq_653	15.21834	63	swine	swine	0.977	1.0	G	E	swine-swine-swine	1	G63E
+252	seq_653	15.21834	83	swine	swine	0.977	1.0	V	M	swine-swine-swine	1	V83M
+252	253	1.44979	39	swine	swine	0.977	0.981	K	R	swine-swine-swine	0	K39R
+253	seq_633	8.9605	22	swine	swine	0.981	1.0	G	E	swine-swine-swine	1	G22E
+253	254	4.70406	14	swine	swine	0.981	0.985	M	T	swine-swine-swine	0	M14T
+253	254	4.70406	29	swine	swine	0.981	0.985	N	S	swine-swine-swine	0	N29S
+253	254	4.70406	83	swine	swine	0.981	0.985	V	M	swine-swine-swine	0	V83M
+254	257	4.14316	58	swine	swine	0.985	0.902	L	F	swine-swine-swine	0	L58F
+254	255	0.59947	20	swine	swine	0.985	0.993	Q	R	swine-swine-swine	0	Q20R
+257	seq_691	9.88314	22	swine	swine	0.902	1.0	G	E	swine-swine-swine	1	G22E
+257	seq_691	9.88314	57	swine	swine	0.902	1.0	F	L	swine-swine-swine	1	F57L
+257	seq_691	9.88314	120	swine	swine	0.902	1.0	F	L	swine-swine-swine	1	F120L
+260	seq_792	11.1214	14	swine	swine	0.75	1.0	T	M	swine-swine-swine	1	T14M
+260	seq_792	11.1214	29	swine	swine	0.75	1.0	S	N	swine-swine-swine	1	S29N
+260	seq_792	11.1214	52	swine	swine	0.75	1.0	T	K	swine-swine-swine	1	T52K
+260	seq_792	11.1214	55	swine	swine	0.75	1.0	L	F	swine-swine-swine	1	L55F
+260	seq_792	11.1214	83	swine	swine	0.75	1.0	M	I	swine-swine-swine	1	M83I
+263	seq_498	14.08415	29	swine	swine	0.978	1.0	N	S	swine-swine-swine	1	N29S
+263	seq_498	14.08415	89	swine	swine	0.978	1.0	I	M	swine-swine-swine	1	I89M
+264	265	2.13016	29	swine	swine	0.971	0.976	N	S	swine-swine-swine	0	N29S
+265	266	3.99357	100	swine	swine	0.976	0.962	M	L	swine-swine-swine	0	M100L
+266	seq_578	7.30414	22	swine	swine	0.962	1.0	G	E	swine-swine-swine	1	G22E
+266	seq_578	7.30414	63	swine	swine	0.962	1.0	G	E	swine-swine-swine	1	G63E
+266	seq_743	11.73401	3	swine	swine	0.962	1.0	S	P	swine-swine-swine	1	S3P
+266	seq_743	11.73401	14	swine	swine	0.962	1.0	M	V	swine-swine-swine	1	M14V
+267	268	7.2477	39	swine	swine	0.978	0.962	R	K	swine-swine-swine	0	R39K
+268	seq_787	8.50807	7	swine	swine	0.962	1.0	S	L	swine-swine-swine	1	S7L
+268	seq_787	8.50807	85	swine	swine	0.962	1.0	H	N	swine-swine-swine	1	H85N
+268	seq_787	8.50807	89	swine	swine	0.962	1.0	I	T	swine-swine-swine	1	I89T
+270	seq_684	7.12366	23	swine	swine	0.991	1.0	S	P	swine-swine-swine	1	S23P
+270	seq_684	7.12366	76	swine	swine	0.991	1.0	I	L	swine-swine-swine	1	I76L
+270	271	0.94163	63	swine	swine	0.991	0.993	G	E	swine-swine-swine	0	G63E
+271	seq_796	8.74339	29	swine	swine	0.993	1.0	S	N	swine-swine-swine	1	S29N
+271	seq_796	8.74339	57	swine	swine	0.993	1.0	F	S	swine-swine-swine	1	F57S
+271	seq_796	8.74339	60	swine	swine	0.993	1.0	N	S	swine-swine-swine	1	N60S
+272	seq_304	7.08834	57	swine	swine	0.991	1.0	S	F	swine-swine-swine	1	S57F
+273	305	0.47046	27	swine	swine	0.993	0.993	D	G	swine-swine-swine	0	D27G
+274	seq_427	13.07644	33	swine	swine	0.988	1.0	T	M	swine-swine-swine	1	T33M
+275	seq_635	7.43428	23	swine	swine	0.986	1.0	S	Y	swine-swine-swine	1	S23Y
+275	seq_635	7.43428	29	swine	swine	0.986	1.0	N	S	swine-swine-swine	1	N29S
+275	seq_635	7.43428	118	swine	swine	0.986	1.0	F	L	swine-swine-swine	1	F118L
+277	seq_479	7.74792	22	swine	swine	0.978	1.0	G	E	swine-swine-swine	1	G22E
+277	seq_479	7.74792	83	swine	swine	0.978	1.0	V	M	swine-swine-swine	1	V83M
+277	seq_479	7.74792	89	swine	swine	0.978	1.0	I	T	swine-swine-swine	1	I89T
+278	seq_503	5.7137	92	swine	swine	0.987	1.0	N	S	swine-swine-swine	1	N92S
+280	seq_752	10.965	60	swine	swine	0.99	1.0	N	H	swine-swine-swine	1	N60H
+280	seq_446	2.25894	7	swine	swine	0.99	1.0	S	I	swine-swine-swine	1	S7I
+281	284	1.95566	83	swine	swine	0.97	0.963	V	M	swine-swine-swine	0	V83M
+282	seq_574	9.40535	14	swine	swine	0.957	1.0	M	V	swine-swine-swine	1	M14V
+282	seq_574	9.40535	48	swine	swine	0.957	1.0	A	T	swine-swine-swine	1	A48T
+282	seq_574	9.40535	49	swine	swine	0.957	1.0	L	X	swine-swine-swine	1	L49X
+282	seq_574	9.40535	57	swine	swine	0.957	1.0	S	F	swine-swine-swine	1	S57F
+282	seq_574	9.40535	58	swine	swine	0.957	1.0	L	F	swine-swine-swine	1	L58F
+282	seq_574	9.40535	64	swine	swine	0.957	1.0	K	N	swine-swine-swine	1	K64N
+282	seq_574	9.40535	71	swine	swine	0.957	1.0	Q	R	swine-swine-swine	1	Q71R
+283	seq_793	6.80469	92	swine	swine	0.96	1.0	N	S	swine-swine-swine	1	N92S
+284	seq_557	9.99049	33	swine	swine	0.963	1.0	T	M	swine-swine-swine	1	T33M
+284	seq_557	9.99049	58	swine	swine	0.963	1.0	L	I	swine-swine-swine	1	L58I
+284	seq_557	9.99049	88	swine	swine	0.963	1.0	K	R	swine-swine-swine	1	K88R
+284	seq_557	9.99049	89	swine	swine	0.963	1.0	I	V	swine-swine-swine	1	I89V
+285	seq_478	6.12992	22	swine	swine	0.958	1.0	G	R	swine-swine-swine	1	G22R
+285	seq_478	6.12992	116	swine	swine	0.958	1.0	F	L	swine-swine-swine	1	F116L
+286	seq_499	7.6738	72	swine	swine	0.953	1.0	K	R	swine-swine-swine	1	K72R
+286	287	2.61632	83	swine	swine	0.953	0.897	M	I	swine-swine-swine	0	M83I
+287	288	3.65336	18	swine	swine	0.897	0.806	K	R	swine-swine-swine	0	K18R
+293	seq_643	1.78971	33	swine	swine	0.999	1.0	T	I	swine-swine-swine	1	T33I
+293	seq_643	1.78971	48	swine	swine	0.999	1.0	A	T	swine-swine-swine	1	A48T
+293	seq_644	0.69907	83	swine	swine	0.999	1.0	I	M	swine-swine-swine	1	I83M
+294	seq_688	6.99406	33	swine	swine	0.897	1.0	T	M	swine-swine-swine	1	T33M
+296	298	5.30992	14	swine	swine	0.932	0.923	M	V	swine-swine-swine	0	M14V
+296	298	5.30992	50	swine	swine	0.932	0.923	M	L	swine-swine-swine	0	M50L
+296	298	5.30992	60	swine	swine	0.932	0.923	N	S	swine-swine-swine	0	N60S
+300	seq_741	4.79624	57	swine	swine	0.988	1.0	S	A	swine-swine-swine	1	S57A
+300	seq_791	5.62147	40	swine	swine	0.988	1.0	L	I	swine-swine-swine	1	L40I
+300	seq_791	5.62147	83	swine	swine	0.988	1.0	I	M	swine-swine-swine	1	I83M
+302	seq_186	6.77669	48	swine	human	0.962	1.0	A	T	swine-swine-human	1	A48T
+302	seq_186	6.77669	51	swine	human	0.962	1.0	R	K	swine-swine-human	1	R51K
+302	seq_186	6.77669	63	swine	human	0.962	1.0	G	V	swine-swine-human	1	G63V
+302	seq_795	4.19814	89	swine	swine	0.962	1.0	I	T	swine-swine-swine	1	I89T
+304	seq_811	4.8543	3	swine	swine	0.988	1.0	S	P	swine-swine-swine	1	S3P
+305	seq_331	10.76305	22	swine	swine	0.993	1.0	G	E	swine-swine-swine	1	G22E
+306	309	0.31097	33	swine	swine	0.994	0.997	T	M	swine-swine-swine	0	T33M
+308	seq_766	10.81988	25	swine	swine	0.793	1.0	S	T	swine-swine-swine	1	S25T
+308	seq_766	10.81988	57	swine	swine	0.793	1.0	S	F	swine-swine-swine	1	S57F
+308	seq_447	3.0007	27	swine	swine	0.793	1.0	G	D	swine-swine-swine	1	G27D
+308	seq_447	3.0007	74	swine	swine	0.793	1.0	E	D	swine-swine-swine	1	E74D
+308	seq_447	3.0007	118	swine	swine	0.793	1.0	F	I	swine-swine-swine	1	F118I
+308	seq_447	3.0007	120	swine	swine	0.793	1.0	F	L	swine-swine-swine	1	F120L
+310	seq_652	11.48503	3	swine	swine	0.978	1.0	S	P	swine-swine-swine	1	S3P
+310	seq_652	11.48503	89	swine	swine	0.978	1.0	I	T	swine-swine-swine	1	I89T
+310	seq_652	11.48503	92	swine	swine	0.978	1.0	N	S	swine-swine-swine	1	N92S
+312	seq_601	19.5989	27	swine	swine	0.997	1.0	G	D	swine-swine-swine	1	G27D
+312	seq_601	19.5989	118	swine	swine	0.997	1.0	F	L	swine-swine-swine	1	F118L
+313	314	2.22181	48	swine	swine	0.997	0.977	A	S	swine-swine-swine	0	A48S
+314	seq_448	10.12556	5	swine	swine	0.977	1.0	T	I	swine-swine-swine	1	T5I
+314	seq_448	10.12556	52	swine	swine	0.977	1.0	T	M	swine-swine-swine	1	T52M
+314	seq_517	11.12259	27	swine	swine	0.977	1.0	G	D	swine-swine-swine	1	G27D
+315	seq_709	20.2018	19	swine	swine	0.997	1.0	M	L	swine-swine-swine	1	M19L
+315	seq_709	20.2018	27	swine	swine	0.997	1.0	G	D	swine-swine-swine	1	G27D
+315	seq_709	20.2018	33	swine	swine	0.997	1.0	M	I	swine-swine-swine	1	M33I
+315	seq_709	20.2018	60	swine	swine	0.997	1.0	N	D	swine-swine-swine	1	N60D
+315	seq_709	20.2018	63	swine	swine	0.997	1.0	G	E	swine-swine-swine	1	G63E
+315	seq_709	20.2018	85	swine	swine	0.997	1.0	H	Y	swine-swine-swine	1	H85Y
+317	318	4.70259	27	swine	swine	0.994	0.985	G	D	swine-swine-swine	0	G27D
+317	318	4.70259	60	swine	swine	0.994	0.985	N	T	swine-swine-swine	0	N60T
+317	318	4.70259	85	swine	swine	0.994	0.985	H	Y	swine-swine-swine	0	H85Y
+317	seq_270	2.40861	7	swine	swine	0.994	1.0	S	L	swine-swine-swine	1	S7L
+318	seq_453	4.70602	92	swine	swine	0.985	1.0	N	S	swine-swine-swine	1	N92S
+319	seq_509	11.2344	57	swine	swine	0.988	1.0	S	Y	swine-swine-swine	1	S57Y
+319	seq_509	11.2344	89	swine	swine	0.988	1.0	I	T	swine-swine-swine	1	I89T
+320	seq_639	10.4943	76	swine	swine	0.985	1.0	I	L	swine-swine-swine	1	I76L
+320	seq_510	11.26037	27	swine	swine	0.985	1.0	G	D	swine-swine-swine	1	G27D
+320	seq_510	11.26037	29	swine	swine	0.985	1.0	N	S	swine-swine-swine	1	N29S
+320	seq_510	11.26037	31	swine	swine	0.985	1.0	M	I	swine-swine-swine	1	M31I
+322	seq_602	11.34694	22	swine	swine	0.973	1.0	G	E	swine-swine-swine	1	G22E
+322	seq_602	11.34694	33	swine	swine	0.973	1.0	M	T	swine-swine-swine	1	M33T
+322	seq_602	11.34694	86	swine	swine	0.973	1.0	R	K	swine-swine-swine	1	R86K
+322	seq_657	10.43187	6	swine	swine	0.973	1.0	V	M	swine-swine-swine	1	V6M
+322	seq_657	10.43187	26	swine	swine	0.973	1.0	K	E	swine-swine-swine	1	K26E
+322	seq_657	10.43187	27	swine	swine	0.973	1.0	G	D	swine-swine-swine	1	G27D
+322	seq_657	10.43187	115	swine	swine	0.973	1.0	T	A	swine-swine-swine	1	T115A
+322	seq_657	10.43187	120	swine	swine	0.973	1.0	F	L	swine-swine-swine	1	F120L
+325	seq_476	8.90208	14	swine	swine	0.997	1.0	M	V	swine-swine-swine	1	M14V
+326	330	1.88011	44	swine	swine	1.0	0.992	S	T	swine-swine-swine	0	S44T
+326	seq_273	3.02615	22	swine	swine	1.0	1.0	G	R	swine-swine-swine	1	G22R
+327	seq_508	9.51538	83	swine	swine	0.999	1.0	V	I	swine-swine-swine	1	V83I
+329	seq_641	5.99792	35	swine	swine	0.995	1.0	F	L	swine-swine-swine	1	F35L
+329	seq_506	7.99585	52	swine	swine	0.995	1.0	T	N	swine-swine-swine	1	T52N
+330	332	4.18853	39	swine	swine	0.992	0.978	K	R	swine-swine-swine	0	K39R
+330	332	4.18853	57	swine	swine	0.992	0.978	S	T	swine-swine-swine	0	S57T
+331	seq_489	3.93119	10	swine	swine	0.992	1.0	Q	K	swine-swine-swine	1	Q10K
+331	seq_428	2.76407	31	swine	swine	0.992	1.0	M	I	swine-swine-swine	1	M31I
+331	seq_428	2.76407	82	swine	swine	0.992	1.0	E	D	swine-swine-swine	1	E82D
+332	333	4.62326	22	swine	swine	0.978	1.0	G	E	swine-swine-swine	0	G22E
+332	333	4.62326	33	swine	swine	0.978	1.0	M	T	swine-swine-swine	0	M33T
+332	333	4.62326	52	swine	swine	0.978	1.0	T	K	swine-swine-swine	0	T52K
+333	seq_690	3.45479	27	swine	swine	1.0	1.0	G	D	swine-swine-swine	1	G27D
+336	seq_713	14.20147	3	swine	swine	0.992	1.0	S	P	swine-swine-swine	1	S3P
+336	seq_713	14.20147	27	swine	swine	0.992	1.0	G	D	swine-swine-swine	1	G27D
+336	seq_713	14.20147	29	swine	swine	0.992	1.0	N	S	swine-swine-swine	1	N29S
+336	seq_713	14.20147	120	swine	swine	0.992	1.0	F	L	swine-swine-swine	1	F120L
+337	seq_493	6.72153	60	swine	swine	0.996	1.0	N	D	swine-swine-swine	1	N60D
+339	seq_613	8.8037	23	swine	swine	0.986	1.0	S	P	swine-swine-swine	1	S23P
+339	seq_613	8.8037	86	swine	swine	0.986	1.0	R	K	swine-swine-swine	1	R86K
+340	345	0.58895	57	swine	swine	1.0	0.998	S	F	swine-swine-swine	0	S57F
+340	342	8.5895	83	swine	swine	1.0	0.998	V	M	swine-swine-swine	0	V83M
+341	seq_496	6.25817	23	swine	swine	0.984	1.0	S	P	swine-swine-swine	1	S23P
+342	seq_610	2.19953	120	swine	swine	0.998	1.0	F	L	swine-swine-swine	1	F120L
+343	344	1.99063	63	swine	swine	0.998	0.988	G	E	swine-swine-swine	0	G63E
+344	seq_488	5.27636	52	swine	swine	0.988	1.0	T	M	swine-swine-swine	1	T52M
+345	seq_492	7.07132	63	swine	swine	0.998	1.0	G	E	swine-swine-swine	1	G63E
+345	seq_492	7.07132	85	swine	swine	0.998	1.0	H	Q	swine-swine-swine	1	H85Q
+346	347	2.25643	27	swine	swine	0.997	0.994	G	D	swine-swine-swine	0	G27D
+347	seq_512	6.06624	23	swine	swine	0.994	1.0	S	P	swine-swine-swine	1	S23P
+347	seq_512	6.06624	39	swine	swine	0.994	1.0	K	R	swine-swine-swine	1	K39R
+347	seq_512	6.06624	57	swine	swine	0.994	1.0	F	S	swine-swine-swine	1	F57S
+348	seq_612	10.48158	47	swine	swine	0.991	1.0	E	G	swine-swine-swine	1	E47G
+348	seq_612	10.48158	57	swine	swine	0.991	1.0	F	S	swine-swine-swine	1	F57S
+348	seq_612	10.48158	111	swine	swine	0.991	1.0	Q	R	swine-swine-swine	1	Q111R
+348	seq_473	4.8376	85	swine	swine	0.991	1.0	H	Q	swine-swine-swine	1	H85Q
+350	seq_615	10.53142	44	swine	swine	0.988	1.0	S	T	swine-swine-swine	1	S44T
+350	seq_615	10.53142	48	swine	swine	0.988	1.0	A	T	swine-swine-swine	1	A48T
+350	seq_615	10.53142	52	swine	swine	0.988	1.0	T	K	swine-swine-swine	1	T52K
+350	351	3.14591	89	swine	swine	0.988	0.975	I	M	swine-swine-swine	0	I89M
+351	seq_614	7.59043	64	swine	swine	0.975	1.0	K	R	swine-swine-swine	1	K64R
+351	seq_614	7.59043	88	swine	swine	0.975	1.0	K	Q	swine-swine-swine	1	K88Q
+353	seq_629	6.09354	48	swine	swine	0.988	1.0	A	S	swine-swine-swine	1	A48S
+353	seq_629	6.09354	89	swine	swine	0.988	1.0	I	T	swine-swine-swine	1	I89T
+355	seq_712	10.3592	111	swine	swine	0.984	1.0	Q	L	swine-swine-swine	1	Q111L
+356	357	1.99106	63	swine	swine	0.989	0.982	G	E	swine-swine-swine	0	G63E
+357	seq_770	7.78893	59	swine	swine	0.982	1.0	Q	L	swine-swine-swine	1	Q59L
+357	seq_770	7.78893	64	swine	swine	0.982	1.0	K	R	swine-swine-swine	1	K64R
+358	seq_611	5.72194	22	swine	swine	0.99	1.0	G	E	swine-swine-swine	1	G22E
+358	seq_611	5.72194	33	swine	swine	0.99	1.0	M	T	swine-swine-swine	1	M33T
+360	seq_761	7.42298	27	swine	swine	0.988	1.0	G	D	swine-swine-swine	1	G27D
+360	seq_761	7.42298	39	swine	swine	0.988	1.0	K	R	swine-swine-swine	1	K39R
+361	seq_762	7.25926	27	swine	swine	0.989	1.0	G	D	swine-swine-swine	1	G27D
+361	seq_762	7.25926	31	swine	swine	0.989	1.0	M	I	swine-swine-swine	1	M31I
+361	seq_762	7.25926	39	swine	swine	0.989	1.0	K	R	swine-swine-swine	1	K39R
+361	seq_762	7.25926	64	swine	swine	0.989	1.0	K	R	swine-swine-swine	1	K64R
+361	seq_763	7.08424	57	swine	swine	0.989	1.0	S	F	swine-swine-swine	1	S57F
+361	seq_763	7.08424	71	swine	swine	0.989	1.0	Q	H	swine-swine-swine	1	Q71H
+361	seq_763	7.08424	89	swine	swine	0.989	1.0	I	L	swine-swine-swine	1	I89L
+362	363	1.9948	34	swine	swine	0.966	0.994	Q	R	swine-swine-swine	0	Q34R
+363	365	2.05388	52	swine	swine	0.994	0.999	M	T	swine-swine-swine	0	M52T
+364	seq_294	1.08157	36	swine	swine	0.995	1.0	E	K	swine-swine-swine	1	E36K
+366	seq_258	4.0125	3	swine	swine	0.965	1.0	S	F	swine-swine-swine	1	S3F
+366	seq_258	4.0125	34	swine	swine	0.965	1.0	Q	K	swine-swine-swine	1	Q34K
+366	367	30.74063	63	swine	swine	0.965	0.812	G	E	swine-swine-swine	0	G63E
+366	367	30.74063	86	swine	swine	0.965	0.812	R	K	swine-swine-swine	0	R86K
+366	367	30.74063	113	swine	swine	0.965	0.812	I	M	swine-swine-swine	0	I113M
+367	seq_260	4.27461	22	swine	swine	0.812	1.0	G	R	swine-swine-swine	1	G22R
+368	369	4.4909	89	human	human	0.825	0.993	I	M	swine-human-human	0	I89M
+368	seq_193	6.77923	39	human	human	0.825	1.0	K	R	swine-human-human	1	K39R
+368	seq_193	6.77923	83	human	human	0.825	1.0	V	I	swine-human-human	1	V83I
+369	seq_194	2.86157	92	human	human	0.993	1.0	N	S	human-human-human	1	N92S
+369	370	2.86294	85	human	human	0.993	1.0	H	Q	human-human-human	0	H85Q
+369	seq_039	2.86294	83	human	human	0.993	1.0	V	L	human-human-human	1	V83L
+374	376	0.28747	7	swine	swine	0.75	0.76	S	L	swine-swine-swine	0	S7L
+374	375	0.65584	48	swine	swine	0.75	0.793	A	T	swine-swine-swine	0	A48T
+375	seq_407	10.29014	31	swine	swine	0.793	1.0	M	I	swine-swine-swine	1	M31I
+375	seq_407	10.29014	49	swine	swine	0.793	1.0	V	L	swine-swine-swine	1	V49L
+375	seq_407	10.29014	86	swine	swine	0.793	1.0	K	R	swine-swine-swine	1	K86R
+375	seq_407	10.29014	89	swine	swine	0.793	1.0	M	I	swine-swine-swine	1	M89I
+376	377	3.54717	29	swine	swine	0.76	0.849	N	S	swine-swine-swine	0	N29S
+376	377	3.54717	76	swine	swine	0.76	0.849	I	V	swine-swine-swine	0	I76V
+376	377	3.54717	113	swine	swine	0.76	0.849	I	M	swine-swine-swine	0	I113M
+376	seq_369	29.65851	6	swine	swine	0.76	1.0	V	M	swine-swine-swine	1	V6M
+376	seq_369	29.65851	32	swine	swine	0.76	1.0	V	I	swine-swine-swine	1	V32I
+376	seq_369	29.65851	34	swine	swine	0.76	1.0	Q	R	swine-swine-swine	1	Q34R
+376	seq_369	29.65851	48	swine	swine	0.76	1.0	A	S	swine-swine-swine	1	A48S
+376	seq_369	29.65851	85	swine	swine	0.76	1.0	H	Q	swine-swine-swine	1	H85Q
+376	seq_369	29.65851	88	swine	swine	0.76	1.0	K	R	swine-swine-swine	1	K88R
+377	380	4.17594	23	swine	swine	0.849	0.905	S	P	swine-swine-swine	0	S23P
+378	seq_368	19.66114	29	swine	swine	0.902	1.0	S	N	swine-swine-swine	1	S29N
+378	seq_368	19.66114	67	swine	swine	0.902	1.0	E	K	swine-swine-swine	1	E67K
+378	seq_368	19.66114	76	swine	swine	0.902	1.0	V	I	swine-swine-swine	1	V76I
+378	seq_368	19.66114	89	swine	swine	0.902	1.0	M	K	swine-swine-swine	1	M89K
+379	seq_367	17.17165	22	swine	swine	0.918	1.0	G	E	swine-swine-swine	1	G22E
+379	seq_367	17.17165	32	swine	swine	0.918	1.0	V	I	swine-swine-swine	1	V32I
+379	seq_367	17.17165	39	swine	swine	0.918	1.0	K	R	swine-swine-swine	1	K39R
+379	seq_328	9.17165	89	swine	swine	0.918	1.0	M	T	swine-swine-swine	1	M89T
+380	seq_829	7.93403	67	swine	swine	0.905	1.0	E	D	swine-swine-swine	1	E67D
+380	seq_829	7.93403	88	swine	swine	0.905	1.0	K	R	swine-swine-swine	1	K88R
+380	seq_702	36.37924	14	swine	swine	0.905	1.0	M	T	swine-swine-swine	1	M14T
+380	seq_702	36.37924	52	swine	swine	0.905	1.0	M	I	swine-swine-swine	1	M52I
+380	seq_702	36.37924	57	swine	swine	0.905	1.0	Y	H	swine-swine-swine	1	Y57H
+380	seq_702	36.37924	120	swine	swine	0.905	1.0	L	F	swine-swine-swine	1	L120F
+380	381	13.38024	31	swine	swine	0.905	0.941	M	I	swine-swine-swine	0	M31I
+380	381	13.38024	48	swine	swine	0.905	0.941	A	T	swine-swine-swine	0	A48T
+381	seq_366	8.55516	35	swine	swine	0.941	1.0	F	L	swine-swine-swine	1	F35L
+381	seq_366	8.55516	83	swine	swine	0.941	1.0	V	M	swine-swine-swine	1	V83M
+381	seq_292	9.55516	27	swine	swine	0.941	1.0	G	D	swine-swine-swine	1	G27D
+381	seq_292	9.55516	29	swine	swine	0.941	1.0	S	N	swine-swine-swine	1	S29N
+382	seq_256	1.82026	48	swine	swine	0.965	1.0	A	T	swine-swine-swine	1	A48T
+385	seq_282	18.15467	36	swine	swine	0.948	1.0	E	K	swine-swine-swine	1	E36K
+385	seq_282	18.15467	85	swine	swine	0.948	1.0	H	Y	swine-swine-swine	1	H85Y
+385	seq_280	17.15467	6	swine	swine	0.948	1.0	V	M	swine-swine-swine	1	V6M
+385	seq_280	17.15467	29	swine	swine	0.948	1.0	N	S	swine-swine-swine	1	N29S
+388	389	11.98859	14	swine	swine	0.985	0.963	M	V	swine-swine-swine	0	M14V
+388	389	11.98859	89	swine	swine	0.985	0.963	M	I	swine-swine-swine	0	M89I
+388	390	0.74216	60	swine	swine	0.985	0.983	N	S	swine-swine-swine	0	N60S
+389	seq_364	9.17921	4	swine	swine	0.963	1.0	N	I	swine-swine-swine	1	N4I
+389	seq_364	9.17921	22	swine	swine	0.963	1.0	G	E	swine-swine-swine	1	G22E
+389	seq_364	9.17921	26	swine	swine	0.963	1.0	E	G	swine-swine-swine	1	E26G
+389	seq_364	9.17921	31	swine	swine	0.963	1.0	M	I	swine-swine-swine	1	M31I
+389	seq_364	9.17921	32	swine	swine	0.963	1.0	V	I	swine-swine-swine	1	V32I
+389	seq_202	4.59838	86	swine	swine	0.963	1.0	K	R	swine-swine-swine	1	K86R
+392	seq_246	19.07064	6	swine	swine	0.959	1.0	V	M	swine-swine-swine	1	V6M
+392	seq_246	19.07064	27	swine	swine	0.959	1.0	G	D	swine-swine-swine	1	G27D
+392	seq_246	19.07064	48	swine	swine	0.959	1.0	A	T	swine-swine-swine	1	A48T
+392	seq_246	19.07064	70	swine	swine	0.959	1.0	G	S	swine-swine-swine	1	G70S
+392	seq_246	19.07064	81	swine	swine	0.959	1.0	E	D	swine-swine-swine	1	E81D
+396	seq_045	1.82011	27	human	human	0.822	1.0	G	D	swine-human-human	1	G27D
+396	seq_045	1.82011	49	human	human	0.822	1.0	V	I	swine-human-human	1	V49I
+397	401	1.68497	60	swine	swine	0.978	0.977	N	S	swine-swine-swine	0	N60S
+397	398	2.0391	89	swine	swine	0.978	0.961	M	I	swine-swine-swine	0	M89I
+398	seq_431	22.75546	6	swine	swine	0.961	1.0	V	M	swine-swine-swine	1	V6M
+398	seq_431	22.75546	22	swine	swine	0.961	1.0	G	K	swine-swine-swine	1	G22K
+398	seq_431	22.75546	31	swine	swine	0.961	1.0	M	I	swine-swine-swine	1	M31I
+398	seq_431	22.75546	52	swine	swine	0.961	1.0	M	T	swine-swine-swine	1	M52T
+398	399	7.69412	34	swine	swine	0.961	0.953	R	Q	swine-swine-swine	0	R34Q
+398	399	7.69412	49	swine	swine	0.961	0.953	V	I	swine-swine-swine	0	V49I
+399	400	3.42373	6	swine	swine	0.953	0.964	V	M	swine-swine-swine	0	V6M
+399	400	3.42373	85	swine	swine	0.953	0.964	H	Q	swine-swine-swine	0	H85Q
+399	400	3.42373	89	swine	swine	0.953	0.964	I	T	swine-swine-swine	0	I89T
+399	seq_245	10.47937	86	swine	swine	0.953	1.0	K	R	swine-swine-swine	1	K86R
+400	seq_244	7.05564	44	swine	swine	0.964	1.0	S	L	swine-swine-swine	1	S44L
+400	seq_244	7.05564	89	swine	swine	0.964	1.0	T	K	swine-swine-swine	1	T89K
+402	403	5.80443	22	swine	human	0.961	0.982	G	E	swine-swine-human	0	G22E
+402	403	5.80443	92	swine	human	0.961	0.982	N	S	swine-swine-human	0	N92S
+404	seq_277	17.55554	6	swine	swine	0.956	1.0	V	L	swine-swine-swine	1	V6L
+404	seq_277	17.55554	22	swine	swine	0.956	1.0	G	E	swine-swine-swine	1	G22E
+404	seq_277	17.55554	49	swine	swine	0.956	1.0	V	I	swine-swine-swine	1	V49I
+404	seq_277	17.55554	89	swine	swine	0.956	1.0	M	I	swine-swine-swine	1	M89I
+405	seq_330	13.65806	3	swine	swine	0.95	1.0	S	A	swine-swine-swine	1	S3A
+405	seq_330	13.65806	27	swine	swine	0.95	1.0	G	D	swine-swine-swine	1	G27D
+405	406	4.80355	49	swine	swine	0.95	0.944	V	L	swine-swine-swine	0	V49L
+405	406	4.80355	57	swine	swine	0.95	0.944	Y	H	swine-swine-swine	0	Y57H
+405	406	4.80355	86	swine	swine	0.95	0.944	K	R	swine-swine-swine	0	K86R
+406	seq_387	15.3504	27	swine	swine	0.944	1.0	G	D	swine-swine-swine	1	G27D
+406	seq_387	15.3504	32	swine	swine	0.944	1.0	V	I	swine-swine-swine	1	V32I
+407	seq_278	2.89608	93	swine	swine	0.979	1.0	S	G	swine-swine-swine	1	S93G
+408	seq_454	7.10154	22	swine	swine	0.976	1.0	G	E	swine-swine-swine	1	G22E
+408	seq_454	7.10154	89	swine	swine	0.976	1.0	M	V	swine-swine-swine	1	M89V
+408	seq_454	7.10154	92	swine	swine	0.976	1.0	N	S	swine-swine-swine	1	N92S
+411	413	5.4279	14	human	swine	0.909	0.8	M	K	human-human-swine	0	M14K
+411	413	5.4279	48	human	swine	0.909	0.8	A	S	human-human-swine	0	A48S
+411	413	5.4279	120	human	swine	0.909	0.8	L	F	human-human-swine	0	L120F
+411	415	0.21711	48	human	human	0.909	0.873	A	T	human-human-human	0	A48T
+413	seq_358	7.04603	49	swine	swine	0.8	1.0	V	A	human-swine-swine	1	V49A
+414	seq_248	7.37437	32	swine	swine	0.866	1.0	V	I	swine-swine-swine	1	V32I
+414	seq_360	4.95245	89	swine	swine	0.866	1.0	M	I	swine-swine-swine	1	M89I
+416	seq_374	16.46609	32	human	swine	0.875	1.0	V	I	human-human-swine	1	V32I
+416	seq_374	16.46609	44	human	swine	0.875	1.0	S	L	human-human-swine	1	S44L
+416	seq_374	16.46609	52	human	swine	0.875	1.0	M	T	human-human-swine	1	M52T
+416	seq_374	16.46609	60	human	swine	0.875	1.0	S	N	human-human-swine	1	S60N
+416	seq_374	16.46609	120	human	swine	0.875	1.0	L	F	human-human-swine	1	L120F
+418	seq_365	7.04048	22	swine	swine	0.812	1.0	G	E	swine-swine-swine	1	G22E
+418	seq_365	7.04048	60	swine	swine	0.812	1.0	S	N	swine-swine-swine	1	S60N
+418	seq_365	7.04048	86	swine	swine	0.812	1.0	K	R	swine-swine-swine	1	K86R
+419	seq_363	6.5193	22	swine	swine	0.847	1.0	G	E	swine-swine-swine	1	G22E
+419	seq_363	6.5193	27	swine	swine	0.847	1.0	G	D	swine-swine-swine	1	G27D
+419	seq_363	6.5193	48	swine	swine	0.847	1.0	S	Y	swine-swine-swine	1	S48Y
+422	seq_361	6.65234	53	swine	swine	0.723	1.0	G	A	human-swine-swine	1	G53A
+422	seq_361	6.65234	61	swine	swine	0.723	1.0	R	T	human-swine-swine	1	R61T
+422	seq_361	6.65234	65	swine	swine	0.723	1.0	W	G	human-swine-swine	1	W65G
+422	seq_361	6.65234	85	swine	swine	0.723	1.0	H	L	human-swine-swine	1	H85L
+422	seq_361	6.65234	109	swine	swine	0.723	1.0	V	L	human-swine-swine	1	V109L
+422	seq_361	6.65234	114	swine	swine	0.723	1.0	R	K	human-swine-swine	1	R114K
+422	seq_361	6.65234	119	swine	swine	0.723	1.0	Q	H	human-swine-swine	1	Q119H
+423	seq_357	3.49243	12	swine	swine	0.929	1.0	I	L	swine-swine-swine	1	I12L
+423	seq_356	8.28309	27	swine	swine	0.929	1.0	G	D	swine-swine-swine	1	G27D
+423	seq_356	8.28309	86	swine	swine	0.929	1.0	K	R	swine-swine-swine	1	K86R
+423	seq_356	8.28309	89	swine	swine	0.929	1.0	M	T	swine-swine-swine	1	M89T
+424	425	1.01163	86	human	human	0.903	0.91	K	R	human-human-human	0	K86R
+424	seq_274	14.45874	39	human	swine	0.903	1.0	K	R	human-human-swine	1	K39R
+425	426	6.17876	27	human	swine	0.91	0.999	G	D	human-human-swine	0	G27D
+425	427	0.88286	48	human	human	0.91	0.938	A	T	human-human-human	0	A48T
+427	430	1.68796	27	human	human	0.938	0.795	G	D	human-human-human	0	G27D
+430	seq_014	3.87629	4	human	human	0.795	1.0	N	T	human-human-human	1	N4T
+430	seq_014	3.87629	63	human	human	0.795	1.0	E	D	human-human-human	1	E63D
+430	seq_014	3.87629	89	human	human	0.795	1.0	M	S	human-human-human	1	M89S
+430	431	0.78424	89	human	swine	0.795	0.89	M	A	human-human-swine	0	M89A
+431	432	4.09205	48	swine	swine	0.89	1.0	T	A	human-swine-swine	0	T48A
+431	466	0.95729	37	swine	swine	0.89	0.905	S	A	human-swine-swine	0	S37A
+433	seq_470	11.81229	10	swine	swine	0.925	1.0	Q	E	swine-swine-swine	1	Q10E
+433	seq_470	11.81229	14	swine	swine	0.925	1.0	M	K	swine-swine-swine	1	M14K
+433	seq_470	11.81229	111	swine	swine	0.925	1.0	Q	R	swine-swine-swine	1	Q111R
+434	seq_340	12.13275	48	swine	swine	0.929	1.0	T	A	swine-swine-swine	1	T48A
+434	seq_340	12.13275	53	swine	swine	0.929	1.0	G	R	swine-swine-swine	1	G53R
+434	seq_340	12.13275	60	swine	swine	0.929	1.0	S	N	swine-swine-swine	1	S60N
+434	seq_340	12.13275	64	swine	swine	0.929	1.0	K	R	swine-swine-swine	1	K64R
+434	seq_218	5.13275	116	swine	swine	0.929	1.0	F	L	swine-swine-swine	1	F116L
+435	seq_375	7.86192	48	swine	swine	0.909	1.0	T	A	swine-swine-swine	1	T48A
+435	seq_375	7.86192	53	swine	swine	0.909	1.0	G	R	swine-swine-swine	1	G53R
+435	seq_375	7.86192	55	swine	swine	0.909	1.0	L	F	swine-swine-swine	1	L55F
+435	436	0.73095	40	swine	swine	0.909	0.951	I	V	swine-swine-swine	0	I40V
+436	seq_219	5.13097	16	swine	swine	0.951	1.0	M	I	swine-swine-swine	1	M16I
+436	seq_219	5.13097	81	swine	swine	0.951	1.0	E	G	swine-swine-swine	1	E81G
+436	437	0.35139	52	swine	swine	0.951	0.961	M	T	swine-swine-swine	0	M52T
+437	seq_223	3.77957	80	swine	swine	0.961	1.0	I	T	swine-swine-swine	1	I80T
+438	439	6.46942	19	swine	swine	0.963	0.961	M	L	swine-swine-swine	0	M19L
+438	439	6.46942	32	swine	swine	0.963	0.961	V	I	swine-swine-swine	0	V32I
+439	seq_373	7.19235	22	swine	swine	0.961	1.0	G	R	swine-swine-swine	1	G22R
+439	seq_373	7.19235	60	swine	swine	0.961	1.0	S	N	swine-swine-swine	1	S60N
+441	seq_823	10.03391	52	swine	swine	0.966	1.0	T	K	swine-swine-swine	1	T52K
+441	seq_823	10.03391	60	swine	swine	0.966	1.0	S	R	swine-swine-swine	1	S60R
+441	seq_823	10.03391	89	swine	swine	0.966	1.0	A	E	swine-swine-swine	1	A89E
+442	seq_539	7.62986	48	swine	swine	0.967	1.0	T	N	swine-swine-swine	1	T48N
+442	seq_539	7.62986	89	swine	swine	0.967	1.0	A	V	swine-swine-swine	1	A89V
+443	444	0.47149	92	swine	swine	0.979	0.979	N	S	swine-swine-swine	0	N92S
+444	seq_599	12.8831	31	swine	swine	0.979	1.0	M	I	swine-swine-swine	1	M31I
+444	seq_599	12.8831	52	swine	swine	0.979	1.0	T	M	swine-swine-swine	1	T52M
+444	seq_599	12.8831	64	swine	swine	0.979	1.0	K	R	swine-swine-swine	1	K64R
+444	seq_599	12.8831	89	swine	swine	0.979	1.0	A	T	swine-swine-swine	1	A89T
+444	445	0.36	80	swine	swine	0.979	0.979	I	T	swine-swine-swine	0	I80T
+445	seq_314	9.99456	31	swine	swine	0.979	1.0	M	I	swine-swine-swine	1	M31I
+445	seq_314	9.99456	40	swine	swine	0.979	1.0	V	I	swine-swine-swine	1	V40I
+445	seq_314	9.99456	52	swine	swine	0.979	1.0	T	A	swine-swine-swine	1	T52A
+445	seq_314	9.99456	53	swine	swine	0.979	1.0	G	R	swine-swine-swine	1	G53R
+446	seq_355	9.41838	11	swine	swine	0.978	1.0	D	G	swine-swine-swine	1	D11G
+446	seq_355	9.41838	40	swine	swine	0.978	1.0	V	L	swine-swine-swine	1	V40L
+446	seq_393	6.95537	34	swine	swine	0.978	1.0	R	L	swine-swine-swine	1	R34L
+446	seq_393	6.95537	52	swine	swine	0.978	1.0	T	M	swine-swine-swine	1	T52M
+446	seq_393	6.95537	60	swine	swine	0.978	1.0	S	N	swine-swine-swine	1	S60N
+446	seq_393	6.95537	92	swine	swine	0.978	1.0	S	N	swine-swine-swine	1	S92N
+447	seq_821	12.45401	14	swine	swine	0.977	1.0	M	I	swine-swine-swine	1	M14I
+447	seq_821	12.45401	49	swine	swine	0.977	1.0	V	I	swine-swine-swine	1	V49I
+447	seq_821	12.45401	88	swine	swine	0.977	1.0	K	R	swine-swine-swine	1	K88R
+448	seq_378	10.93611	48	swine	swine	0.975	1.0	T	S	swine-swine-swine	1	T48S
+449	seq_310	9.45848	89	swine	swine	0.971	1.0	A	E	swine-swine-swine	1	A89E
+450	451	2.39517	48	swine	swine	0.968	0.941	T	N	swine-swine-swine	0	T48N
+450	seq_820	11.04134	6	swine	swine	0.968	1.0	V	M	swine-swine-swine	1	V6M
+450	seq_820	11.04134	41	swine	swine	0.968	1.0	Y	F	swine-swine-swine	1	Y41F
+451	452	1.26599	22	swine	swine	0.941	0.951	G	R	swine-swine-swine	0	G22R
+451	453	1.19062	60	swine	swine	0.941	0.909	S	N	swine-swine-swine	0	S60N
+452	seq_336	5.79114	20	swine	swine	0.951	1.0	Q	R	swine-swine-swine	1	Q20R
+452	seq_336	5.79114	22	swine	swine	0.951	1.0	R	S	swine-swine-swine	1	R22S
+452	seq_336	5.79114	64	swine	swine	0.951	1.0	K	N	swine-swine-swine	1	K64N
+452	seq_677	8.99936	32	swine	swine	0.951	1.0	V	I	swine-swine-swine	1	V32I
+452	seq_677	8.99936	85	swine	swine	0.951	1.0	H	Q	swine-swine-swine	1	H85Q
+453	456	0.56255	49	swine	swine	0.909	0.876	V	I	swine-swine-swine	0	V49I
+453	454	5.00547	29	swine	swine	0.909	0.999	N	S	swine-swine-swine	0	N29S
+456	seq_380	5.66835	29	swine	swine	0.876	1.0	N	S	swine-swine-swine	1	N29S
+456	457	3.6348	31	swine	human	0.876	0.602	M	I	swine-swine-human	0	M31I
+456	457	3.6348	48	swine	human	0.876	0.602	N	S	swine-swine-human	0	N48S
+457	seq_137	7.12944	34	human	human	0.602	1.0	R	Q	swine-human-human	1	R34Q
+457	seq_137	7.12944	89	human	human	0.602	1.0	A	V	swine-human-human	1	A89V
+459	460	0.68626	40	human	human	0.621	0.611	V	I	human-human-human	0	V40I
+463	464	1.36034	81	swine	swine	0.601	0.722	E	D	swine-swine-swine	0	E81D
+463	seq_780	10.04607	60	swine	swine	0.601	1.0	N	S	swine-swine-swine	1	N60S
+463	seq_780	10.04607	83	swine	swine	0.601	1.0	V	M	swine-swine-swine	1	V83M
+464	465	2.39144	83	swine	swine	0.722	0.85	V	M	swine-swine-swine	0	V83M
+464	seq_806	9.67788	4	swine	swine	0.722	1.0	N	G	swine-swine-swine	1	N4G
+464	seq_806	9.67788	6	swine	swine	0.722	1.0	V	E	swine-swine-swine	1	V6E
+464	seq_806	9.67788	9	swine	swine	0.722	1.0	F	C	swine-swine-swine	1	F9C
+464	seq_806	9.67788	14	swine	swine	0.722	1.0	M	V	swine-swine-swine	1	M14V
+465	seq_777	6.29702	2	swine	swine	0.85	1.0	D	Y	swine-swine-swine	1	D2Y
+465	seq_777	6.29702	6	swine	swine	0.85	1.0	V	F	swine-swine-swine	1	V6F
+465	seq_777	6.29702	76	swine	swine	0.85	1.0	I	V	swine-swine-swine	1	I76V
+465	seq_808	7.26731	16	swine	swine	0.85	1.0	M	I	swine-swine-swine	1	M16I
+465	seq_808	7.26731	81	swine	swine	0.85	1.0	D	G	swine-swine-swine	1	D81G
+465	seq_808	7.26731	85	swine	swine	0.85	1.0	H	Q	swine-swine-swine	1	H85Q
+466	467	4.05756	6	swine	swine	0.905	0.664	V	M	swine-swine-swine	0	V6M
+467	seq_144	17.08268	60	swine	human	0.664	1.0	S	N	swine-swine-human	1	S60N
+467	seq_144	17.08268	82	swine	human	0.664	1.0	E	K	swine-swine-human	1	E82K
+467	seq_144	17.08268	83	swine	human	0.664	1.0	V	I	swine-swine-human	1	V83I
+467	seq_144	17.08268	89	swine	human	0.664	1.0	A	T	swine-swine-human	1	A89T
+469	471	1.5065	89	human	human	0.999	0.98	A	E	swine-human-human	0	A89E
+469	seq_723	11.29333	35	human	swine	0.999	1.0	F	L	swine-human-swine	1	F35L
+469	seq_723	11.29333	39	human	swine	0.999	1.0	K	R	swine-human-swine	1	K39R
+469	seq_723	11.29333	50	human	swine	0.999	1.0	M	I	swine-human-swine	1	M50I
+469	seq_723	11.29333	57	human	swine	0.999	1.0	Y	H	swine-human-swine	1	Y57H
+469	seq_723	11.29333	89	human	swine	0.999	1.0	A	M	swine-human-swine	1	A89M
+469	seq_723	11.29333	115	human	swine	0.999	1.0	A	T	swine-human-swine	1	A115T
+469	seq_696	12.71524	60	human	swine	0.999	1.0	S	N	swine-human-swine	1	S60N
+469	seq_696	12.71524	72	human	swine	0.999	1.0	K	R	swine-human-swine	1	K72R
+469	seq_696	12.71524	74	human	swine	0.999	1.0	E	D	swine-human-swine	1	E74D
+469	seq_696	12.71524	83	human	swine	0.999	1.0	M	T	swine-human-swine	1	M83T
+469	seq_696	12.71524	89	human	swine	0.999	1.0	A	S	swine-human-swine	1	A89S
+469	470	1.55927	7	human	human	0.999	0.718	S	L	swine-human-human	0	S7L
+469	seq_834	12.71524	6	human	swine	0.999	1.0	M	T	swine-human-swine	1	M6T
+469	seq_834	12.71524	83	human	swine	0.999	1.0	M	V	swine-human-swine	1	M83V
+469	seq_834	12.71524	115	human	swine	0.999	1.0	A	T	swine-human-swine	1	A115T
+470	seq_698	10.79433	29	human	swine	0.718	1.0	N	S	human-human-swine	1	N29S
+470	seq_698	10.79433	83	human	swine	0.718	1.0	M	I	human-human-swine	1	M83I
+470	seq_700	11.22994	85	human	swine	0.718	1.0	H	N	human-human-swine	1	H85N
+470	seq_700	11.22994	89	human	swine	0.718	1.0	A	T	human-human-swine	1	A89T
+473	seq_717	11.17154	27	human	swine	0.84	1.0	D	G	human-human-swine	1	D27G
+473	seq_717	11.17154	32	human	swine	0.84	1.0	V	I	human-human-swine	1	V32I
+473	seq_717	11.17154	60	human	swine	0.84	1.0	S	C	human-human-swine	1	S60C
+473	seq_717	11.17154	83	human	swine	0.84	1.0	M	I	human-human-swine	1	M83I
+473	seq_717	11.17154	89	human	swine	0.84	1.0	A	V	human-human-swine	1	A89V
+473	seq_717	11.17154	100	human	swine	0.84	1.0	M	I	human-human-swine	1	M100I
+475	seq_729	2.77053	33	swine	swine	0.961	1.0	T	M	human-swine-swine	1	T33M
+475	seq_772	4.99731	89	swine	swine	0.961	1.0	A	V	human-swine-swine	1	A89V
+475	seq_746	4.40615	87	swine	swine	0.961	1.0	M	I	human-swine-swine	1	M87I
+475	seq_746	4.40615	92	swine	swine	0.961	1.0	S	N	human-swine-swine	1	S92N
+477	seq_167	12.64618	115	human	human	0.864	1.0	A	T	human-human-human	1	A115T
+477	seq_747	12.12432	81	human	swine	0.864	1.0	E	D	human-human-swine	1	E81D
+477	seq_747	12.12432	89	human	swine	0.864	1.0	A	V	human-human-swine	1	A89V
+478	seq_693	11.4456	26	human	swine	0.882	1.0	E	G	human-human-swine	1	E26G
+478	seq_693	11.4456	60	human	swine	0.882	1.0	S	N	human-human-swine	1	S60N
+478	seq_693	11.4456	85	human	swine	0.882	1.0	H	Q	human-human-swine	1	H85Q
+478	seq_693	11.4456	115	human	swine	0.882	1.0	A	T	human-human-swine	1	A115T
+478	seq_694	11.62916	14	human	swine	0.882	1.0	M	V	human-human-swine	1	M14V
+478	seq_694	11.62916	22	human	swine	0.882	1.0	G	E	human-human-swine	1	G22E
+478	seq_694	11.62916	89	human	swine	0.882	1.0	A	T	human-human-swine	1	A89T
+481	482	8.66124	14	swine	swine	0.663	1.0	M	I	human-swine-swine	0	M14I
+481	482	8.66124	83	swine	swine	0.663	1.0	M	V	human-swine-swine	0	M83V
+481	482	8.66124	120	swine	swine	0.663	1.0	L	F	human-swine-swine	0	L120F
+481	seq_354	0.86142	121	swine	swine	0.663	1.0	I	X	human-swine-swine	1	I121X
+484	seq_085	1.01436	67	human	human	1.0	1.0	E	K	human-human-human	1	E67K
+485	seq_079	1.02701	54	human	human	1.0	1.0	D	N	human-human-human	1	D54N
+486	487	1.05267	28	human	swine	1.0	0.974	L	W	human-human-swine	0	L28W
+493	seq_083	0.5294	63	human	human	1.0	1.0	E	K	human-human-human	1	E63K
+497	seq_832	8.15123	19	human	swine	0.92	1.0	M	I	human-human-swine	1	M19I
+497	seq_164	9.67922	26	human	human	0.92	1.0	E	G	human-human-human	1	E26G
+497	seq_164	9.67922	67	human	human	0.92	1.0	E	D	human-human-human	1	E67D
+497	seq_164	9.67922	89	human	human	0.92	1.0	A	T	human-human-human	1	A89T
+508	509	1.23713	89	human	human	1.0	0.993	A	V	human-human-human	0	A89V
+509	seq_841	12.61164	26	human	swine	0.993	1.0	E	G	human-human-swine	1	E26G
+509	seq_841	12.61164	31	human	swine	0.993	1.0	M	I	human-human-swine	1	M31I
+509	seq_841	12.61164	34	human	swine	0.993	1.0	R	Q	human-human-swine	1	R34Q
+509	seq_841	12.61164	67	human	swine	0.993	1.0	E	A	human-human-swine	1	E67A
+509	seq_841	12.61164	83	human	swine	0.993	1.0	M	I	human-human-swine	1	M83I
+509	seq_841	12.61164	115	human	swine	0.993	1.0	A	S	human-human-swine	1	A115S
+510	seq_707	10.91047	83	human	swine	0.816	1.0	M	I	human-human-swine	1	M83I
+510	seq_707	10.91047	85	human	swine	0.816	1.0	H	Q	human-human-swine	1	H85Q
+510	seq_707	10.91047	115	human	swine	0.816	1.0	A	S	human-human-swine	1	A115S
+510	seq_707	10.91047	120	human	swine	0.816	1.0	L	F	human-human-swine	1	L120F
+511	seq_837	10.65003	85	human	swine	0.662	1.0	H	Y	human-human-swine	1	H85Y
+511	seq_833	10.3788	83	human	swine	0.662	1.0	M	I	human-human-swine	1	M83I
+511	seq_833	10.3788	92	human	swine	0.662	1.0	N	S	human-human-swine	1	N92S
+512	seq_835	11.9623	115	human	swine	0.648	1.0	A	T	human-human-swine	1	A115T
+514	seq_779	11.01363	6	swine	swine	0.789	1.0	M	I	swine-swine-swine	1	M6I
+514	seq_779	11.01363	32	swine	swine	0.789	1.0	V	I	swine-swine-swine	1	V32I
+514	seq_779	11.01363	48	swine	swine	0.789	1.0	T	A	swine-swine-swine	1	T48A
+514	seq_779	11.01363	89	swine	swine	0.789	1.0	A	V	swine-swine-swine	1	A89V
+515	seq_839	8.29077	40	swine	swine	0.838	1.0	I	L	swine-swine-swine	1	I40L
+515	seq_839	8.29077	52	swine	swine	0.838	1.0	M	L	swine-swine-swine	1	M52L
+515	seq_839	8.29077	55	swine	swine	0.838	1.0	L	I	swine-swine-swine	1	L55I
+515	seq_839	8.29077	64	swine	swine	0.838	1.0	K	R	swine-swine-swine	1	K64R
+516	seq_678	2.98284	41	swine	swine	0.865	1.0	Y	F	swine-swine-swine	1	Y41F
+516	seq_678	2.98284	64	swine	swine	0.865	1.0	K	R	swine-swine-swine	1	K64R
+516	seq_788	8.87627	52	swine	swine	0.865	1.0	M	V	swine-swine-swine	1	M52V
+516	seq_788	8.87627	72	swine	swine	0.865	1.0	K	R	swine-swine-swine	1	K72R
+516	seq_788	8.87627	115	swine	swine	0.865	1.0	A	T	swine-swine-swine	1	A115T
+517	518	1.9157	48	human	human	0.999	0.959	T	A	human-human-human	0	T48A
+518	521	2.18811	2	human	human	0.959	0.999	D	E	human-human-human	0	D2E
+518	521	2.18811	29	human	human	0.959	0.999	N	S	human-human-human	0	N29S
+518	521	2.18811	83	human	human	0.959	0.999	M	I	human-human-human	0	M83I
+523	seq_160	6.9806	2	human	human	0.997	1.0	E	D	human-human-human	1	E2D
+523	seq_160	6.9806	6	human	human	0.997	1.0	M	V	human-human-human	1	M6V
+525	seq_124	23.48285	2	human	human	1.0	1.0	E	D	human-human-human	1	E2D
+525	seq_124	23.48285	29	human	human	1.0	1.0	S	N	human-human-human	1	S29N
+525	seq_124	23.48285	48	human	human	1.0	1.0	A	T	human-human-human	1	A48T
+525	seq_124	23.48285	52	human	human	1.0	1.0	M	I	human-human-human	1	M52I
+525	seq_124	23.48285	83	human	human	1.0	1.0	I	M	human-human-human	1	I83M
+526	seq_184	8.45992	85	human	human	0.972	1.0	H	Q	human-human-human	1	H85Q
+526	seq_184	8.45992	105	human	human	0.972	1.0	L	I	human-human-human	1	L105I
+526	seq_191	9.10101	14	human	human	0.972	1.0	M	L	human-human-human	1	M14L
+526	seq_191	9.10101	29	human	human	0.972	1.0	S	N	human-human-human	1	S29N
+526	seq_191	9.10101	32	human	human	0.972	1.0	V	I	human-human-human	1	V32I
+526	seq_191	9.10101	115	human	human	0.972	1.0	A	T	human-human-human	1	A115T
+528	seq_701	9.77643	26	swine	swine	0.655	1.0	E	G	swine-swine-swine	1	E26G
+528	seq_701	9.77643	88	swine	swine	0.655	1.0	K	R	swine-swine-swine	1	K88R
+528	seq_697	10.98465	60	swine	swine	0.655	1.0	S	N	swine-swine-swine	1	S60N
+528	seq_697	10.98465	76	swine	swine	0.655	1.0	I	V	swine-swine-swine	1	I76V
+530	seq_724	8.4648	48	swine	swine	0.74	1.0	T	A	swine-swine-swine	1	T48A
+530	seq_810	12.62644	60	swine	swine	0.74	1.0	S	N	swine-swine-swine	1	S60N
+530	seq_810	12.62644	83	swine	swine	0.74	1.0	M	V	swine-swine-swine	1	M83V
+530	seq_810	12.62644	85	swine	swine	0.74	1.0	H	Q	swine-swine-swine	1	H85Q
+531	seq_812	10.203	29	swine	swine	0.792	1.0	N	S	swine-swine-swine	1	N29S
+531	seq_812	10.203	58	swine	swine	0.792	1.0	L	F	swine-swine-swine	1	L58F
+531	seq_812	10.203	115	swine	swine	0.792	1.0	A	T	swine-swine-swine	1	A115T
+531	532	4.83458	31	swine	swine	0.792	0.966	M	I	swine-swine-swine	0	M31I
+531	532	4.83458	48	swine	swine	0.792	0.966	T	A	swine-swine-swine	0	T48A
+531	532	4.83458	83	swine	swine	0.792	0.966	M	I	swine-swine-swine	0	M83I
+531	532	4.83458	111	swine	swine	0.792	0.966	Q	L	swine-swine-swine	0	Q111L
+534	seq_178	5.18985	36	swine	human	0.94	1.0	E	G	swine-swine-human	1	E36G
+535	536	1.98959	14	swine	swine	0.989	1.0	M	V	swine-swine-swine	0	M14V
+538	seq_094	1.0515	16	human	human	1.0	1.0	M	I	human-human-human	1	M16I
+544	seq_570	2.26849	115	human	swine	1.0	1.0	A	T	human-human-swine	1	A115T
+544	seq_692	9.3726	31	human	swine	1.0	1.0	M	V	human-human-swine	1	M31V
+544	seq_692	9.3726	62	human	swine	1.0	1.0	N	T	human-human-swine	1	N62T
+544	seq_692	9.3726	63	human	swine	1.0	1.0	E	K	human-human-swine	1	E63K
+544	seq_692	9.3726	83	human	swine	1.0	1.0	M	I	human-human-swine	1	M83I
+546	seq_818	1.03215	68	swine	swine	0.994	1.0	Q	K	swine-swine-swine	1	Q68K
+546	seq_818	1.03215	112	swine	swine	0.994	1.0	E	G	swine-swine-swine	1	E112G
+546	seq_816	0.80201	48	swine	swine	0.994	1.0	T	N	swine-swine-swine	1	T48N
+547	548	0.52487	52	human	swine	0.999	1.0	M	V	human-human-swine	0	M52V
+550	seq_771	10.5959	76	swine	swine	0.999	1.0	I	M	human-swine-swine	1	I76M
+550	seq_771	10.5959	88	swine	swine	0.999	1.0	K	R	human-swine-swine	1	K88R
+550	seq_771	10.5959	99	swine	swine	0.999	1.0	F	Y	human-swine-swine	1	F99Y
+557	seq_285	10.52956	22	swine	swine	0.954	1.0	G	R	swine-swine-swine	1	G22R
+558	seq_458	7.1198	60	swine	swine	0.986	1.0	S	N	swine-swine-swine	1	S60N
+558	seq_458	7.1198	88	swine	swine	0.986	1.0	K	I	swine-swine-swine	1	K88I
+559	560	0.43258	57	swine	swine	0.996	0.997	Y	H	swine-swine-swine	0	Y57H
+559	seq_220	2.82558	19	swine	swine	0.996	1.0	M	L	swine-swine-swine	1	M19L
+559	seq_220	2.82558	31	swine	swine	0.996	1.0	M	I	swine-swine-swine	1	M31I
+559	seq_220	2.82558	89	swine	swine	0.996	1.0	A	V	swine-swine-swine	1	A89V
+561	seq_469	4.79928	64	swine	swine	0.997	1.0	K	R	swine-swine-swine	1	K64R
+561	seq_469	4.79928	81	swine	swine	0.997	1.0	E	D	swine-swine-swine	1	E81D
+561	seq_224	1.38398	117	swine	swine	0.997	1.0	S	P	swine-swine-swine	1	S117P
+562	seq_461	11.62861	52	swine	swine	0.993	1.0	M	V	swine-swine-swine	1	M52V
+562	seq_461	11.62861	72	swine	swine	0.993	1.0	K	I	swine-swine-swine	1	K72I
+562	seq_461	11.62861	74	swine	swine	0.993	1.0	E	G	swine-swine-swine	1	E74G
+562	seq_461	11.62861	85	swine	swine	0.993	1.0	H	Q	swine-swine-swine	1	H85Q
+562	seq_461	11.62861	86	swine	swine	0.993	1.0	R	K	swine-swine-swine	1	R86K
+562	564	1.07458	89	swine	swine	0.993	0.971	A	T	swine-swine-swine	0	A89T
+564	566	4.75676	23	swine	swine	0.971	1.0	S	Y	swine-swine-swine	0	S23Y
+564	566	4.75676	26	swine	swine	0.971	1.0	E	G	swine-swine-swine	0	E26G
+565	seq_053	2.27494	4	swine	human	0.798	1.0	N	T	swine-swine-human	1	N4T
+568	seq_468	8.87325	32	swine	swine	0.972	1.0	V	I	swine-swine-swine	1	V32I
+568	seq_468	8.87325	49	swine	swine	0.972	1.0	V	L	swine-swine-swine	1	V49L
+568	seq_468	8.87325	89	swine	swine	0.972	1.0	A	E	swine-swine-swine	1	A89E
+568	seq_392	8.87599	14	swine	swine	0.972	1.0	M	I	swine-swine-swine	1	M14I
+568	seq_392	8.87599	22	swine	swine	0.972	1.0	G	R	swine-swine-swine	1	G22R
+568	seq_392	8.87599	48	swine	swine	0.972	1.0	T	A	swine-swine-swine	1	T48A
+569	570	0.66692	54	swine	swine	0.999	1.0	D	N	swine-swine-swine	0	D54N
+569	seq_217	1.54568	15	swine	swine	0.999	1.0	R	G	swine-swine-swine	1	R15G
+569	seq_217	1.54568	48	swine	swine	0.999	1.0	T	P	swine-swine-swine	1	T48P
+570	seq_236	0.87876	111	swine	swine	1.0	1.0	Q	R	swine-swine-swine	1	Q111R
+571	seq_333	8.15058	85	swine	swine	0.981	1.0	H	Q	swine-swine-swine	1	H85Q
+572	seq_827	13.76601	89	swine	swine	0.975	1.0	A	T	swine-swine-swine	1	A89T
+573	574	1.9129	12	swine	swine	0.761	0.937	I	T	swine-swine-swine	0	I12T
+574	seq_349	4.89059	2	swine	swine	0.937	1.0	D	E	swine-swine-swine	1	D2E
+574	seq_349	4.89059	7	swine	swine	0.937	1.0	S	T	swine-swine-swine	1	S7T
+574	seq_349	4.89059	51	swine	swine	0.937	1.0	R	S	swine-swine-swine	1	R51S
+574	seq_349	4.89059	108	swine	swine	0.937	1.0	E	Q	swine-swine-swine	1	E108Q
+574	seq_349	4.89059	118	swine	swine	0.937	1.0	F	L	swine-swine-swine	1	F118L
+574	575	1.17278	64	swine	swine	0.937	0.987	K	R	swine-swine-swine	0	K64R
+575	seq_334	0.91507	121	swine	swine	0.987	1.0	I	F	swine-swine-swine	1	I121F
+575	seq_098	0.66575	76	swine	human	0.987	1.0	I	M	swine-swine-human	1	I76M
+578	580	1.29481	14	human	human	0.993	0.99	M	T	swine-human-human	0	M14T
+581	seq_351	0.79087	118	swine	swine	0.952	1.0	F	L	human-swine-swine	1	F118L
+582	seq_128	3.32813	19	human	human	0.978	1.0	M	L	human-human-human	1	M19L
+584	seq_718	10.3296	14	human	swine	0.69	1.0	T	M	human-human-swine	1	T14M
+584	seq_718	10.3296	67	human	swine	0.69	1.0	E	K	human-human-swine	1	E67K
+584	seq_718	10.3296	86	human	swine	0.69	1.0	R	K	human-human-swine	1	R86K
+584	seq_695	8.98198	48	human	swine	0.69	1.0	T	A	human-human-swine	1	T48A
+584	seq_695	8.98198	60	human	swine	0.69	1.0	S	R	human-human-swine	1	S60R
+585	seq_699	9.6749	29	human	swine	0.826	1.0	N	S	human-human-swine	1	N29S
+585	seq_699	9.6749	63	human	swine	0.826	1.0	E	K	human-human-swine	1	E63K
+585	seq_699	9.6749	76	human	swine	0.826	1.0	I	M	human-human-swine	1	I76M
+585	seq_699	9.6749	89	human	swine	0.826	1.0	A	E	human-human-swine	1	A89E
+585	seq_699	9.6749	113	human	swine	0.826	1.0	I	M	human-human-swine	1	I113M
+588	seq_213	1.84243	40	swine	swine	0.997	1.0	I	V	swine-swine-swine	1	I40V
+589	590	3.38579	23	swine	swine	0.992	1.0	S	P	swine-swine-swine	0	S23P
+589	590	3.38579	121	swine	swine	0.992	1.0	I	M	swine-swine-swine	0	I121M
+591	seq_579	12.98197	31	swine	swine	0.986	1.0	M	V	swine-swine-swine	1	M31V
+591	seq_423	6.56827	39	swine	swine	0.986	1.0	K	R	swine-swine-swine	1	K39R
+593	seq_432	11.12394	14	swine	swine	0.994	1.0	M	L	swine-swine-swine	1	M14L
+593	seq_432	11.12394	48	swine	swine	0.994	1.0	T	A	swine-swine-swine	1	T48A
+593	seq_432	11.12394	60	swine	swine	0.994	1.0	S	I	swine-swine-swine	1	S60I
+594	595	1.83719	89	swine	swine	0.966	0.978	A	T	swine-swine-swine	0	A89T
+594	seq_424	9.08904	22	swine	swine	0.966	1.0	G	R	swine-swine-swine	1	G22R
+594	seq_424	9.08904	85	swine	swine	0.966	1.0	H	Q	swine-swine-swine	1	H85Q
+594	seq_424	9.08904	89	swine	swine	0.966	1.0	A	V	swine-swine-swine	1	A89V
+594	seq_424	9.08904	92	swine	swine	0.966	1.0	N	S	swine-swine-swine	1	N92S
+595	seq_824	8.98884	54	swine	swine	0.978	1.0	D	T	swine-swine-swine	1	D54T
+595	596	0.49144	60	swine	swine	0.978	0.981	S	N	swine-swine-swine	0	S60N
+598	seq_456	3.97877	52	swine	swine	0.983	1.0	M	I	swine-swine-swine	1	M52I
+598	seq_456	3.97877	113	swine	swine	0.983	1.0	I	M	swine-swine-swine	1	I113M
+599	seq_737	9.89731	20	swine	swine	0.965	1.0	Q	R	swine-swine-swine	1	Q20R
+599	seq_545	5.32471	32	swine	swine	0.965	1.0	V	I	swine-swine-swine	1	V32I
+599	seq_545	5.32471	52	swine	swine	0.965	1.0	M	V	swine-swine-swine	1	M52V
+599	seq_545	5.32471	74	swine	swine	0.965	1.0	E	D	swine-swine-swine	1	E74D
+601	seq_598	7.19485	88	swine	swine	0.959	1.0	K	R	swine-swine-swine	1	K88R
+602	seq_377	4.31377	27	swine	swine	0.969	1.0	D	G	swine-swine-swine	1	D27G
+602	seq_300	2.56583	14	swine	swine	0.969	1.0	M	L	swine-swine-swine	1	M14L
+603	seq_549	9.39397	89	swine	swine	0.968	1.0	T	I	swine-swine-swine	1	T89I
+604	seq_800	10.50823	55	swine	swine	0.961	1.0	L	F	swine-swine-swine	1	L55F
+604	605	3.12202	88	swine	swine	0.961	0.967	K	R	swine-swine-swine	0	K88R
+605	seq_734	6.25898	2	swine	swine	0.967	1.0	D	N	swine-swine-swine	1	D2N
+605	seq_734	6.25898	92	swine	swine	0.967	1.0	N	T	swine-swine-swine	1	N92T
+607	seq_550	7.28028	2	swine	swine	0.634	1.0	D	E	swine-swine-swine	1	D2E
+607	seq_550	7.28028	89	swine	swine	0.634	1.0	T	M	swine-swine-swine	1	T89M
+607	seq_126	3.08607	3	swine	human	0.634	1.0	S	Y	swine-swine-human	1	S3Y
+608	seq_541	5.10862	85	swine	swine	0.781	1.0	H	Q	swine-swine-swine	1	H85Q
+608	seq_805	10.77985	14	swine	swine	0.781	1.0	M	V	swine-swine-swine	1	M14V
+609	seq_394	2.65443	92	swine	swine	0.652	1.0	N	T	swine-swine-swine	1	N92T
+609	seq_828	9.09279	29	swine	swine	0.652	1.0	N	S	swine-swine-swine	1	N29S
+610	seq_564	7.07797	26	swine	swine	0.604	1.0	E	G	swine-swine-swine	1	E26G
+610	seq_564	7.07797	34	swine	swine	0.604	1.0	R	Q	swine-swine-swine	1	R34Q
+610	seq_564	7.07797	88	swine	swine	0.604	1.0	K	R	swine-swine-swine	1	K88R
+610	seq_564	7.07797	115	swine	swine	0.604	1.0	T	A	swine-swine-swine	1	T115A
+611	seq_546	6.12666	47	swine	swine	0.634	1.0	E	K	swine-swine-swine	1	E47K
+611	seq_546	6.12666	89	swine	swine	0.634	1.0	T	M	swine-swine-swine	1	T89M
+611	seq_546	6.12666	91	swine	swine	0.634	1.0	E	D	swine-swine-swine	1	E91D
+611	seq_593	7.55954	6	swine	swine	0.634	1.0	V	L	swine-swine-swine	1	V6L
+613	614	2.36419	29	swine	swine	0.607	0.772	N	S	swine-swine-swine	0	N29S
+613	seq_735	10.16192	2	swine	swine	0.607	1.0	D	N	swine-swine-swine	1	D2N
+613	seq_735	10.16192	71	swine	swine	0.607	1.0	Q	L	swine-swine-swine	1	Q71L
+613	617	1.24827	89	swine	swine	0.607	0.834	T	M	swine-swine-swine	0	T89M
+614	seq_733	7.55729	48	swine	swine	0.772	1.0	T	N	swine-swine-swine	1	T48N
+615	seq_704	8.61744	60	swine	swine	0.665	1.0	N	S	swine-swine-swine	1	N60S
+615	seq_556	4.19004	14	swine	swine	0.665	1.0	M	I	swine-swine-swine	1	M14I
+615	seq_556	4.19004	19	swine	swine	0.665	1.0	M	L	swine-swine-swine	1	M19L
+616	seq_132	1.04593	19	human	human	0.993	1.0	M	I	swine-human-human	1	M19I
+617	618	1.119	60	swine	swine	0.834	0.959	N	S	swine-swine-swine	0	N60S
+617	seq_708	7.63865	89	swine	swine	0.834	1.0	M	I	swine-swine-swine	1	M89I
+619	seq_543	1.47167	29	swine	swine	0.992	1.0	N	S	swine-swine-swine	1	N29S
+620	seq_568	3.53727	64	swine	swine	0.974	1.0	K	R	swine-swine-swine	1	K64R
+620	seq_568	3.53727	82	swine	swine	0.974	1.0	E	K	swine-swine-swine	1	E82K
+621	seq_540	4.07865	120	swine	swine	0.652	1.0	L	F	swine-swine-swine	1	L120F
+624	seq_799	7.89929	2	swine	swine	0.865	1.0	D	E	swine-swine-swine	1	D2E
+624	seq_799	7.89929	26	swine	swine	0.865	1.0	E	G	swine-swine-swine	1	E26G
+624	seq_799	7.89929	32	swine	swine	0.865	1.0	V	I	swine-swine-swine	1	V32I
+625	seq_567	2.43215	77	swine	swine	0.935	1.0	R	K	swine-swine-swine	1	R77K
+625	seq_567	2.43215	92	swine	swine	0.935	1.0	N	S	swine-swine-swine	1	N92S
+625	seq_566	2.35291	89	swine	swine	0.935	1.0	T	K	swine-swine-swine	1	T89K
+627	seq_173	1.86049	49	human	human	0.999	1.0	V	L	human-human-human	1	V49L
+628	seq_179	0.55652	71	human	human	1.0	1.0	Q	K	human-human-human	1	Q71K
+629	seq_341	6.87068	48	swine	swine	0.766	1.0	T	A	swine-swine-swine	1	T48A
+629	seq_341	6.87068	63	swine	swine	0.766	1.0	E	G	swine-swine-swine	1	E63G
+629	seq_341	6.87068	86	swine	swine	0.766	1.0	R	K	swine-swine-swine	1	R86K
+629	seq_341	6.87068	89	swine	swine	0.766	1.0	A	M	swine-swine-swine	1	A89M
+629	seq_463	11.79418	31	swine	swine	0.766	1.0	M	I	swine-swine-swine	1	M31I
+629	seq_463	11.79418	32	swine	swine	0.766	1.0	V	I	swine-swine-swine	1	V32I
+629	seq_463	11.79418	43	swine	swine	0.766	1.0	D	N	swine-swine-swine	1	D43N
+629	seq_463	11.79418	83	swine	swine	0.766	1.0	V	M	swine-swine-swine	1	V83M
+631	seq_389	2.81214	31	human	swine	0.675	1.0	M	I	human-human-swine	1	M31I
+632	seq_590	7.23775	32	human	swine	0.999	1.0	V	A	human-human-swine	1	V32A
+632	seq_590	7.23775	34	human	swine	0.999	1.0	R	Q	human-human-swine	1	R34Q
+636	seq_586	10.86755	35	swine	swine	0.609	1.0	F	L	human-swine-swine	1	F35L
+636	seq_586	10.86755	81	swine	swine	0.609	1.0	E	D	human-swine-swine	1	E81D
+636	seq_586	10.86755	83	swine	swine	0.609	1.0	V	I	human-swine-swine	1	V83I
+637	seq_588	8.04229	29	swine	swine	0.806	1.0	N	S	swine-swine-swine	1	N29S
+637	seq_606	8.93585	27	swine	swine	0.806	1.0	D	G	swine-swine-swine	1	D27G
+637	seq_606	8.93585	99	swine	swine	0.806	1.0	F	Y	swine-swine-swine	1	F99Y
+641	seq_462	5.91369	11	swine	swine	0.86	1.0	D	N	human-swine-swine	1	D11N
+641	seq_462	5.91369	12	swine	swine	0.86	1.0	I	R	human-swine-swine	1	I12R
+641	seq_462	5.91369	18	swine	swine	0.86	1.0	K	I	human-swine-swine	1	K18I
+641	seq_462	5.91369	19	swine	swine	0.86	1.0	M	V	human-swine-swine	1	M19V
+641	seq_462	5.91369	34	swine	swine	0.86	1.0	R	G	human-swine-swine	1	R34G
+641	seq_462	5.91369	35	swine	swine	0.86	1.0	F	C	human-swine-swine	1	F35C
+641	seq_462	5.91369	37	swine	swine	0.86	1.0	A	S	human-swine-swine	1	A37S
+641	seq_462	5.91369	42	swine	swine	0.86	1.0	R	G	human-swine-swine	1	R42G
+641	seq_462	5.91369	51	swine	swine	0.86	1.0	R	K	human-swine-swine	1	R51K
+646	seq_595	12.28981	39	human	swine	0.633	1.0	K	R	human-human-swine	1	K39R
+646	seq_595	12.28981	85	human	swine	0.633	1.0	H	Q	human-human-swine	1	H85Q
+646	seq_595	12.28981	100	human	swine	0.633	1.0	M	I	human-human-swine	1	M100I
+648	seq_825	8.15856	37	swine	swine	0.604	1.0	A	S	swine-swine-swine	1	A37S
+648	seq_825	8.15856	55	swine	swine	0.604	1.0	L	F	swine-swine-swine	1	L55F
+649	seq_587	12.33666	3	human	swine	0.648	1.0	S	F	human-human-swine	1	S3F
+649	seq_587	12.33666	6	human	swine	0.648	1.0	V	M	human-human-swine	1	V6M
+649	seq_587	12.33666	19	human	swine	0.648	1.0	M	L	human-human-swine	1	M19L
+649	seq_587	12.33666	29	human	swine	0.648	1.0	N	S	human-human-swine	1	N29S
+649	seq_587	12.33666	52	human	swine	0.648	1.0	M	T	human-human-swine	1	M52T
+649	seq_587	12.33666	89	human	swine	0.648	1.0	A	V	human-human-swine	1	A89V
+651	seq_538	11.00588	81	human	swine	0.635	1.0	E	G	human-human-swine	1	E81G
+652	seq_522	5.58696	89	human	swine	0.649	1.0	A	T	human-human-swine	1	A89T
+652	seq_067	3.1349	48	human	human	0.649	1.0	T	N	human-human-human	1	T48N
+652	seq_067	3.1349	115	human	human	0.649	1.0	T	A	human-human-human	1	T115A
+654	655	1.99403	49	swine	swine	0.968	0.995	V	I	swine-swine-swine	0	V49I
+656	seq_523	1.84099	22	swine	swine	0.99	1.0	G	R	swine-swine-swine	1	G22R
+657	seq_140	1.68997	89	swine	human	0.986	1.0	A	T	swine-swine-human	1	A89T
+657	seq_547	0.74438	60	swine	swine	0.986	1.0	N	T	swine-swine-swine	1	N60T
+662	seq_594	9.16759	83	swine	swine	0.697	1.0	V	I	swine-swine-swine	1	V83I
+662	seq_594	9.16759	89	swine	swine	0.697	1.0	A	V	swine-swine-swine	1	A89V
+663	seq_591	10.17084	89	swine	swine	0.752	1.0	A	V	swine-swine-swine	1	A89V
+664	665	1.74787	14	swine	swine	0.808	0.908	M	K	swine-swine-swine	0	M14K
+665	seq_548	5.57102	89	swine	swine	0.908	1.0	A	V	swine-swine-swine	1	A89V
+665	seq_443	3.44398	22	swine	swine	0.908	1.0	G	E	swine-swine-swine	1	G22E
+665	seq_443	3.44398	100	swine	swine	0.908	1.0	M	I	swine-swine-swine	1	M100I
+666	seq_434	5.27204	27	swine	swine	0.741	1.0	D	G	swine-swine-swine	1	D27G
+668	seq_797	5.13035	89	human	swine	1.0	1.0	A	T	human-human-swine	1	A89T
+669	670	1.6467	100	human	human	0.999	1.0	M	I	human-human-human	0	M100I
+672	seq_174	14.8302	26	swine	human	0.751	1.0	E	G	swine-swine-human	1	E26G
+672	seq_565	10.41689	3	swine	swine	0.751	1.0	S	F	swine-swine-swine	1	S3F
+672	seq_565	10.41689	27	swine	swine	0.751	1.0	D	G	swine-swine-swine	1	D27G
+672	seq_565	10.41689	29	swine	swine	0.751	1.0	N	S	swine-swine-swine	1	N29S
+672	seq_565	10.41689	100	swine	swine	0.751	1.0	M	I	swine-swine-swine	1	M100I
+672	seq_531	7.36993	64	swine	swine	0.751	1.0	K	R	swine-swine-swine	1	K64R
+674	seq_433	2.83818	76	swine	swine	0.967	1.0	I	L	swine-swine-swine	1	I76L
+675	676	0.60565	89	swine	swine	0.991	0.999	A	V	swine-swine-swine	0	A89V
+675	seq_739	9.37106	63	swine	swine	0.991	1.0	E	G	swine-swine-swine	1	E63G
+675	seq_739	9.37106	85	swine	swine	0.991	1.0	H	N	swine-swine-swine	1	H85N
+675	seq_739	9.37106	100	swine	swine	0.991	1.0	M	I	swine-swine-swine	1	M100I
+681	seq_803	7.46849	86	swine	swine	1.0	1.0	R	K	swine-swine-swine	1	R86K
+683	seq_182	7.34826	60	swine	human	0.851	1.0	N	T	swine-swine-human	1	N60T
+684	seq_736	6.02406	27	swine	swine	0.857	1.0	D	G	swine-swine-swine	1	D27G
