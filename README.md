@@ -21,6 +21,8 @@ We gratefully acknowledge all data contributors, i.e., the authors and their ori
 
 We cannot publicly upload the genetic sequences from GISAID, and therefore no sequence (fasta) files are uploaded to this repository. However, the [data](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/data) folder contains lists of accession numbers for all the sequences originally downloaded for analysis as well as for the sequences kepth through each step of the data preparation.
 
+The full list of GISAID sequences used and their contributors can be found in the [GISAID accnowledgement table](https://github.com/KMAnker/IAV_ancestral_reconstruction/tree/main/data/gisaid_supplemental_table_epi_set_250117dt.pdf).
+
 
 
 ## Analysis and output folders
